@@ -1,0 +1,24 @@
+baseURL = "/"
+languageCode = "zh-cn"
+title = "⌚️老王"
+theme = "nocss-hugo"
+preserveTaxonomyNames = true
+paginate = 10 #frontpage pagination
+hasCJKLanguage = true
+subtitle = "一个老伙计心中的少年。这是一个没有CSS的站点"
+enableRobotsTXT = true
+
+[outputs]
+home = ["HTML"]
+
+[params]
+SEOTitle = "一个老伙计心中的少年。天文 无线电"
+Subtitle = "一个老伙计心中的少年。PS:这是一个没有CSS的站点"
+TOC = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[permalinks]
+  post = "/p/:title/"
