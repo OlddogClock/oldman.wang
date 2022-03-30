@@ -1,3 +1,3 @@
-[submodule "themes/hugo-clarity"]
-	path = themes/hugo-clarity
-	url = https://github.com/chipzoller/hugo-clarity
+[submodule "themes/nocss-hugo"]
+	path = themes/nocss-hugo
+	url = git@github.com:OlddogClock/nocss-hugo.git
