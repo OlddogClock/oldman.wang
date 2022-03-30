@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "zh-cn"
-title = "⌚️老王"
+title = "老王"
 theme = "nocss-hugo"
 preserveTaxonomyNames = true
 paginate = 10 #frontpage pagination

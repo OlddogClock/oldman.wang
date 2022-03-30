@@ -1,352 +1,92 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>GTX3060成功安装tensorflow-gpu过程记录-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
-    
-    <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
-    <link rel="stylesheet" href="/css/alone.css" />
-</head>
-<body><header class="homepage-header">
-    <h1>⌚️老王</h1>
-    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header>
-<hr />
-&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
-
-<hr />
-
-
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>GTX3060成功安装tensorflow-gpu过程记录-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+<hr>
 <article>
-    <div class="container">
-        <h2>📖GTX3060成功安装tensorflow-gpu过程记录</h2>
-        
-
-    
-    
-    
-        
-        
-        
-        <hr />
-        <h5>文章目录</h5>
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e6%98%be%e5%8d%a1%e5%92%8c%e7%b3%bb%e7%bb%9f%e5%9f%ba%e6%9c%ac%e6%83%85%e5%86%b5">
-                    显卡和系统基本情况
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e5%ae%89%e8%a3%85%e6%ad%a5%e9%aa%a4">
-                    安装步骤
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e7%a1%ae%e5%ae%9a%e7%89%88%e6%9c%ac%e4%bf%a1%e6%81%af">
-                    确定版本信息
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85">
-                    下载安装
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e8%ae%be%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f">
-                    设置环境变量
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e5%ae%89%e8%a3%85tensorflow_gpu">
-                    安装tensorflow_gpu
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e5%a4%b1%e8%b4%a5%e7%9a%84%e6%83%85%e5%86%b5">
-                    失败的情况
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%b8%bawindows-terminal%e5%a2%9e%e5%8a%a0anaconda-prompt">
-                    为Windows Terminal增加Anaconda prompt
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bb%bb%e5%8a%a1%e7%ae%a1%e7%90%86%e5%99%a8%e4%b8%ad%e6%b2%a1%e6%9c%89cuda%e5%9b%be%e8%a1%a8">
-                    为什么任务管理器中没有CUDA图表
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-    
-
-        <hr />
-
-        <p>Windows10下成功安装Tensorflow-GPU过程（GTX 3060）</p>
-<p>本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。</p>
-<p>重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看</p>
-<h2 id="显卡和系统基本情况">显卡和系统基本情况</h2>
+<div class=container>
+<h2>📖GTX3060成功安装tensorflow-gpu过程记录</h2><hr>
+<h5>文章目录</h5><ul class=nav>
+<ul class=nav>
+<li><a href=#%e6%98%be%e5%8d%a1%e5%92%8c%e7%b3%bb%e7%bb%9f%e5%9f%ba%e6%9c%ac%e6%83%85%e5%86%b5>
+显卡和系统基本情况
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e5%ae%89%e8%a3%85%e6%ad%a5%e9%aa%a4>
+安装步骤
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e7%a1%ae%e5%ae%9a%e7%89%88%e6%9c%ac%e4%bf%a1%e6%81%af>
+确定版本信息
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85>
+下载安装
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e8%ae%be%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f>
+设置环境变量
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e5%ae%89%e8%a3%85tensorflow_gpu>
+安装tensorflow_gpu
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e5%a4%b1%e8%b4%a5%e7%9a%84%e6%83%85%e5%86%b5>
+失败的情况
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%b8%bawindows-terminal%e5%a2%9e%e5%8a%a0anaconda-prompt>
+为Windows Terminal增加Anaconda prompt
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bb%bb%e5%8a%a1%e7%ae%a1%e7%90%86%e5%99%a8%e4%b8%ad%e6%b2%a1%e6%9c%89cuda%e5%9b%be%e8%a1%a8>
+为什么任务管理器中没有CUDA图表
+</a></li></ul></ul><hr>
+<p>Windows10下成功安装Tensorflow-GPU过程（GTX 3060）</p><p>本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。</p><p>重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看</p><h2 id=显卡和系统基本情况>显卡和系统基本情况</h2><ul>
+<li>GIGABYTE RTX 3060 GAMING OC Rev. 2.0（GV-N3060GAMING OC-12GD）技嘉魔鹰2.0显卡，这是块锁算力的卡；</li><li>Windows 10 企业版64bit 21H1，19043.1320</li><li>Anaconda3，python3.7，tensorflow-gpu-2.7.0</li><li>显卡驱动GameReady 471.41，CUDA v11.2.2，cudnn v8.1.1</li><li>其他配置：
 <ul>
-<li>GIGABYTE RTX 3060 GAMING OC Rev. 2.0（GV-N3060GAMING OC-12GD）技嘉魔鹰2.0显卡，这是块锁算力的卡；</li>
-<li>Windows 10 企业版64bit 21H1，19043.1320</li>
-<li>Anaconda3，python3.7，tensorflow-gpu-2.7.0</li>
-<li>显卡驱动GameReady 471.41，CUDA v11.2.2，cudnn v8.1.1</li>
-<li>其他配置：
-<ul>
-<li>CPU：AMD Ryzen 7 3700X</li>
-<li>主板：Gigabyte B550I Aorus Pro AX</li>
-<li>内存：金士顿 DDR4 3200MHz 16G</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/gpu2.gif" alt=""></p>
-<h2 id="安装步骤">安装步骤</h2>
-<ol start="0">
-<li>分为&quot;确定版本信息、下载安装cuda、设置环境变量、安装tf&quot;，四个大步骤</li>
-</ol>
-<h3 id="确定版本信息">确定版本信息</h3>
-<ol>
+<li>CPU：AMD Ryzen 7 3700X</li><li>主板：Gigabyte B550I Aorus Pro AX</li><li>内存：金士顿 DDR4 3200MHz 16G</li></ul></li></ul><p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/gpu2.gif alt></p><h2 id=安装步骤>安装步骤</h2><ol start=0>
+<li>分为"确定版本信息、下载安装cuda、设置环境变量、安装tf"，四个大步骤</li></ol><h3 id=确定版本信息>确定版本信息</h3><ol>
 <li>
-<p>安装显卡驱动，我用的GameReady版，最高版本是496.xx，没追新，用的是471.41；</p>
-</li>
-<li>
-<p>确认自己能安装什么版本的CUDA。打开&quot;NVIDA控制面板&quot;&ndash;&gt;帮助&ndash;&gt;系统信息&ndash;&gt;查看NVCUDA64.DLL后面对应的NVIDIA CUDA版本；
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E6%98%BE%E5%8D%A1%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF.PNG" alt="">
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E9%A9%B1%E5%8A%A8%E5%AF%B9%E5%BA%94.PNG" alt=""></p>
-</li>
-<li>
+<p>安装显卡驱动，我用的GameReady版，最高版本是496.xx，没追新，用的是471.41；</p></li><li>
+<p>确认自己能安装什么版本的CUDA。打开"NVIDA控制面板"&ndash;>帮助&ndash;>系统信息&ndash;>查看NVCUDA64.DLL后面对应的NVIDIA CUDA版本；
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E6%98%BE%E5%8D%A1%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF.PNG alt>
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E9%A9%B1%E5%8A%A8%E5%AF%B9%E5%BA%94.PNG alt></p></li><li>
 <p>Nvidia GeForce GameReady 471.41驱动最高支持到CUDA v11.4，但是Tensorflow目前不支持这么高的CUDA版本，所以我根据tf文档中的提示，安装tensorflow_gpu-2.6.0 对应的CUDA 11.2
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/tf-cuda%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94.PNG" alt=""></p>
-</li>
-</ol>
-<h3 id="下载安装">下载安装</h3>
-<ol start="4">
-<li>在<code>https://developer.nvidia.com/cuda-toolkit-archive</code>下载CUDA Toolkit 11.2 Update 2，稍后安装</li>
-<li>在<code>https://developer.nvidia.com/rdp/cudnn-archive</code>下载cuDNN v8.1.1 (Feburary 26th, 2021), for CUDA 11.0,11.1 and 11.2，稍后安装</li>
-<li>在<code>https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</code>下载Anaconda3-2021.05-Windows-x86_64.exe，直接安装</li>
-<li>安装CUDA，选择自定义安装，我只勾选了CUDA-&gt;Runtime-Libraries，其它都不安装，因为第1步安装驱动时包含了一部分，VisualStudio集成等功能tf也用不到；使用默认安装路径，我的在C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/cudasetup.PNG" alt=""></li>
-<li>将第5步下载的cudnn-11.2-windows-x64-v8.1.1.33.zip\cuda\bin\下所有文件复制到CUDA目录C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\</li>
-<li>再将cudnn-11.2-windows-x64-v8.1.1.33.zip\cuda\lib\x64 下所有文件复制到C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\lib\x64\</li>
-</ol>
-<h3 id="设置环境变量">设置环境变量</h3>
-<ol start="10">
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/tf-cuda%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94.PNG alt></p></li></ol><h3 id=下载安装>下载安装</h3><ol start=4>
+<li>在<code>https://developer.nvidia.com/cuda-toolkit-archive</code>下载CUDA Toolkit 11.2 Update 2，稍后安装</li><li>在<code>https://developer.nvidia.com/rdp/cudnn-archive</code>下载cuDNN v8.1.1 (Feburary 26th, 2021), for CUDA 11.0,11.1 and 11.2，稍后安装</li><li>在<code>https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</code>下载Anaconda3-2021.05-Windows-x86_64.exe，直接安装</li><li>安装CUDA，选择自定义安装，我只勾选了CUDA->Runtime-Libraries，其它都不安装，因为第1步安装驱动时包含了一部分，VisualStudio集成等功能tf也用不到；使用默认安装路径，我的在C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/cudasetup.PNG alt></li><li>将第5步下载的cudnn-11.2-windows-x64-v8.1.1.33.zip\cuda\bin\下所有文件复制到CUDA目录C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\</li><li>再将cudnn-11.2-windows-x64-v8.1.1.33.zip\cuda\lib\x64 下所有文件复制到C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\lib\x64\</li></ol><h3 id=设置环境变量>设置环境变量</h3><ol start=10>
 <li>
 <p>在系统变量中，CUDA安装程序会自动增加<code>CUDA_PATH</code>和<code>CUDA_PATH_V11_2</code>变量取值为安装目录，无需人为干预
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F1.PNG" alt=""></p>
-</li>
-<li>
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F1.PNG alt></p></li><li>
 <p>修改系统变量的Path变量，在最前面增加<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\lib\x64;</code>两个目录
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F2.PNG" alt=""></p>
-</li>
-<li>
-<p>在系统变量中，增加变量名<code>TF_GEFORCE_GPU_ALLOW_GROWTH</code>，取值为true。不知干嘛的，从别人教程里搬过来的</p>
-</li>
-<li>
-<p>重启</p>
-</li>
-</ol>
-<h3 id="安装tensorflow_gpu">安装tensorflow_gpu</h3>
-<ol start="14">
-<li>创建一个tf环境<code>conda create -n mytf python=3.7</code>。我之前失败的尝试都是py3.8，这次尝试使用py3.7成功了，不知道py版本是否有关系，按照tf官方文档，3.8是可以的</li>
-<li>进入tf环境<code>conda activate mytf</code>；我以为现在tf的最高版本是2.6.0，上面的安装也都是照着tf2.6.0来的，所以安装tf时没有带版本号，直接<code>pip install tensorflow-gpu -i https://pypi.doubanio.com/simple/</code>，结果发现安装的是2.7.0</li>
-<li>测试代码如下</li>
-</ol>
-<pre tabindex="0"><code>import tensorflow as tf
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F2.PNG alt></p></li><li>
+<p>在系统变量中，增加变量名<code>TF_GEFORCE_GPU_ALLOW_GROWTH</code>，取值为true。不知干嘛的，从别人教程里搬过来的</p></li><li>
+<p>重启</p></li></ol><h3 id=安装tensorflow_gpu>安装tensorflow_gpu</h3><ol start=14>
+<li>创建一个tf环境<code>conda create -n mytf python=3.7</code>。我之前失败的尝试都是py3.8，这次尝试使用py3.7成功了，不知道py版本是否有关系，按照tf官方文档，3.8是可以的</li><li>进入tf环境<code>conda activate mytf</code>；我以为现在tf的最高版本是2.6.0，上面的安装也都是照着tf2.6.0来的，所以安装tf时没有带版本号，直接<code>pip install tensorflow-gpu -i https://pypi.doubanio.com/simple/</code>，结果发现安装的是2.7.0</li><li>测试代码如下</li></ol><pre tabindex=0><code>import tensorflow as tf
 print(&#39;GPU&#39;,tf.config.list_physical_devices(&#39;GPU&#39;))
 print(&#34;Num GPUs Available: &#34;, len(tf.config.experimental.list_physical_devices(&#39;GPU&#39;)))
-</code></pre><p>我只有一块GTX3060显卡，执行后返回:</p>
-<pre tabindex="0"><code>GPU [PhysicalDevice(name=&#39;/physical_device:GPU:0&#39;, device_type=&#39;GPU&#39;)]
+</code></pre><p>我只有一块GTX3060显卡，执行后返回:</p><pre tabindex=0><code>GPU [PhysicalDevice(name=&#39;/physical_device:GPU:0&#39;, device_type=&#39;GPU&#39;)]
 Num GPUs Available:  1
-</code></pre><p>到此为安装成功。</p>
-<h2 id="失败的情况">失败的情况</h2>
-<p>CUDA11.1＋cuDNN8.0.5＋tensorflow-gpu2.4.1，照别人3060安装成功的教程搬过来的，在我这失败，提示cusolver64_10.dll丢失，当时用的Python3.8，显卡驱动496.xx</p>
-<h2 id="为windows-terminal增加anaconda-prompt">为Windows Terminal增加Anaconda prompt</h2>
-<p>Windows Terminal是Win10下很好用的一个终端，但是默认无法显示出conda的环境名称，可以手工增加：
-打开Windows Terminal设置，再左下角的&quot;打开JSON文件&quot;</p>
-<p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/wt.PNG" alt=""></p>
-<p>profiles.list数组增加如下代码后，重新打开Windows Terminal即可：</p>
-<pre tabindex="0"><code>{
+</code></pre><p>到此为安装成功。</p><h2 id=失败的情况>失败的情况</h2><p>CUDA11.1＋cuDNN8.0.5＋tensorflow-gpu2.4.1，照别人3060安装成功的教程搬过来的，在我这失败，提示cusolver64_10.dll丢失，当时用的Python3.8，显卡驱动496.xx</p><h2 id=为windows-terminal增加anaconda-prompt>为Windows Terminal增加Anaconda prompt</h2><p>Windows Terminal是Win10下很好用的一个终端，但是默认无法显示出conda的环境名称，可以手工增加：
+打开Windows Terminal设置，再左下角的"打开JSON文件"</p><p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/wt.PNG alt></p><p>profiles.list数组增加如下代码后，重新打开Windows Terminal即可：</p><pre tabindex=0><code>{
     &#34;bellStyle&#34;: 
     [
         &#34;window&#34;,
@@ -366,36 +106,17 @@ Num GPUs Available:  1
     //Windows Terminal菜单中显示的名称
     &#34;name&#34;: &#34;Anaconda Prompt&#34;
 }
-</code></pre><p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/wt2.PNG" alt=""></p>
-<h2 id="为什么任务管理器中没有cuda图表">为什么任务管理器中没有CUDA图表</h2>
-<p>安装完CUDA后，Windows任务管理器&ndash;&gt;性能&ndash;&gt;GPU图表里会有CUDA这一选项，
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/640.png" alt=""></p>
-<p>这个选项并不能判断CUDA是否安装成功，如果开启了Windows设置&ndash;显示-图形设置&ndash;硬件加速，则任务管理器中的CUDA选项会消失
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/task2.PNG" alt="">
-<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/task1.PNG" alt=""></p>
-
-        
-
-        <hr>
-        <p>
-            
-                <a href="/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/" 
-            title="2021年商业、半商业运作远程天文台不完全汇总">
-            《2021年商业、半商业运作远程天文台不完全汇总》</a>⬅
-            
-            🧰
-            
-            ➡<a href="/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/" 
-                    title="为Windows打造完美终端（非WSL）">《为Windows打造完美终端（非WSL）》</a>
-            
-        </p>
-    </div>
-    </div>
-</article>
-
-<hr />
-&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-</body>
-</html>
+</code></pre><p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/wt2.PNG alt></p><h2 id=为什么任务管理器中没有cuda图表>为什么任务管理器中没有CUDA图表</h2><p>安装完CUDA后，Windows任务管理器&ndash;>性能&ndash;>GPU图表里会有CUDA这一选项，
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/640.png alt></p><p>这个选项并不能判断CUDA是否安装成功，如果开启了Windows设置&ndash;显示-图形设置&ndash;硬件加速，则任务管理器中的CUDA选项会消失
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/task2.PNG alt>
+<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/task1.PNG alt></p><hr>
+<p>
+<a href=/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/ title=2021年商业、半商业运作远程天文台不完全汇总>
+《2021年商业、半商业运作远程天文台不完全汇总》</a>⬅
+🧰
+➡<a href=/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/ title=为Windows打造完美终端（非WSL）>《为Windows打造完美终端（非WSL）》</a>
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>

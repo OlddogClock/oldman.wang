@@ -1,324 +1,85 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>记一次远程天文台建台经历（三）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
-    
-    <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
-    <link rel="stylesheet" href="/css/alone.css" />
-</head>
-<body><header class="homepage-header">
-    <h1>⌚️老王</h1>
-    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header>
-<hr />
-&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
-
-<hr />
-
-
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>记一次远程天文台建台经历（三）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+<hr>
 <article>
-    <div class="container">
-        <h2>📖记一次远程天文台建台经历（三）</h2>
-        
-
-    
-    
-    
-        
-        
-        
-        <hr />
-        <h5>文章目录</h5>
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e6%80%bb%e6%8e%a7%e7%94%b5%e8%84%91%e9%85%8d%e7%bd%ae">
-                    总控电脑配置
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%b8%bb%e6%9d%bfasus-h410t2csm">
-                    主板：Asus H410T2/CSM
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#cpuintel-core-i5-10400">
-                    CPU：Intel Core i5-10400
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e7%bd%91%e5%8d%a1intel-ax210">
-                    网卡：Intel AX210
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e7%94%b5%e6%ba%90%e5%8d%8e%e7%a1%95-19v-632a">
-                    电源：华硕 19V 6.32A
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e7%a1%ac%e7%9b%98%e5%86%85%e5%ad%98">
-                    硬盘、内存
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e5%85%b6%e5%ae%83%e9%85%8d%e4%bb%b6">
-                    其它配件
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e6%9c%80%e7%bb%88%e6%95%88%e6%9e%9c">
-                    最终效果
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-    
-
-        <hr />
-
-        <p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
-借这个空当，介绍下天文电脑的配置。</p>
-<h2 id="总控电脑配置">总控电脑配置</h2>
-<p>我对天文总控电脑的基本要求是：</p>
-<ul>
-<li>支持户外工作，温度范围是-10℃~40℃</li>
-<li>支持多个USB3.0接口</li>
-<li>支持通电自动开机（非常重要）</li>
-<li>支持千兆网卡</li>
-</ul>
-<p>这次远程台我没有使用大家常用的无风扇工控机，之前打野时也用过，还因为正负极接反而烧过一台。内部是小厂生产的主板集成低压CPU，比如Intel Celeron J9000或者型号结尾“U”的低功耗Core，内存、SSD也都是我们没听过的品牌，扩展性很差，我曾经要升级一块带蓝牙的无线网卡都无法支持&hellip;但是并不代表着质量就差，正好相反，我用过的这两台工控机都非常稳定，从来没有死过机。这次就挑战一回自己动手装的电脑看是否适合长期在野外工作。</p>
-<h3 id="主板asus-h410t2csm">主板：Asus H410T2/CSM</h3>
-<p>华硕的这款是工控机主板，THIN MINI-ITX结构，尺寸只有17×17cm，关键是支持12V/19V供电、通电自动开机，不用再购买DC-ATX模块了，关于H410T2主板的详情介绍可以看<a href="https://item.taobao.com/item.htm?id=634886483572&amp;_u=t18gkkqb0e0">这里</a>。现在出了支持Intel第十一代CPU的H510T，需要注意的是，这种主板是不可能支持PCI-E的，也就是不能插独立显卡。</p>
-<h3 id="cpuintel-core-i5-10400">CPU：Intel Core i5-10400</h3>
-<p>带核显，设计功耗65W，再高我怕电源供不上</p>
-<h3 id="网卡intel-ax210">网卡：Intel AX210</h3>
-<p>支持wifi6、带蓝牙，花几元钱买IPEX4接口的<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.58a22e8d8G8KDI&amp;id=586127342811&amp;_u=t18gkkqa2de">PCB天线</a>装上，信号效果远远好于各种“八爪鱼”天线，而且还不用支棱在外面</p>
-<h3 id="电源华硕-19v-632a">电源：华硕 19V 6.32A</h3>
-<p>直流电源的造假、虚标现象非常严重，买的时候一定要注意看评论、店家信誉，我是在<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=573189648830&amp;_u=t18gkkqe88d">这家</a>买的</p>
-<h3 id="硬盘内存">硬盘、内存</h3>
-<p>内存16G起，硬盘用两块，主板M.2上一块、SATA插一块，因为有流星监控，需要大量的视频读写。
-将拍照的硬盘和视频的硬盘分开</p>
-<h3 id="其它配件">其它配件</h3>
-<p>由于主板只有2个USB3、2个USB2，使用USB hub又可能存在问题，故将主板预留的USB口插针用上</p>
-<ul>
-<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=619496705052&amp;_u=t18gkkq1821">板载USB2.0插口</a></li>
-<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=637884469447&amp;_u=t18gkkqd1de">板载USB3.0插口</a></li>
-<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=599621211629&amp;_u=t18gkkq262f">亚克力定制主机箱</a></li>
-<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=634739991191&amp;_u=t18gkkq4395">1U纯铜背动散热鳍片</a></li>
-<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&amp;id=613065189847&amp;_u=t18gkkq1b36">超薄静音风扇</a></li>
-</ul>
-<h3 id="最终效果">最终效果</h3>
-<p>板载USB扩展是我后打孔穿出来的，当时定制机箱时并没有考虑这一点，有点难看</p>
-<p><img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3660.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3661.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3662.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3663.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3664.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3665.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3666.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3667.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3668-1.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3669-1.jpeg" alt="">
-<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3670-1.jpeg" alt=""></p>
-
-        
-
-        <hr>
-        <p>
-            
-                <a href="/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/" 
-            title="记一次远程天文台建台经历（二）">
-            《记一次远程天文台建台经历（二）》</a>⬅
-            
-            🧰
-            
-            ➡<a href="/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/" 
-                    title="2021年商业、半商业运作远程天文台不完全汇总">《2021年商业、半商业运作远程天文台不完全汇总》</a>
-            
-        </p>
-    </div>
-    </div>
-</article>
-
-<hr />
-&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-</body>
-</html>
+<div class=container>
+<h2>📖记一次远程天文台建台经历（三）</h2><hr>
+<h5>文章目录</h5><ul class=nav>
+<ul class=nav>
+<li><a href=#%e6%80%bb%e6%8e%a7%e7%94%b5%e8%84%91%e9%85%8d%e7%bd%ae>
+总控电脑配置
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%b8%bb%e6%9d%bfasus-h410t2csm>
+主板：Asus H410T2/CSM
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#cpuintel-core-i5-10400>
+CPU：Intel Core i5-10400
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e7%bd%91%e5%8d%a1intel-ax210>
+网卡：Intel AX210
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e7%94%b5%e6%ba%90%e5%8d%8e%e7%a1%95-19v-632a>
+电源：华硕 19V 6.32A
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e7%a1%ac%e7%9b%98%e5%86%85%e5%ad%98>
+硬盘、内存
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e5%85%b6%e5%ae%83%e9%85%8d%e4%bb%b6>
+其它配件
+</a></li></ul></ul></ul><ul class=nav>
+<ul class=nav>
+<ul class=nav>
+<li><a href=#%e6%9c%80%e7%bb%88%e6%95%88%e6%9e%9c>
+最终效果
+</a></li></ul></ul></ul><hr>
+<p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
+借这个空当，介绍下天文电脑的配置。</p><h2 id=总控电脑配置>总控电脑配置</h2><p>我对天文总控电脑的基本要求是：</p><ul>
+<li>支持户外工作，温度范围是-10℃~40℃</li><li>支持多个USB3.0接口</li><li>支持通电自动开机（非常重要）</li><li>支持千兆网卡</li></ul><p>这次远程台我没有使用大家常用的无风扇工控机，之前打野时也用过，还因为正负极接反而烧过一台。内部是小厂生产的主板集成低压CPU，比如Intel Celeron J9000或者型号结尾“U”的低功耗Core，内存、SSD也都是我们没听过的品牌，扩展性很差，我曾经要升级一块带蓝牙的无线网卡都无法支持&mldr;但是并不代表着质量就差，正好相反，我用过的这两台工控机都非常稳定，从来没有死过机。这次就挑战一回自己动手装的电脑看是否适合长期在野外工作。</p><h3 id=主板asus-h410t2csm>主板：Asus H410T2/CSM</h3><p>华硕的这款是工控机主板，THIN MINI-ITX结构，尺寸只有17×17cm，关键是支持12V/19V供电、通电自动开机，不用再购买DC-ATX模块了，关于H410T2主板的详情介绍可以看<a href="https://item.taobao.com/item.htm?id=634886483572&_u=t18gkkqb0e0">这里</a>。现在出了支持Intel第十一代CPU的H510T，需要注意的是，这种主板是不可能支持PCI-E的，也就是不能插独立显卡。</p><h3 id=cpuintel-core-i5-10400>CPU：Intel Core i5-10400</h3><p>带核显，设计功耗65W，再高我怕电源供不上</p><h3 id=网卡intel-ax210>网卡：Intel AX210</h3><p>支持wifi6、带蓝牙，花几元钱买IPEX4接口的<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.58a22e8d8G8KDI&id=586127342811&_u=t18gkkqa2de">PCB天线</a>装上，信号效果远远好于各种“八爪鱼”天线，而且还不用支棱在外面</p><h3 id=电源华硕-19v-632a>电源：华硕 19V 6.32A</h3><p>直流电源的造假、虚标现象非常严重，买的时候一定要注意看评论、店家信誉，我是在<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=573189648830&_u=t18gkkqe88d">这家</a>买的</p><h3 id=硬盘内存>硬盘、内存</h3><p>内存16G起，硬盘用两块，主板M.2上一块、SATA插一块，因为有流星监控，需要大量的视频读写。
+将拍照的硬盘和视频的硬盘分开</p><h3 id=其它配件>其它配件</h3><p>由于主板只有2个USB3、2个USB2，使用USB hub又可能存在问题，故将主板预留的USB口插针用上</p><ul>
+<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=619496705052&_u=t18gkkq1821">板载USB2.0插口</a></li><li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=637884469447&_u=t18gkkqd1de">板载USB3.0插口</a></li><li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=599621211629&_u=t18gkkq262f">亚克力定制主机箱</a></li><li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=634739991191&_u=t18gkkq4395">1U纯铜背动散热鳍片</a></li><li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=613065189847&_u=t18gkkq1b36">超薄静音风扇</a></li></ul><h3 id=最终效果>最终效果</h3><p>板载USB扩展是我后打孔穿出来的，当时定制机箱时并没有考虑这一点，有点难看</p><p><img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3660.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3661.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3662.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3663.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3664.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3665.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3666.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3667.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3668-1.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3669-1.jpeg alt>
+<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/2021-10-29-IMG_3670-1.jpeg alt></p><hr>
+<p>
+<a href=/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/ title=记一次远程天文台建台经历（二）>
+《记一次远程天文台建台经历（二）》</a>⬅
+🧰
+➡<a href=/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/ title=2021年商业、半商业运作远程天文台不完全汇总>《2021年商业、半商业运作远程天文台不完全汇总》</a>
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>

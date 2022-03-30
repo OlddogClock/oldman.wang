@@ -1,362 +1,77 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>业余天文里的常见开源、免费软件-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
-    
-    <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
-    <link rel="stylesheet" href="/css/alone.css" />
-</head>
-<body><header class="homepage-header">
-    <h1>⌚️老王</h1>
-    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header>
-<hr />
-&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
-
-<hr />
-
-
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>业余天文里的常见开源、免费软件-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+<hr>
 <article>
-    <div class="container">
-        <h2>📖业余天文里的常见开源、免费软件</h2>
-        
-
-    
-    
-    
-        
-        
-        
-        <hr />
-        <h5>文章目录</h5>
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#ascom">
-                    ASCOM
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#ninanighttime-imaging-n-astronomy">
-                    N.I.N.A，Nighttime Imaging ‘N’ Astronomy
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#phd2">
-                    PHD2
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#stellarium%e8%99%9a%e6%8b%9f%e5%a4%a9%e6%96%87%e9%a6%86">
-                    Stellarium虚拟天文馆
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#indiinstrument-neutral-distributed-interface">
-                    INDI，Instrument-Neutral-Distributed-Interface
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#kstar">
-                    KStar
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#dssdeepskystacker">
-                    DSS，DeepSkyStacker
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#siril">
-                    Siril
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#astrobin">
-                    AstroBin
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#onstep">
-                    OnStep
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#croatianmeteornetwork">
-                    CroatianMeteorNetwork
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-    
-
-        <hr />
-
-        <p>业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）</p>
-<h2 id="ascom">ASCOM</h2>
-<p>大名鼎鼎、装机必备的ASCOM。是一套设备驱动和软件的对接标准，在它出来之前，都是各厂商的控制软件都是各自为战（官网是这么介绍的，实际上我没体验过没有它的情况，这东西出自1998年&hellip;），它的出现类似中间件，将各种设备的控制方式统一起来，现在各厂商的设备不一定都有自己的控制软件，但肯定都提供ASCOM驱动。如果你自己动手能力强，做个电动调焦、自动镜头盖什么的，并且想要通过软件控制，那肯定要学习的是ASCOM驱动开发。仅支持Windows。</p>
-<p>代码库：https://github.com/ASCOMInitiative/ASCOMPlatform</p>
-<p>官网：https://ascom-standards.org/</p>
-<h2 id="ninanighttime-imaging-n-astronomy">N.I.N.A，Nighttime Imaging &lsquo;N&rsquo; Astronomy</h2>
-<p>大名鼎鼎、装机必备的NINA，后起之秀。是一个集GOTO、拍摄、解析、自动化等等一切于一体的控制平台，瑞士军刀，而且简单易用，界面直观，支持多语言（包括简体中文），他的部分功能还可以调用部软件实现，比如上面的ASCOM、PHD2导星、ASTAP解析等等。NINA出来之前，都是昂贵的SkyX Pro的天下。仅支持Windows。</p>
-<p>代码库：https://bitbucket.org/Isbeorn/nina/src</p>
-<p>官网：https://nighttime-imaging.eu/</p>
-<h2 id="phd2">PHD2</h2>
-<p>大名鼎鼎、装机必备的PHD2，重要到我居然忘记了它的存在。是一款导星软件，没有它再精准的赤道仪也就能跑十分钟，它还具有非常强大的对极轴功能，它产出的导星曲线是衡量一款赤道仪、一次拍摄活动精准程度的关键指标。主程序可以供外部程序调用，使任何控制软件都可以调用它来进行导星。它还附带导星日志查看器，可以分析一周期内导星中的问题。适用于Windows、Mac和Linux</p>
-<p>代码库：主程序 <a href="https://github.com/OpenPHDGuiding/phd2">https://github.com/OpenPHDGuiding/phd2</a> 日志查看器：https://github.com/agalasso/phdlogview/wiki</p>
-<p>官网：https://openphdguiding.org/  日志查看器：https://adgsoftware.com/phd2utils/</p>
-<h2 id="stellarium虚拟天文馆">Stellarium虚拟天文馆</h2>
-<p>大名鼎鼎、装机必备的Stellarium，支持Win、Linux、Mac、Web全平台，支持多语言。它以3D形式展示了极为逼真的星空，就像你在真实世界使用裸眼，双筒望远镜或天文望远镜看到的一样，还包括非常详尽的天体基本信息。还可以通过插件扩展功能，包括控制赤道仪进行GOTO。很多天体可以通过它知道运行轨迹、方位，空间站过境、彗星、流星雨都可以通过它提前找到位置。</p>
-<p>代码库：https://github.com/Stellarium/stellarium/</p>
-<p>官网：https://stellarium.org/zh_CN/</p>
-<h2 id="indiinstrument-neutral-distributed-interface">INDI，Instrument-Neutral-Distributed-Interface</h2>
-<p>和ASCOM一样，也是一个用来控制、自动化、数据获取以及在硬件设备和软件之间的交换数据的平台，只不过INDI更适合Linux平台，官方还基于树莓派研发了<a href="https://www.stellarmate.com/">StellarMate</a>盒子，并开放了镜像下载（收费），可以只花费振旺盒子四分之一的钱实现一个同样的天文盒子。INDI是跨平台的，但Windows下是通过虚拟机运行。</p>
-<p>代码库：https://github.com/indilib/indi</p>
-<p>官网：https://indilib.org/</p>
-<h2 id="kstar">KStar</h2>
-<p>一个虚拟天文馆，还是KDE的项目，结合Ekos、INDI可以实现控制各种设备，在Linux上实现N.I.N.A这样的平台</p>
-<p>代码库：https://github.com/KDE/kstars</p>
-<p>官网：https://edu.kde.org/kstars/</p>
-<h2 id="dssdeepskystacker">DSS，DeepSkyStacker</h2>
-<p>大名鼎鼎、装机必备的DSS，也就是叠加软件，当你对同一个深空天体拍摄了多张相同或不同曝光时间的照片后，用DSS就能处理出一张信噪比更高、画面主题更鲜明的深空照片来。仅支持Windows。</p>
-<p>代码库：https://github.com/deepskystacker/DSS</p>
-<p>官网：http://deepskystacker.free.fr/english/</p>
-<h2 id="siril">Siril</h2>
-<p>深空照片后期处理软件，类似PixInsight的简版，我感觉是挺难用的，但如果你觉得Pi比较贵，可以试着学习Siril。支持Linux、Mac、Windows，跨平台。</p>
-<p>官网：https://siril.org/</p>
-<p>代码库：http://free-astro.org/svn/siril/trunk/</p>
-<h2 id="astrobin">AstroBin</h2>
-<p>大名鼎鼎、装机必备的AstroBin.com，这是个网站，源代码开源。它就是天文圈子里的500px，社区很规范，每张图片除了会标示拍摄设备外，有的还有解析数据，非常直观。</p>
-<p>官网：https://www.astrobin.com/</p>
-<p>代码库：https://github.com/astrobin/astrobin</p>
-<h2 id="onstep">OnStep</h2>
-<p>大名鼎鼎的赤道仪控制器、GOTO系统，通常用于给手动赤道仪增加电动跟踪时使用，很受DIY爱好者青睐，有了它Arduino+步进电机就能将几百元的赤道仪改装成高精度跟踪赤道仪，并且还可以通过手机控制。
-可不要以为DIY的廉价产品质量不好，国内有爱好者使用OnStep DIY的电跟系统秒杀艾顿CEM70这款万元中高端赤道仪！<a href="https://bbs.imufu.cn/thread-809246-1-1.html">围观</a></p>
-<p>代码库：https://github.com/hjd1964/OnStep</p>
-<h2 id="croatianmeteornetwork">CroatianMeteorNetwork</h2>
-<p>这应该不算时普通用户认知中的软件了，是一个流星监测系统，可以用树莓派+摄像头抓取并录像流星视频，可以部署在自家楼顶或阳台。</p>
-<p>代码库：https://github.com/CroatianMeteorNetwork/RMS</p>
-
-        
-
-        <hr>
-        <p>
-            
-                <a href="/p/pixlnsight1.8/" 
-            title="Pixlnsight1.8">
-            《Pixlnsight1.8》</a>⬅
-            
-            🧰
-            
-            ➡<a href="/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/" 
-                    title="树莓派控制直流电源HUB的开关">《树莓派控制直流电源HUB的开关》</a>
-            
-        </p>
-    </div>
-    </div>
-</article>
-
-<hr />
-&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-</body>
-</html>
+<div class=container>
+<h2>📖业余天文里的常见开源、免费软件</h2><hr>
+<h5>文章目录</h5><ul class=nav>
+<ul class=nav>
+<li><a href=#ascom>
+ASCOM
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#ninanighttime-imaging-n-astronomy>
+N.I.N.A，Nighttime Imaging ‘N’ Astronomy
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#phd2>
+PHD2
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#stellarium%e8%99%9a%e6%8b%9f%e5%a4%a9%e6%96%87%e9%a6%86>
+Stellarium虚拟天文馆
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#indiinstrument-neutral-distributed-interface>
+INDI，Instrument-Neutral-Distributed-Interface
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#kstar>
+KStar
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#dssdeepskystacker>
+DSS，DeepSkyStacker
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#siril>
+Siril
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#astrobin>
+AstroBin
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#onstep>
+OnStep
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#croatianmeteornetwork>
+CroatianMeteorNetwork
+</a></li></ul></ul><hr>
+<p>业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）</p><h2 id=ascom>ASCOM</h2><p>大名鼎鼎、装机必备的ASCOM。是一套设备驱动和软件的对接标准，在它出来之前，都是各厂商的控制软件都是各自为战（官网是这么介绍的，实际上我没体验过没有它的情况，这东西出自1998年&mldr;），它的出现类似中间件，将各种设备的控制方式统一起来，现在各厂商的设备不一定都有自己的控制软件，但肯定都提供ASCOM驱动。如果你自己动手能力强，做个电动调焦、自动镜头盖什么的，并且想要通过软件控制，那肯定要学习的是ASCOM驱动开发。仅支持Windows。</p><p>代码库：https://github.com/ASCOMInitiative/ASCOMPlatform</p><p>官网：https://ascom-standards.org/</p><h2 id=ninanighttime-imaging-n-astronomy>N.I.N.A，Nighttime Imaging &lsquo;N&rsquo; Astronomy</h2><p>大名鼎鼎、装机必备的NINA，后起之秀。是一个集GOTO、拍摄、解析、自动化等等一切于一体的控制平台，瑞士军刀，而且简单易用，界面直观，支持多语言（包括简体中文），他的部分功能还可以调用部软件实现，比如上面的ASCOM、PHD2导星、ASTAP解析等等。NINA出来之前，都是昂贵的SkyX Pro的天下。仅支持Windows。</p><p>代码库：https://bitbucket.org/Isbeorn/nina/src</p><p>官网：https://nighttime-imaging.eu/</p><h2 id=phd2>PHD2</h2><p>大名鼎鼎、装机必备的PHD2，重要到我居然忘记了它的存在。是一款导星软件，没有它再精准的赤道仪也就能跑十分钟，它还具有非常强大的对极轴功能，它产出的导星曲线是衡量一款赤道仪、一次拍摄活动精准程度的关键指标。主程序可以供外部程序调用，使任何控制软件都可以调用它来进行导星。它还附带导星日志查看器，可以分析一周期内导星中的问题。适用于Windows、Mac和Linux</p><p>代码库：主程序 <a href=https://github.com/OpenPHDGuiding/phd2>https://github.com/OpenPHDGuiding/phd2</a> 日志查看器：https://github.com/agalasso/phdlogview/wiki</p><p>官网：https://openphdguiding.org/ 日志查看器：https://adgsoftware.com/phd2utils/</p><h2 id=stellarium虚拟天文馆>Stellarium虚拟天文馆</h2><p>大名鼎鼎、装机必备的Stellarium，支持Win、Linux、Mac、Web全平台，支持多语言。它以3D形式展示了极为逼真的星空，就像你在真实世界使用裸眼，双筒望远镜或天文望远镜看到的一样，还包括非常详尽的天体基本信息。还可以通过插件扩展功能，包括控制赤道仪进行GOTO。很多天体可以通过它知道运行轨迹、方位，空间站过境、彗星、流星雨都可以通过它提前找到位置。</p><p>代码库：https://github.com/Stellarium/stellarium/</p><p>官网：https://stellarium.org/zh_CN/</p><h2 id=indiinstrument-neutral-distributed-interface>INDI，Instrument-Neutral-Distributed-Interface</h2><p>和ASCOM一样，也是一个用来控制、自动化、数据获取以及在硬件设备和软件之间的交换数据的平台，只不过INDI更适合Linux平台，官方还基于树莓派研发了<a href=https://www.stellarmate.com/>StellarMate</a>盒子，并开放了镜像下载（收费），可以只花费振旺盒子四分之一的钱实现一个同样的天文盒子。INDI是跨平台的，但Windows下是通过虚拟机运行。</p><p>代码库：https://github.com/indilib/indi</p><p>官网：https://indilib.org/</p><h2 id=kstar>KStar</h2><p>一个虚拟天文馆，还是KDE的项目，结合Ekos、INDI可以实现控制各种设备，在Linux上实现N.I.N.A这样的平台</p><p>代码库：https://github.com/KDE/kstars</p><p>官网：https://edu.kde.org/kstars/</p><h2 id=dssdeepskystacker>DSS，DeepSkyStacker</h2><p>大名鼎鼎、装机必备的DSS，也就是叠加软件，当你对同一个深空天体拍摄了多张相同或不同曝光时间的照片后，用DSS就能处理出一张信噪比更高、画面主题更鲜明的深空照片来。仅支持Windows。</p><p>代码库：https://github.com/deepskystacker/DSS</p><p>官网：http://deepskystacker.free.fr/english/</p><h2 id=siril>Siril</h2><p>深空照片后期处理软件，类似PixInsight的简版，我感觉是挺难用的，但如果你觉得Pi比较贵，可以试着学习Siril。支持Linux、Mac、Windows，跨平台。</p><p>官网：https://siril.org/</p><p>代码库：http://free-astro.org/svn/siril/trunk/</p><h2 id=astrobin>AstroBin</h2><p>大名鼎鼎、装机必备的AstroBin.com，这是个网站，源代码开源。它就是天文圈子里的500px，社区很规范，每张图片除了会标示拍摄设备外，有的还有解析数据，非常直观。</p><p>官网：https://www.astrobin.com/</p><p>代码库：https://github.com/astrobin/astrobin</p><h2 id=onstep>OnStep</h2><p>大名鼎鼎的赤道仪控制器、GOTO系统，通常用于给手动赤道仪增加电动跟踪时使用，很受DIY爱好者青睐，有了它Arduino+步进电机就能将几百元的赤道仪改装成高精度跟踪赤道仪，并且还可以通过手机控制。
+可不要以为DIY的廉价产品质量不好，国内有爱好者使用OnStep DIY的电跟系统秒杀艾顿CEM70这款万元中高端赤道仪！<a href=https://bbs.imufu.cn/thread-809246-1-1.html>围观</a></p><p>代码库：https://github.com/hjd1964/OnStep</p><h2 id=croatianmeteornetwork>CroatianMeteorNetwork</h2><p>这应该不算时普通用户认知中的软件了，是一个流星监测系统，可以用树莓派+摄像头抓取并录像流星视频，可以部署在自家楼顶或阳台。</p><p>代码库：https://github.com/CroatianMeteorNetwork/RMS</p><hr>
+<p>
+<a href=/p/pixlnsight1.8/ title=Pixlnsight1.8>
+《Pixlnsight1.8》</a>⬅
+🧰
+➡<a href=/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/ title=树莓派控制直流电源HUB的开关>《树莓派控制直流电源HUB的开关》</a>
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>

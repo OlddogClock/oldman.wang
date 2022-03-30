@@ -1,199 +1,65 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>记一次远程天文台建台经历（四）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
-    
-    <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
-    <link rel="stylesheet" href="/css/alone.css" />
-</head>
-<body><header class="homepage-header">
-    <h1>⌚️老王</h1>
-    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header>
-<hr />
-&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
-
-<hr />
-
-
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>记一次远程天文台建台经历（四）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+<hr>
 <article>
-    <div class="container">
-        <h2>📖记一次远程天文台建台经历（四）</h2>
-        
-
-    
-    
-    
-        
-        
-        
-        <hr />
-        <h5>文章目录</h5>
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#2021%e5%b9%b412%e6%9c%8830%e6%97%a5-%e7%8e%b0%e5%9c%ba%e8%b0%83%e8%af%95%e8%ae%b0%e5%bd%95">
-                    2021年12月30日 现场调试记录
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#2021%e5%b9%b412%e6%9c%8819%e6%97%a5%e6%96%b9%e6%a1%88%e5%8f%98%e6%9b%b4">
-                    2021年12月19日方案变更：
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#2021%e5%b9%b412%e6%9c%8811%e6%97%a5%e9%97%ae%e9%a2%98%e8%ae%b0%e5%bd%95">
-                    2021年12月11日问题记录
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-    
-
-        <hr />
-
-        <p>记录调试和变更日志</p>
-<h2 id="2021年12月30日-现场调试记录">2021年12月30日 现场调试记录</h2>
-<p>元旦前可用是没戏了，本次现场跳调试记录问题如下：</p>
-<ul>
-<li>QHYOAG-S买错了，我的QHYCFW3-M滤镜轮应该对应QHYOAG-M，就是中号滤镜轮只能安装中号偏轴导星；重新下单，下次再装吧</li>
-<li>由于我误操作，设置的电调步数过大，大黑的CYCK调焦座被拧下来了，调焦齿轮产生了严重的磨损，相机差点掉地上（相机是向下安装的），返给CYCK维修了<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4831.jpeg" alt=""></li>
-<li>我自制的电源Hub使用12V电源输入时，会导致Intel NUC电脑频繁重启（还没到Windows引导界面），更换了多个12V电源都没有解决，不通过Hub，直接接12V电源供电是OK的，换成19V电源输入也是OK的，我一度怀疑是电流不足导致的，但更换电源分别都是12V 10A 和12V 38A大功率电源，而且经过万用表测试，Intel NUC所用电流不到1A。再做一个电源Hub试试吧。电源Hub是有继电器控制开关的，树莓派控制的弃用了。</li>
-<li>给海康威视摄像头装了一个可通过软件控制的云台<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/shexiangtouyuntai.jpg" alt=""></li>
-<li>TPLINK路由器更换为了NETGEAR R6800，5G与2.4G信号分开，2.4G给插线板用，这会电脑与路由器的链接速度可以达到1733Mbps了</li>
-<li><a href="/p/%E7%BB%99IntelNUC%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD.html">Intel Nuc通过鸠尾槽安装在望远镜OTA上面</a></li>
-<li>12V电源HUB的制作忘拍图了，下次补上</li>
-</ul>
-<p>下图是现在的情况：卸掉了镜头盖，大黑调焦座返厂维修，为了减少进灰，镜片朝下放置着。此图也看出来了摄像头中心在2米内无法对焦的问题
-<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/vlcsnap-2021-12-31-13h46m35s706.jpg" alt=""></p>
-<h2 id="2021年12月19日方案变更">2021年12月19日方案变更：</h2>
-<p>在以上基础上，增改如下：</p>
-<ul>
-<li>增加QHYOAG-S偏轴导星</li>
-<li>去除导星镜，导星相机仍然使用QHY5III 178M。原因是单独的导星镜不方便对焦</li>
-<li>主控电脑改为上置，即在望远镜上，原方案是放在赤道仪下面，上置的好处是减少并缩短线缆</li>
-<li>主控电脑更换为南方天文的Intel NUC，上置的话找个重量轻一些的</li>
-<li>增加USB有源HUB，Intel NUC的USB口太少，所以增加HUB，同时根据大佬的建议，将QHY的产品接到HUB上，并通过远程控制开关HUB电源的方式间接实现插拔，用于解决某些异常问题（具体我没遇到过，但我接受了大佬建议）。</li>
-<li>增加DIY的树莓派控制的电源HUB，6口，同样是在望远镜上面。</li>
-<li>增加摄像头云台。由于海康威视臻全彩3T87WD-L没有云台，所以加一个通过网络控制的低温云台，可以兼顾流星监测和望远镜姿态查看</li>
-<li>更换路由器为NETGEAR R6800</li>
-<li>考虑去掉EAF的加热</li>
-<li>更换走线图，由于自己误操作，将路由器电源关了，现在所有设备都连不上了，所以路由器交换机改为插在普通插排上
-<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/yuancheng.png" alt=""></li>
-</ul>
-<p>以上方案正在实施中，后续公开细节。争取2021年圣诞节期间完成</p>
-<h2 id="2021年12月11日问题记录">2021年12月11日问题记录</h2>
-<p>2021年12月11日夜，晴，-8℃，月龄8，北京怀柔区喇叭沟门敬老院楼顶；
-第一次通电，开始整体联调、测试，发现了很多问题，后续需要进一步调整，还没有达到使用状态。</p>
-<ol>
-<li>EQ6R赤道仪电源接口2针是正极，插头上有数字标识。由于我未使用信达SKYWATCHER EQ6R赤道仪原厂提供的电源线（车载插口容易松动，不适合远程台），自己购买了GX12-2航空插头线作为电源线，正极的红线在1针上，我认知的“红线接1针”也是正常的，但是EQ6R的电源接口是2针为正极！！幸好我用万用表测试了一下，否则直接就返厂了&hellip;</li>
-<li>TODO P1：普通电源线、数据线的PVC塑料材质绝缘层在低温下变硬、变脆，这是常识，我没想到到的是才零下几摄氏度，这个问题就变的很严重。由于是双镜系统，电源线比较多，而且还没有使用电源HUB、没使用USB HUB、总控电脑在赤道仪下方，所以引下的线缆比较多，束到一起很粗，被冻的非常硬，塑料扎线带都断了好几根，已经影响到EQ6R赤道仪的GOTO和平衡了，正在考虑要不要把电脑放在望远镜上方或者鸠尾板的位置（没有这么做是因为会增加赤道仪重量），已经购买了铁氟龙线和制作电源HUB的材料。</li>
-<li>TODO P1：ZWO EAF2代电调转不动了，不知道是不是大黑调焦座锁的太紧，下次再看</li>
-<li>TODO P1：电子极轴看到星点都是月牙形状，虽然不影响使用，但还是调整下好，方法如下</li>
-</ol>
-<blockquote>
+<div class=container>
+<h2>📖记一次远程天文台建台经历（四）</h2><hr>
+<h5>文章目录</h5><ul class=nav>
+<ul class=nav>
+<li><a href=#2021%e5%b9%b412%e6%9c%8830%e6%97%a5-%e7%8e%b0%e5%9c%ba%e8%b0%83%e8%af%95%e8%ae%b0%e5%bd%95>
+2021年12月30日 现场调试记录
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#2021%e5%b9%b412%e6%9c%8819%e6%97%a5%e6%96%b9%e6%a1%88%e5%8f%98%e6%9b%b4>
+2021年12月19日方案变更：
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#2021%e5%b9%b412%e6%9c%8811%e6%97%a5%e9%97%ae%e9%a2%98%e8%ae%b0%e5%bd%95>
+2021年12月11日问题记录
+</a></li></ul></ul><hr>
+<p>记录调试和变更日志</p><h2 id=2021年12月30日-现场调试记录>2021年12月30日 现场调试记录</h2><p>元旦前可用是没戏了，本次现场跳调试记录问题如下：</p><ul>
+<li>QHYOAG-S买错了，我的QHYCFW3-M滤镜轮应该对应QHYOAG-M，就是中号滤镜轮只能安装中号偏轴导星；重新下单，下次再装吧</li><li>由于我误操作，设置的电调步数过大，大黑的CYCK调焦座被拧下来了，调焦齿轮产生了严重的磨损，相机差点掉地上（相机是向下安装的），返给CYCK维修了<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4831.jpeg alt></li><li>我自制的电源Hub使用12V电源输入时，会导致Intel NUC电脑频繁重启（还没到Windows引导界面），更换了多个12V电源都没有解决，不通过Hub，直接接12V电源供电是OK的，换成19V电源输入也是OK的，我一度怀疑是电流不足导致的，但更换电源分别都是12V 10A 和12V 38A大功率电源，而且经过万用表测试，Intel NUC所用电流不到1A。再做一个电源Hub试试吧。电源Hub是有继电器控制开关的，树莓派控制的弃用了。</li><li>给海康威视摄像头装了一个可通过软件控制的云台<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/shexiangtouyuntai.jpg alt></li><li>TPLINK路由器更换为了NETGEAR R6800，5G与2.4G信号分开，2.4G给插线板用，这会电脑与路由器的链接速度可以达到1733Mbps了</li><li><a href=/p/%E7%BB%99IntelNUC%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD.html>Intel Nuc通过鸠尾槽安装在望远镜OTA上面</a></li><li>12V电源HUB的制作忘拍图了，下次补上</li></ul><p>下图是现在的情况：卸掉了镜头盖，大黑调焦座返厂维修，为了减少进灰，镜片朝下放置着。此图也看出来了摄像头中心在2米内无法对焦的问题
+<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/vlcsnap-2021-12-31-13h46m35s706.jpg alt></p><h2 id=2021年12月19日方案变更>2021年12月19日方案变更：</h2><p>在以上基础上，增改如下：</p><ul>
+<li>增加QHYOAG-S偏轴导星</li><li>去除导星镜，导星相机仍然使用QHY5III 178M。原因是单独的导星镜不方便对焦</li><li>主控电脑改为上置，即在望远镜上，原方案是放在赤道仪下面，上置的好处是减少并缩短线缆</li><li>主控电脑更换为南方天文的Intel NUC，上置的话找个重量轻一些的</li><li>增加USB有源HUB，Intel NUC的USB口太少，所以增加HUB，同时根据大佬的建议，将QHY的产品接到HUB上，并通过远程控制开关HUB电源的方式间接实现插拔，用于解决某些异常问题（具体我没遇到过，但我接受了大佬建议）。</li><li>增加DIY的树莓派控制的电源HUB，6口，同样是在望远镜上面。</li><li>增加摄像头云台。由于海康威视臻全彩3T87WD-L没有云台，所以加一个通过网络控制的低温云台，可以兼顾流星监测和望远镜姿态查看</li><li>更换路由器为NETGEAR R6800</li><li>考虑去掉EAF的加热</li><li>更换走线图，由于自己误操作，将路由器电源关了，现在所有设备都连不上了，所以路由器交换机改为插在普通插排上
+<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/yuancheng.png alt></li></ul><p>以上方案正在实施中，后续公开细节。争取2021年圣诞节期间完成</p><h2 id=2021年12月11日问题记录>2021年12月11日问题记录</h2><p>2021年12月11日夜，晴，-8℃，月龄8，北京怀柔区喇叭沟门敬老院楼顶；
+第一次通电，开始整体联调、测试，发现了很多问题，后续需要进一步调整，还没有达到使用状态。</p><ol>
+<li>EQ6R赤道仪电源接口2针是正极，插头上有数字标识。由于我未使用信达SKYWATCHER EQ6R赤道仪原厂提供的电源线（车载插口容易松动，不适合远程台），自己购买了GX12-2航空插头线作为电源线，正极的红线在1针上，我认知的“红线接1针”也是正常的，但是EQ6R的电源接口是2针为正极！！幸好我用万用表测试了一下，否则直接就返厂了&mldr;</li><li>TODO P1：普通电源线、数据线的PVC塑料材质绝缘层在低温下变硬、变脆，这是常识，我没想到到的是才零下几摄氏度，这个问题就变的很严重。由于是双镜系统，电源线比较多，而且还没有使用电源HUB、没使用USB HUB、总控电脑在赤道仪下方，所以引下的线缆比较多，束到一起很粗，被冻的非常硬，塑料扎线带都断了好几根，已经影响到EQ6R赤道仪的GOTO和平衡了，正在考虑要不要把电脑放在望远镜上方或者鸠尾板的位置（没有这么做是因为会增加赤道仪重量），已经购买了铁氟龙线和制作电源HUB的材料。</li><li>TODO P1：ZWO EAF2代电调转不动了，不知道是不是大黑调焦座锁的太紧，下次再看</li><li>TODO P1：电子极轴看到星点都是月牙形状，虽然不影响使用，但还是调整下好，方法如下</li></ol><blockquote>
 <p>在电子极轴镜出厂之前，已经调好焦距。如果发现焦距仍然不对，星点不够细，则需要重新调焦距。对好以后锁死，以后就不用再对了。
 方法为：
 1.旋开电子极轴镜的保护镜筒
 2.使用M2内六角扳手松开内部镜头侧面的顶丝
 3.对着星空调节镜头，让星点最细
-4.锁好顶丝，重新装回保护套筒。</p>
-</blockquote>
-<p><img src="https://www.qhyccd.cn/wp-content/uploads/20210611233.jpg" alt="">
-5. TODO P2：可能因为两个电调的安装方向原因，控制方向是相反的，大黑&laquo;向是向外，70SA的&laquo;向是内，看有没有办法统一了
+4.锁好顶丝，重新装回保护套筒。</p></blockquote><p><img src=https://www.qhyccd.cn/wp-content/uploads/20210611233.jpg alt>
+5. TODO P2：可能因为两个电调的安装方向原因，控制方向是相反的，大黑&#171;向是向外，70SA的&#171;向是内，看有没有办法统一了
 6. TODO P2：设置下两个电调的限位
 7. TODO P3：海康威视C8W的红外补光灯关不掉，影响环境，弃用了；海康威视臻全彩摄像头3T87WD-L表现非常出色，没有任何补光的情况下拍出全彩的视频。这两款摄像头都无法在2米内对焦，看东西是模糊的；对IMX291的成像有些失望；考虑弄个云台，把臻全彩3T87WD-L装在上面，IMX291装在望远镜上
-<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/10.0.0.102_01_20211212180724404.jpg" alt="">
+<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/10.0.0.102_01_20211212180724404.jpg alt>
 8. TODO P3：买一个偏心重锤
 9. 增高节没用上，用了会超过2米，碰到了顶，而且加了增高节之后高于邻居了，我担心有影响
-10. 购买了正版PixInsight，信用卡划款1700多RMB，不能超过2台电脑使用，会被要求重新获取授权码，在多台电脑上使用可能会被封禁。<a href="/p/Pixlnsight1.8%E4%B8%8B%E8%BD%BD.html">PixInsight1.8破解版</a>
+10. 购买了正版PixInsight，信用卡划款1700多RMB，不能超过2台电脑使用，会被要求重新获取授权码，在多台电脑上使用可能会被封禁。<a href=/p/Pixlnsight1.8%E4%B8%8B%E8%BD%BD.html>PixInsight1.8破解版</a>
 11. 起了个名字：开源既明，OpenSource Damn Bright. 随便画了个logo。将公开与天文相关的一切技术和方法，提供免费使用远程台的规则
-<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/logo.png" alt=""></p>
-
-        
-
-        <hr>
-        <p>
-            
-                <a href="/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/" 
-            title="树莓派控制直流电源HUB的开关">
-            《树莓派控制直流电源HUB的开关》</a>⬅
-            
-            🧰
-            
-            ➡<a href="/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/" 
-                    title="给IntelNUC加装鸠尾槽">《给IntelNUC加装鸠尾槽》</a>
-            
-        </p>
-    </div>
-    </div>
-</article>
-
-<hr />
-&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-</body>
-</html>
+<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/logo.png alt></p><hr>
+<p>
+<a href=/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/ title=树莓派控制直流电源HUB的开关>
+《树莓派控制直流电源HUB的开关》</a>⬅
+🧰
+➡<a href=/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/ title=给IntelNUC加装鸠尾槽>《给IntelNUC加装鸠尾槽》</a>
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>

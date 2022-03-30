@@ -1,221 +1,63 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>树莓派控制直流电源HUB的开关-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
-    
-    <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
-    <link rel="stylesheet" href="/css/alone.css" />
-</head>
-<body><header class="homepage-header">
-    <h1>⌚️老王</h1>
-    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header>
-<hr />
-&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
-
-|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
-
-<hr />
-
-
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>树莓派控制直流电源HUB的开关-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+<hr>
 <article>
-    <div class="container">
-        <h2>📖树莓派控制直流电源HUB的开关</h2>
-        
-
-    
-    
-    
-        
-        
-        
-        <hr />
-        <h5>文章目录</h5>
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e7%9b%ae%e7%9a%84">
-                    目的
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%bc%98%e7%82%b9">
-                    优点
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e4%b8%8d%e8%b6%b3">
-                    不足
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e6%9d%90%e6%96%99">
-                    材料
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-            
-            
-                
-                    
-                    
-                        <ul class="nav">
-                    
-                        <ul class="nav">
-                    
-                    
-                    <li><a href="#%e8%bf%87%e7%a8%8b">
-                    过程
-                    </a></li>
-                    
-                    
-                        </ul>
-                    
-                        </ul>
-                    
-                
-            
-        
-    
-
-        <hr />
-
-        <p>我电子相关知识基本为0，停留在高中物理阶段，现用现查吧，欢迎指正。
-这是一个简易版，好听点叫”原型“，直白点说就很简陋，只能在自己的局域网内、自己一个人使用。</p>
-<p>但我没有使用这个方案来控制电源HUB，采用了RS232串口控制，直接在Windows主控电脑上，这样就免去了树莓派。
-如果你对此方案有意，可以随时问我（微信号: <code>qi--_--ip__olo</code>），我会将此方案进行完善，比如可以通过互联网远程控制开关等</p>
-<h2 id="目的">目的</h2>
-<p>通过网页开关12V电源HUB上的单个接口。主要是给远程天文望远镜用。</p>
-<h2 id="优点">优点</h2>
-<ul>
-<li>树莓派自带wifi，能少拉一根网线</li>
-<li>可以利用自己熟悉的高级语言编程，比如我用的Nodejs</li>
-</ul>
-<h2 id="不足">不足</h2>
-<ul>
-<li>无法记录断电前状态（可以实现，但是我没做）</li>
-<li>GPIO连接会有一堆杜邦线</li>
-<li>体积还是比较大的</li>
-<li>完成版比较丑，我就不拍照了</li>
-</ul>
-<h2 id="材料">材料</h2>
-<ul>
-<li>树莓派3B+。这东西涨价真是太厉害了，我是以高于当年购买全新4B4G的钱买了一个二手3B+</li>
-<li><a href="https://item.taobao.com/item.htm?id=570578720722">光耦继电器</a>，我使用的是4路，触发信号3.3V~5V，供电电压12V。树莓派的GPIO不能输出超过5V的电平，所以触发信号不要选错了。耐受电流10A，掌握好用电设备功率。</li>
-<li>杜邦线、防水盒子、DC55-21母头插座、0.25和0.75平方铁氟龙电线</li>
-</ul>
-<p>继电器接线示意图：
-<img src="https://img.alicdn.com/imgextra/i2/2495360764/O1CN01wHOEBZ1HVxHhm1oPL_!!2495360764.jpg" alt="">
-<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%BB%A7%E7%94%B5%E5%99%A8.jpg" alt=""></p>
-<h2 id="过程">过程</h2>
-<p>源代码：https://opensourcedamnbright.coding.net/p/cac/d/power-hub-pi/git ，<code>myswitcher.d</code>在<code>/etc/init.d</code>目录下实现开机启动等服务管理</p>
-<p>树莓派系统是bullseye，无桌面的Lite版，自带Python 3.9（后来退回到了2.7），Nodejs 16，配置详细过程略。使用<code>onoff</code>（https://github.com/fivdi/onoff）控制GPIO，<code>git clone</code>下来后进入目录，执行<code>npm install</code>如果安装过程中出现问题，就将Python3换回python2.7，再重装<code>node-gyp</code>，然后再运行<code>node-gyp rebuild</code>，不管是否出错，onoff可用了能跑起来就OK</p>
-<pre tabindex="0"><code>npm uninstall node-gyp
+<div class=container>
+<h2>📖树莓派控制直流电源HUB的开关</h2><hr>
+<h5>文章目录</h5><ul class=nav>
+<ul class=nav>
+<li><a href=#%e7%9b%ae%e7%9a%84>
+目的
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%bc%98%e7%82%b9>
+优点
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e4%b8%8d%e8%b6%b3>
+不足
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e6%9d%90%e6%96%99>
+材料
+</a></li></ul></ul><ul class=nav>
+<ul class=nav>
+<li><a href=#%e8%bf%87%e7%a8%8b>
+过程
+</a></li></ul></ul><hr>
+<p>我电子相关知识基本为0，停留在高中物理阶段，现用现查吧，欢迎指正。
+这是一个简易版，好听点叫”原型“，直白点说就很简陋，只能在自己的局域网内、自己一个人使用。</p><p>但我没有使用这个方案来控制电源HUB，采用了RS232串口控制，直接在Windows主控电脑上，这样就免去了树莓派。
+如果你对此方案有意，可以随时问我（微信号: <code>qi--_--ip__olo</code>），我会将此方案进行完善，比如可以通过互联网远程控制开关等</p><h2 id=目的>目的</h2><p>通过网页开关12V电源HUB上的单个接口。主要是给远程天文望远镜用。</p><h2 id=优点>优点</h2><ul>
+<li>树莓派自带wifi，能少拉一根网线</li><li>可以利用自己熟悉的高级语言编程，比如我用的Nodejs</li></ul><h2 id=不足>不足</h2><ul>
+<li>无法记录断电前状态（可以实现，但是我没做）</li><li>GPIO连接会有一堆杜邦线</li><li>体积还是比较大的</li><li>完成版比较丑，我就不拍照了</li></ul><h2 id=材料>材料</h2><ul>
+<li>树莓派3B+。这东西涨价真是太厉害了，我是以高于当年购买全新4B4G的钱买了一个二手3B+</li><li><a href="https://item.taobao.com/item.htm?id=570578720722">光耦继电器</a>，我使用的是4路，触发信号3.3V~5V，供电电压12V。树莓派的GPIO不能输出超过5V的电平，所以触发信号不要选错了。耐受电流10A，掌握好用电设备功率。</li><li>杜邦线、防水盒子、DC55-21母头插座、0.25和0.75平方铁氟龙电线</li></ul><p>继电器接线示意图：
+<img src=https://img.alicdn.com/imgextra/i2/2495360764/O1CN01wHOEBZ1HVxHhm1oPL_!!2495360764.jpg alt>
+<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%BB%A7%E7%94%B5%E5%99%A8.jpg alt></p><h2 id=过程>过程</h2><p>源代码：https://opensourcedamnbright.coding.net/p/cac/d/power-hub-pi/git ，<code>myswitcher.d</code>在<code>/etc/init.d</code>目录下实现开机启动等服务管理</p><p>树莓派系统是bullseye，无桌面的Lite版，自带Python 3.9（后来退回到了2.7），Nodejs 16，配置详细过程略。使用<code>onoff</code>（https://github.com/fivdi/onoff）控制GPIO，<code>git clone</code>下来后进入目录，执行<code>npm install</code>如果安装过程中出现问题，就将Python3换回python2.7，再重装<code>node-gyp</code>，然后再运行<code>node-gyp rebuild</code>，不管是否出错，onoff可用了能跑起来就OK</p><pre tabindex=0><code>npm uninstall node-gyp
 sudo npm uninstall node-gyp -g
 npm install node-gyp
 sudo npm install node-gyp -g
-</code></pre>
-
-        
-
-        <hr>
-        <p>
-            
-                <a href="/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/" 
-            title="业余天文里的常见开源、免费软件">
-            《业余天文里的常见开源、免费软件》</a>⬅
-            
-            🧰
-            
-            ➡<a href="/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/" 
-                    title="记一次远程天文台建台经历（四）">《记一次远程天文台建台经历（四）》</a>
-            
-        </p>
-    </div>
-    </div>
-</article>
-
-<hr />
-&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-</body>
-</html>
+</code></pre><hr>
+<p>
+<a href=/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/ title=业余天文里的常见开源、免费软件>
+《业余天文里的常见开源、免费软件》</a>⬅
+🧰
+➡<a href=/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/ title=记一次远程天文台建台经历（四）>《记一次远程天文台建台经历（四）》</a>
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>
