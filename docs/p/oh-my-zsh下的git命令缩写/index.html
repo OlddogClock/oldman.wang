@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>oh-my-zsh下的git命令缩写-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
+    
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
+    <link rel="stylesheet" href="/css/alone.css" />
+</head>
+<body><header class="homepage-header">
+    <h1>⌚️老王</h1>
+    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header>
+<hr />
+&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
+
+<hr />
+
+
+<article>
+    <div class="container">
+        <h2>📖oh-my-zsh下的git命令缩写</h2>
+        
+
+    
+    
+    
+        
+        
+        
+        <hr />
+        <h5>文章目录</h5>
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#git-version-checking">
+                    Git version checking
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#functions">
+                    Functions
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#the-name-of-the-current-branch">
+                    The name of the current branch
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#back-compatibility-wrapper-for-when-this-function-was-defined-here-in">
+                    Back-compatibility wrapper for when this function was defined here in
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#the-plugin-before-being-pulled-in-to-core-libgitzsh-as-git_current_branch">
+                    the plugin, before being pulled in to core lib/git.zsh as git_current_branch()
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#to-fix-the-core---git-plugin-dependency">
+                    to fix the core -&gt; git plugin dependency.
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#pretty-log-messages">
+                    Pretty log messages
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#warn-if-the-current-branch-is-a-wip">
+                    Warn if the current branch is a WIP
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#check-if-main-exists-and-use-instead-of-master">
+                    Check if main exists and use instead of master
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#check-for-develop-and-similarly-named-branches">
+                    Check for develop and similarly named branches
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#aliases">
+                    Aliases
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#sorted-alphabetically">
+                    (sorted alphabetically)
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#--jobsn-was-added-in-git-28">
+                    –jobs=was added in git 2.8
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#use-the-default-stash-push-on-git-213-and-newer">
+                    use the default stash push on git 2.13 and newer
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#rename-branch-locally">
+                    Rename branch locally
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#rename-branch-in-origin-remote">
+                    Rename branch in origin remote
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                
+            
+        
+    
+
+        <hr />
+
+        <p>之前使用git时都要自己设置命令缩写，其实在安装了oh-my-zsh git插件后，是自带非常完整的命令缩写的，就在<code>~/.oh-my-zsh/plugins/git/git.plugin.zsh</code>中</p>
+<h1 id="git-version-checking">Git version checking</h1>
+<p>autoload -Uz is-at-least
+git_version=&quot;${${(As: :)$(git version 2&gt;/dev/null)}[3]}&quot;</p>
+<h1 id="heading"></h1>
+<h1 id="functions">Functions</h1>
+<h1 id="heading-1"></h1>
+<h1 id="the-name-of-the-current-branch">The name of the current branch</h1>
+<h1 id="back-compatibility-wrapper-for-when-this-function-was-defined-here-in">Back-compatibility wrapper for when this function was defined here in</h1>
+<h1 id="the-plugin-before-being-pulled-in-to-core-libgitzsh-as-git_current_branch">the plugin, before being pulled in to core lib/git.zsh as git_current_branch()</h1>
+<h1 id="to-fix-the-core---git-plugin-dependency">to fix the core -&gt; git plugin dependency.</h1>
+<p>function current_branch() {
+git_current_branch
+}</p>
+<h1 id="pretty-log-messages">Pretty log messages</h1>
+<p>function _git_log_prettily(){
+if ! [ -z $1 ]; then
+git log &ndash;pretty=$1
+fi
+}
+compdef _git _git_log_prettily=git-log</p>
+<h1 id="warn-if-the-current-branch-is-a-wip">Warn if the current branch is a WIP</h1>
+<p>function work_in_progress() {
+if $(git log -n 1 2&gt;/dev/null | grep -q -c &ldquo;--wip--&rdquo;); then
+echo &ldquo;WIP!!&rdquo;
+fi
+}</p>
+<h1 id="check-if-main-exists-and-use-instead-of-master">Check if main exists and use instead of master</h1>
+<p>function git_main_branch() {
+command git rev-parse &ndash;git-dir &amp;&gt;/dev/null || return
+local ref
+for ref in refs/{heads,remotes/{origin,upstream}}/{main,trunk}; do
+if command git show-ref -q &ndash;verify $ref; then
+echo ${ref:t}
+return
+fi
+done
+echo master
+}</p>
+<h1 id="check-for-develop-and-similarly-named-branches">Check for develop and similarly named branches</h1>
+<p>function git_develop_branch() {
+command git rev-parse &ndash;git-dir &amp;&gt;/dev/null || return
+local branch
+for branch in dev devel development; do
+if command git show-ref -q &ndash;verify refs/heads/$branch; then
+echo $branch
+return
+fi
+done
+echo develop
+}</p>
+<h1 id="heading-2"></h1>
+<h1 id="aliases">Aliases</h1>
+<h1 id="sorted-alphabetically">(sorted alphabetically)</h1>
+<h1 id="heading-3"></h1>
+<p>alias g=&lsquo;git&rsquo;</p>
+<p>alias ga=&lsquo;git add&rsquo;
+alias gaa=&lsquo;git add &ndash;all&rsquo;
+alias gapa=&lsquo;git add &ndash;patch&rsquo;
+alias gau=&lsquo;git add &ndash;update&rsquo;
+alias gav=&lsquo;git add &ndash;verbose&rsquo;
+alias gap=&lsquo;git apply&rsquo;
+alias gapt=&lsquo;git apply &ndash;3way&rsquo;</p>
+<p>alias gb=&lsquo;git branch&rsquo;
+alias gba=&lsquo;git branch -a&rsquo;
+alias gbd=&lsquo;git branch -d&rsquo;
+alias gbda=&lsquo;git branch &ndash;no-color &ndash;merged | command grep -vE &ldquo;^([+<em>]|\s</em>($(git_main_branch)|$(git_develop_branch))\s*$)&rdquo; | command xargs git branch -d 2&gt;/dev/null&rsquo;
+alias gbD=&lsquo;git branch -D&rsquo;
+alias gbl=&lsquo;git blame -b -w&rsquo;
+alias gbnm=&lsquo;git branch &ndash;no-merged&rsquo;
+alias gbr=&lsquo;git branch &ndash;remote&rsquo;
+alias gbs=&lsquo;git bisect&rsquo;
+alias gbsb=&lsquo;git bisect bad&rsquo;
+alias gbsg=&lsquo;git bisect good&rsquo;
+alias gbsr=&lsquo;git bisect reset&rsquo;
+alias gbss=&lsquo;git bisect start&rsquo;</p>
+<p>alias gc=&lsquo;git commit -v&rsquo;
+alias gc!=&lsquo;git commit -v &ndash;amend&rsquo;
+alias gcn!=&lsquo;git commit -v &ndash;no-edit &ndash;amend&rsquo;
+alias gca=&lsquo;git commit -v -a&rsquo;
+alias gca!=&lsquo;git commit -v -a &ndash;amend&rsquo;
+alias gcan!=&lsquo;git commit -v -a &ndash;no-edit &ndash;amend&rsquo;
+alias gcans!=&lsquo;git commit -v -a -s &ndash;no-edit &ndash;amend&rsquo;
+alias gcam=&lsquo;git commit -a -m&rsquo;
+alias gcsm=&lsquo;git commit -s -m&rsquo;
+alias gcas=&lsquo;git commit -a -s&rsquo;
+alias gcasm=&lsquo;git commit -a -s -m&rsquo;
+alias gcb=&lsquo;git checkout -b&rsquo;
+alias gcf=&lsquo;git config &ndash;list&rsquo;</p>
+<p>function gccd() {
+command git clone &ndash;recurse-submodules &ldquo;$@&rdquo;
+[[ -d &ldquo;$<em>&rdquo; ]] &amp;&amp; cd &ldquo;$</em>&rdquo; || cd &ldquo;${${_:t}%.git}&rdquo;
+}
+compdef _git gccd=git-clone</p>
+<p>alias gcl=&lsquo;git clone &ndash;recurse-submodules&rsquo;
+alias gclean=&lsquo;git clean -id&rsquo;
+alias gpristine=&lsquo;git reset &ndash;hard &amp;&amp; git clean -dffx&rsquo;
+alias gcm=&lsquo;git checkout $(git_main_branch)&rsquo;
+alias gcd=&lsquo;git checkout $(git_develop_branch)&rsquo;
+alias gcmsg=&lsquo;git commit -m&rsquo;
+alias gco=&lsquo;git checkout&rsquo;
+alias gcor=&lsquo;git checkout &ndash;recurse-submodules&rsquo;
+alias gcount=&lsquo;git shortlog -sn&rsquo;
+alias gcp=&lsquo;git cherry-pick&rsquo;
+alias gcpa=&lsquo;git cherry-pick &ndash;abort&rsquo;
+alias gcpc=&lsquo;git cherry-pick &ndash;continue&rsquo;
+alias gcs=&lsquo;git commit -S&rsquo;
+alias gcss=&lsquo;git commit -S -s&rsquo;
+alias gcssm=&lsquo;git commit -S -s -m&rsquo;</p>
+<p>alias gd=&lsquo;git diff&rsquo;
+alias gdca=&lsquo;git diff &ndash;cached&rsquo;
+alias gdcw=&lsquo;git diff &ndash;cached &ndash;word-diff&rsquo;
+alias gdct=&lsquo;git describe &ndash;tags $(git rev-list &ndash;tags &ndash;max-count=1)&rsquo;
+alias gds=&lsquo;git diff &ndash;staged&rsquo;
+alias gdt=&lsquo;git diff-tree &ndash;no-commit-id &ndash;name-only -r&rsquo;
+alias gdup=&lsquo;git diff @{upstream}&rsquo;
+alias gdw=&lsquo;git diff &ndash;word-diff&rsquo;</p>
+<p>function gdnolock() {
+git diff &ldquo;$@&rdquo; &ldquo;:(exclude)package-lock.json&rdquo; &ldquo;:(exclude)*.lock&rdquo;
+}
+compdef _git gdnolock=git-diff</p>
+<p>function gdv() { git diff -w &ldquo;$@&rdquo; | view - }
+compdef _git gdv=git-diff</p>
+<p>alias gf=&lsquo;git fetch&rsquo;</p>
+<h1 id="--jobsn-was-added-in-git-28">&ndash;jobs=<!-- raw HTML omitted --> was added in git 2.8</h1>
+<p>is-at-least 2.8 &ldquo;$git_version&rdquo; <br>
+&amp;&amp; alias gfa=&lsquo;git fetch &ndash;all &ndash;prune &ndash;jobs=10&rsquo; <br>
+|| alias gfa=&lsquo;git fetch &ndash;all &ndash;prune&rsquo;
+alias gfo=&lsquo;git fetch origin&rsquo;</p>
+<p>alias gfg=&lsquo;git ls-files | grep&rsquo;</p>
+<p>alias gg=&lsquo;git gui citool&rsquo;
+alias gga=&lsquo;git gui citool &ndash;amend&rsquo;</p>
+<p>function ggf() {
+[[ &ldquo;$#&rdquo; != 1 ]] &amp;&amp; local b=&quot;$(git_current_branch)&quot;
+git push &ndash;force origin &ldquo;${b:=$1}&rdquo;
+}
+compdef _git ggf=git-checkout
+function ggfl() {
+[[ &ldquo;$#&rdquo; != 1 ]] &amp;&amp; local b=&quot;$(git_current_branch)&quot;
+git push &ndash;force-with-lease origin &ldquo;${b:=$1}&rdquo;
+}
+compdef _git ggfl=git-checkout</p>
+<p>function ggl() {
+if [[ &ldquo;$#&rdquo; != 0 ]] &amp;&amp; [[ &ldquo;$#&rdquo; != 1 ]]; then
+git pull origin &ldquo;${*}&rdquo;
+else
+[[ &ldquo;$#&rdquo; == 0 ]] &amp;&amp; local b=&quot;$(git_current_branch)&quot;
+git pull origin &ldquo;${b:=$1}&rdquo;
+fi
+}
+compdef _git ggl=git-checkout</p>
+<p>function ggp() {
+if [[ &ldquo;$#&rdquo; != 0 ]] &amp;&amp; [[ &ldquo;$#&rdquo; != 1 ]]; then
+git push origin &ldquo;${*}&rdquo;
+else
+[[ &ldquo;$#&rdquo; == 0 ]] &amp;&amp; local b=&quot;$(git_current_branch)&quot;
+git push origin &ldquo;${b:=$1}&rdquo;
+fi
+}
+compdef _git ggp=git-checkout</p>
+<p>function ggpnp() {
+if [[ &ldquo;$#&rdquo; == 0 ]]; then
+ggl &amp;&amp; ggp
+else
+ggl &ldquo;${<em>}&rdquo; &amp;&amp; ggp &ldquo;${</em>}&rdquo;
+fi
+}
+compdef _git ggpnp=git-checkout</p>
+<p>function ggu() {
+[[ &ldquo;$#&rdquo; != 1 ]] &amp;&amp; local b=&quot;$(git_current_branch)&quot;
+git pull &ndash;rebase origin &ldquo;${b:=$1}&rdquo;
+}
+compdef _git ggu=git-checkout</p>
+<p>alias ggpur=&lsquo;ggu&rsquo;
+alias ggpull=&lsquo;git pull origin &ldquo;$(git_current_branch)&rdquo;&rsquo;
+alias ggpush=&lsquo;git push origin &ldquo;$(git_current_branch)&rdquo;&rsquo;</p>
+<p>alias ggsup=&lsquo;git branch &ndash;set-upstream-to=origin/$(git_current_branch)&rsquo;
+alias gpsup=&lsquo;git push &ndash;set-upstream origin $(git_current_branch)&rsquo;</p>
+<p>alias ghh=&lsquo;git help&rsquo;</p>
+<p>alias gignore=&lsquo;git update-index &ndash;assume-unchanged&rsquo;
+alias gignored=&lsquo;git ls-files -v | grep &ldquo;^[[:lower:]]&rdquo;&rsquo;
+alias git-svn-dcommit-push=&lsquo;git svn dcommit &amp;&amp; git push github $(git_main_branch):svntrunk&rsquo;</p>
+<p>alias gk=&rsquo;\gitk &ndash;all &ndash;branches &amp;!&rsquo;
+alias gke=&rsquo;\gitk &ndash;all $(git log -g &ndash;pretty=%h) &amp;!'</p>
+<p>alias gl=&lsquo;git pull&rsquo;
+alias glg=&lsquo;git log &ndash;stat&rsquo;
+alias glgp=&lsquo;git log &ndash;stat -p&rsquo;
+alias glgg=&lsquo;git log &ndash;graph&rsquo;
+alias glgga=&lsquo;git log &ndash;graph &ndash;decorate &ndash;all&rsquo;
+alias glgm=&lsquo;git log &ndash;graph &ndash;max-count=10&rsquo;
+alias glo=&lsquo;git log &ndash;oneline &ndash;decorate&rsquo;
+alias glol=&ldquo;git log &ndash;graph &ndash;pretty=&rsquo;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)&lt;%an&gt;%Creset&rsquo;&rdquo;
+alias glols=&ldquo;git log &ndash;graph &ndash;pretty=&rsquo;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)&lt;%an&gt;%Creset&rsquo; &ndash;stat&rdquo;
+alias glod=&ldquo;git log &ndash;graph &ndash;pretty=&rsquo;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)&lt;%an&gt;%Creset&rsquo;&rdquo;
+alias glods=&ldquo;git log &ndash;graph &ndash;pretty=&rsquo;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)&lt;%an&gt;%Creset&rsquo; &ndash;date=short&rdquo;
+alias glola=&ldquo;git log &ndash;graph &ndash;pretty=&rsquo;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)&lt;%an&gt;%Creset&rsquo; &ndash;all&rdquo;
+alias glog=&lsquo;git log &ndash;oneline &ndash;decorate &ndash;graph&rsquo;
+alias gloga=&lsquo;git log &ndash;oneline &ndash;decorate &ndash;graph &ndash;all&rsquo;
+alias glp=&quot;_git_log_prettily&quot;</p>
+<p>alias gm=&lsquo;git merge&rsquo;
+alias gmom=&lsquo;git merge origin/$(git_main_branch)&rsquo;
+alias gmtl=&lsquo;git mergetool &ndash;no-prompt&rsquo;
+alias gmtlvim=&lsquo;git mergetool &ndash;no-prompt &ndash;tool=vimdiff&rsquo;
+alias gmum=&lsquo;git merge upstream/$(git_main_branch)&rsquo;
+alias gma=&lsquo;git merge &ndash;abort&rsquo;</p>
+<p>alias gp=&lsquo;git push&rsquo;
+alias gpd=&lsquo;git push &ndash;dry-run&rsquo;
+alias gpf=&lsquo;git push &ndash;force-with-lease&rsquo;
+alias gpf!=&lsquo;git push &ndash;force&rsquo;
+alias gpoat=&lsquo;git push origin &ndash;all &amp;&amp; git push origin &ndash;tags&rsquo;
+alias gpr=&lsquo;git pull &ndash;rebase&rsquo;
+alias gpu=&lsquo;git push upstream&rsquo;
+alias gpv=&lsquo;git push -v&rsquo;</p>
+<p>alias gr=&lsquo;git remote&rsquo;
+alias gra=&lsquo;git remote add&rsquo;
+alias grb=&lsquo;git rebase&rsquo;
+alias grba=&lsquo;git rebase &ndash;abort&rsquo;
+alias grbc=&lsquo;git rebase &ndash;continue&rsquo;
+alias grbd=&lsquo;git rebase $(git_develop_branch)&rsquo;
+alias grbi=&lsquo;git rebase -i&rsquo;
+alias grbm=&lsquo;git rebase $(git_main_branch)&rsquo;
+alias grbom=&lsquo;git rebase origin/$(git_main_branch)&rsquo;
+alias grbo=&lsquo;git rebase &ndash;onto&rsquo;
+alias grbs=&lsquo;git rebase &ndash;skip&rsquo;
+alias grev=&lsquo;git revert&rsquo;
+alias grh=&lsquo;git reset&rsquo;
+alias grhh=&lsquo;git reset &ndash;hard&rsquo;
+alias groh=&lsquo;git reset origin/$(git_current_branch) &ndash;hard&rsquo;
+alias grm=&lsquo;git rm&rsquo;
+alias grmc=&lsquo;git rm &ndash;cached&rsquo;
+alias grmv=&lsquo;git remote rename&rsquo;
+alias grrm=&lsquo;git remote remove&rsquo;
+alias grs=&lsquo;git restore&rsquo;
+alias grset=&lsquo;git remote set-url&rsquo;
+alias grss=&lsquo;git restore &ndash;source&rsquo;
+alias grst=&lsquo;git restore &ndash;staged&rsquo;
+alias grt=&lsquo;cd &ldquo;$(git rev-parse &ndash;show-toplevel || echo .)&rdquo;&rsquo;
+alias gru=&lsquo;git reset &ndash;&rsquo;
+alias grup=&lsquo;git remote update&rsquo;
+alias grv=&lsquo;git remote -v&rsquo;</p>
+<p>alias gsb=&lsquo;git status -sb&rsquo;
+alias gsd=&lsquo;git svn dcommit&rsquo;
+alias gsh=&lsquo;git show&rsquo;
+alias gsi=&lsquo;git submodule init&rsquo;
+alias gsps=&lsquo;git show &ndash;pretty=short &ndash;show-signature&rsquo;
+alias gsr=&lsquo;git svn rebase&rsquo;
+alias gss=&lsquo;git status -s&rsquo;
+alias gst=&lsquo;git status&rsquo;</p>
+<h1 id="use-the-default-stash-push-on-git-213-and-newer">use the default stash push on git 2.13 and newer</h1>
+<p>is-at-least 2.13 &ldquo;$git_version&rdquo; <br>
+&amp;&amp; alias gsta=&lsquo;git stash push&rsquo; <br>
+|| alias gsta=&lsquo;git stash save&rsquo;</p>
+<p>alias gstaa=&lsquo;git stash apply&rsquo;
+alias gstc=&lsquo;git stash clear&rsquo;
+alias gstd=&lsquo;git stash drop&rsquo;
+alias gstl=&lsquo;git stash list&rsquo;
+alias gstp=&lsquo;git stash pop&rsquo;
+alias gsts=&lsquo;git stash show &ndash;text&rsquo;
+alias gstu=&lsquo;gsta &ndash;include-untracked&rsquo;
+alias gstall=&lsquo;git stash &ndash;all&rsquo;
+alias gsu=&lsquo;git submodule update&rsquo;
+alias gsw=&lsquo;git switch&rsquo;
+alias gswc=&lsquo;git switch -c&rsquo;
+alias gswm=&lsquo;git switch $(git_main_branch)&rsquo;
+alias gswd=&lsquo;git switch $(git_develop_branch)&rsquo;</p>
+<p>alias gts=&lsquo;git tag -s&rsquo;
+alias gtv=&lsquo;git tag | sort -V&rsquo;
+alias gtl=&lsquo;gtl(){ git tag &ndash;sort=-v:refname -n -l &ldquo;${1}*&rdquo; }; noglob gtl&rsquo;</p>
+<p>alias gunignore=&lsquo;git update-index &ndash;no-assume-unchanged&rsquo;
+alias gunwip=&lsquo;git log -n 1 | grep -q -c &ldquo;--wip--&rdquo; &amp;&amp; git reset HEAD~1&rsquo;
+alias gup=&lsquo;git pull &ndash;rebase&rsquo;
+alias gupv=&lsquo;git pull &ndash;rebase -v&rsquo;
+alias gupa=&lsquo;git pull &ndash;rebase &ndash;autostash&rsquo;
+alias gupav=&lsquo;git pull &ndash;rebase &ndash;autostash -v&rsquo;
+alias glum=&lsquo;git pull upstream $(git_main_branch)&rsquo;</p>
+<p>alias gwch=&lsquo;git whatchanged -p &ndash;abbrev-commit &ndash;pretty=medium&rsquo;
+alias gwip=&lsquo;git add -A; git rm $(git ls-files &ndash;deleted) 2&gt; /dev/null; git commit &ndash;no-verify &ndash;no-gpg-sign -m &ldquo;&ndash;wip&ndash; [skip ci]&rdquo;&rsquo;</p>
+<p>alias gam=&lsquo;git am&rsquo;
+alias gamc=&lsquo;git am &ndash;continue&rsquo;
+alias gams=&lsquo;git am &ndash;skip&rsquo;
+alias gama=&lsquo;git am &ndash;abort&rsquo;
+alias gamscp=&lsquo;git am &ndash;show-current-patch&rsquo;</p>
+<p>function grename() {
+if [[ -z &ldquo;$1&rdquo; || -z &ldquo;$2&rdquo; ]]; then
+echo &ldquo;Usage: $0 old_branch new_branch&rdquo;
+return 1
+fi</p>
+<h1 id="rename-branch-locally">Rename branch locally</h1>
+<p>git branch -m &ldquo;$1&rdquo; &ldquo;$2&rdquo;</p>
+<h1 id="rename-branch-in-origin-remote">Rename branch in origin remote</h1>
+<p>if git push origin :&quot;$1&quot;; then
+git push &ndash;set-upstream origin &ldquo;$2&rdquo;
+fi
+}</p>
+<p>unset git_version</p>
+
+        
+
+        <hr>
+        <p>
+            
+                <a href="/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/" 
+            title="Windows10设置Path环境变量的简单方法">
+            《Windows10设置Path环境变量的简单方法》</a>⬅
+            
+            🧰
+            
+            ➡<a href="/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/" 
+                    title="ES版CPU还真有点香">《ES版CPU还真有点香》</a>
+            
+        </p>
+    </div>
+    </div>
+</article>
+
+<hr />
+&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 10 on ⌚️老王</title>
+    <link>/tags/windows-10/</link>
+    <description>Recent content in Windows 10 on ⌚️老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows10设置Path环境变量的简单方法</title>
+      <link>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;给小白看的，人问起来，写下来吧，Win10的系统属性藏的还是比较深的。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

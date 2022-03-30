@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPU on ⌚️老王</title>
+    <link>/tags/cpu/</link>
+    <description>Recent content in CPU on ⌚️老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ES版CPU还真有点香</title>
+      <link>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</guid>
+      <description>&lt;p&gt;🐒ES，Engineering Samples工程样品，是Intel在产品上市之前发给主板厂商、媒体等机构的测试样品，在CPU-Z里不显示CPU型号、主频比正式版低，也有可以正确显示型号的，名称后面会带ES标示，正显也被称为QS版（Qualification Sample品质确认样品），更多介绍可以执行查询。圈里叫我们这些用ES版CPU和淘汰Xeon的人是”垃圾佬“，十分贴切&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

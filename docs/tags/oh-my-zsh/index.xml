@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oh-my-zsh on ⌚️老王</title>
+    <link>/tags/oh-my-zsh/</link>
+    <description>Recent content in oh-my-zsh on ⌚️老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/oh-my-zsh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oh-my-zsh下的git命令缩写</title>
+      <link>/p/oh-my-zsh%E4%B8%8B%E7%9A%84git%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/oh-my-zsh%E4%B8%8B%E7%9A%84git%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99/</guid>
+      <description>&lt;p&gt;之前使用git时都要自己设置命令缩写，其实在安装了oh-my-zsh git插件后，是自带非常完整的命令缩写的，就在&lt;code&gt;~/.oh-my-zsh/plugins/git/git.plugin.zsh&lt;/code&gt;中&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

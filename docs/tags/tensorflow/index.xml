@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tensorflow on ⌚️老王</title>
+    <link>/tags/tensorflow/</link>
+    <description>Recent content in tensorflow on ⌚️老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTX3060成功安装tensorflow-gpu过程记录</title>
+      <link>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Windows10下成功安装Tensorflow-GPU过程（GTX 3060）&lt;/p&gt;
+&lt;p&gt;本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。&lt;/p&gt;
+&lt;p&gt;重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

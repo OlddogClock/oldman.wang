@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on ⌚️老王</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on ⌚️老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oh-my-zsh下的git命令缩写</title>
+      <link>/p/oh-my-zsh%E4%B8%8B%E7%9A%84git%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/oh-my-zsh%E4%B8%8B%E7%9A%84git%E5%91%BD%E4%BB%A4%E7%BC%A9%E5%86%99/</guid>
+      <description>&lt;p&gt;之前使用git时都要自己设置命令缩写，其实在安装了oh-my-zsh git插件后，是自带非常完整的命令缩写的，就在&lt;code&gt;~/.oh-my-zsh/plugins/git/git.plugin.zsh&lt;/code&gt;中&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>git团队协作中出现的术语</title>
+      <link>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</link>
+      <pubDate>Tue, 26 Oct 2021 15:08:49 +0000</pubDate>
+      
+      <guid>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</guid>
+      <description>WIP Work in progress, do not merge yet. // 开发中 LGTM Looks good to me. // Riview 完别人的 PR ，没有问题 PTAL Please take a look. // 帮我看下，一般都是请别人 review 自己的 PR CC Carbon copy // 一般代表抄送别人的意思 RFC — request</description>
+    </item>
+    
+  </channel>
+</rss>
