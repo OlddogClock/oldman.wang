@@ -1,4 +1,3 @@
 [submodule "themes/nocss-hugo"]
 	path = themes/nocss-hugo
 	url = git@github.com:OlddogClock/nocss-hugo.git
-	branch = main
