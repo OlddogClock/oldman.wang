@@ -1,49 +1,188 @@
-<!doctype html><html lang=zh-cn>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=keyword content>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
-<title>为Windows打造完美终端（非WSL）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
-<link rel=stylesheet href=/css/alone.css>
-</head><body><header class=homepage-header>
-<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header><hr>
-&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
-<hr>
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keyword"  content="">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+    <title>为Windows打造完美终端（非WSL）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
+    
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
+    <link rel="stylesheet" href="/css/alone.css" />
+</head>
+<body><header class="homepage-header">
+    <h1>⌚️老王</h1>
+    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header>
+<hr />
+&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
+
+<hr />
+
+
 <article>
-<div class=container>
-<h2>📖为Windows打造完美终端（非WSL）</h2><hr>
-<h5>文章目录</h5><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%9f%ba%e6%9c%ac%e7%8e%af%e5%a2%83>
-基本环境
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%b0%86conda%e9%85%8d%e7%bd%ae%e8%bf%9bwindows-terminal>
-将conda配置进Windows Terminal
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e8%ae%a9windows-terminalpowershell%e6%94%af%e6%8c%81git>
-让Windows Terminal（PowerShell）支持Git
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%ae%89%e8%a3%85-oh-my-posh>
-安装 oh-my-posh
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e8%87%aa%e5%ae%9a%e4%b9%89oh-my-posh%e7%9a%84%e6%8f%90%e7%a4%ba%e7%ac%a6>
-自定义oh-my-posh的提示符
-</a></li></ul></ul><hr>
-<p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130115934.png alt>
-就是要美化Powershell，Mac下有iTerm和oh-my-zsh，很多文章让你使用WSL来实现同样的效果，那叫Windows吗？！而且终端也不能太臃肿和花哨了，我认为有：</p><ol>
-<li>彩色命令行</li><li>git分支显示</li><li>conda环境提示</li><li>历史命令提示
-就可以了。</li></ol><p>Windows下的oh-my-zsh是oh-my-posh，以下操作于2021年12月进行。</p><h2 id=基本环境>基本环境</h2><p>我使用的是Windows 10 21H2，下面三个软件按顺序安装，全部使用默认安装路径</p><ol>
-<li>Windows Terminal <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab">下载</a></li><li>PowerShell 7.2 <a href=https://github.com/PowerShell/PowerShell/releases/>下载</a></li><li>Git for Windows 2.34 <a href=https://github.com/git-for-windows/git/releases/>下载</a></li><li>Miniconda3（Conda 4.10.3 Python 3.9.5） <a href=https://docs.conda.io/en/latest/miniconda.html>下载</a></li></ol><h2 id=将conda配置进windows-terminal>将conda配置进Windows Terminal</h2><p>打开Windows Terminal设置：</p><p><img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130130500.png alt></p><p>打开设置的JSON文件：</p><p><img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130130711.png alt></p><p>根据实际情况，替换或增加如下内容：</p><pre tabindex=0><code>&#34;defaultProfile&#34;: &#34;{45b48db0-01a4-4d92-937b-60f9928e8c5c}&#34;,
+    <div class="container">
+        <h2>📖为Windows打造完美终端（非WSL）</h2>
+        
+
+    
+    
+    
+        
+        
+        
+        <hr />
+        <h5>文章目录</h5>
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%9f%ba%e6%9c%ac%e7%8e%af%e5%a2%83">
+                    基本环境
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%b0%86conda%e9%85%8d%e7%bd%ae%e8%bf%9bwindows-terminal">
+                    将conda配置进Windows Terminal
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e8%ae%a9windows-terminalpowershell%e6%94%af%e6%8c%81git">
+                    让Windows Terminal（PowerShell）支持Git
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%ae%89%e8%a3%85-oh-my-posh">
+                    安装 oh-my-posh
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e8%87%aa%e5%ae%9a%e4%b9%89oh-my-posh%e7%9a%84%e6%8f%90%e7%a4%ba%e7%ac%a6">
+                    自定义oh-my-posh的提示符
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+    
+
+        <hr />
+
+        <p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130115934.png" alt="">
+就是要美化Powershell，Mac下有iTerm和oh-my-zsh，很多文章让你使用WSL来实现同样的效果，那叫Windows吗？！而且终端也不能太臃肿和花哨了，我认为有：</p>
+<ol>
+<li>彩色命令行</li>
+<li>git分支显示</li>
+<li>conda环境提示</li>
+<li>历史命令提示
+就可以了。</li>
+</ol>
+<!-- raw HTML omitted -->
+<p>Windows下的oh-my-zsh是oh-my-posh，以下操作于2021年12月进行。</p>
+<h2 id="基本环境">基本环境</h2>
+<p>我使用的是Windows 10 21H2，下面三个软件按顺序安装，全部使用默认安装路径</p>
+<ol>
+<li>Windows Terminal <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab">下载</a></li>
+<li>PowerShell 7.2 <a href="https://github.com/PowerShell/PowerShell/releases/">下载</a></li>
+<li>Git for Windows 2.34 <a href="https://github.com/git-for-windows/git/releases/">下载</a></li>
+<li>Miniconda3（Conda 4.10.3 Python 3.9.5） <a href="https://docs.conda.io/en/latest/miniconda.html">下载</a></li>
+</ol>
+<h2 id="将conda配置进windows-terminal">将conda配置进Windows Terminal</h2>
+<p>打开Windows Terminal设置：</p>
+<p><img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130130500.png" alt=""></p>
+<p>打开设置的JSON文件：</p>
+<p><img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211130130711.png" alt=""></p>
+<p>根据实际情况，替换或增加如下内容：</p>
+<pre tabindex="0"><code>&#34;defaultProfile&#34;: &#34;{45b48db0-01a4-4d92-937b-60f9928e8c5c}&#34;,
 &#34;profiles&#34;: 
     {
         &#34;defaults&#34;: {
@@ -74,11 +213,26 @@
         ]
     },
 </code></pre><ul>
-<li><code>defaultProfile</code>Windows Terminal启动后的默认终端配置，就是list中的guid值</li><li><code>font</code>找一个自己喜欢的字体Mono字体，最好是<a href=https://www.nerdfonts.com/font-downloads>Nerd Font</a>，含有字体图标的为后面美化做准备；</li><li><code>guid</code>可以用我这个，只要与文件里的其它项不重复就行；</li><li><code>icon</code>自己找个喜欢的图标，显示在Windows Terminal标题栏上的。</li><li><code>commandline</code>取值来自<code>Anaconda Powershell Prompt (Miniconda3)</code>的快捷方式属性中的“目标”，如果是<code>%windir%\System32\WindowsPowerShell\</code>开头，可能是win10自带的powershell目录，不是新安装的PowerShell 7.2版本，需要改成<code>C:\Program Files\PowerShell\7\pwsh.exe</code>，<code>双引号"</code>和<code>斜线\</code>前面要加<code>\</code>进行转义</li></ul><p><img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211204155456.png alt></p><p>至此，Anaconda3已被集成在Windows Terminal</p><h2 id=让windows-terminalpowershell支持git>让Windows Terminal（PowerShell）支持Git</h2><p>安装Git for Windows后，环境变量的PATH会被增加上<code>C:\Program Files\Git\cmd</code>
-我再PowerShell里又装了一次posh-git</p><pre tabindex=0><code>Install-Module posh-git -Scope CurrentUser
-</code></pre><p>如果你想为所有的用户安装，请使用<code>-Scope AllUsers</code>，下同</p><h2 id=安装-oh-my-posh>安装 oh-my-posh</h2><p>oh-my-posh介绍详见官网 <a href=https://ohmyposh.dev/docs/windows>https://ohmyposh.dev/docs/windows</a></p><pre tabindex=0><code>Install-Module oh-my-posh -Scope CurrentUser
-</code></pre><p>编辑<code>$Profile</code>文件，此文件类似于 ~/.zshrc 会在启动 PowerShell 的时候自动执行，我们要用它引入 oh-my-posh 模块：</p><pre tabindex=0><code>notepad.exe $Profile
-</code></pre><p>输入以下内容：</p><pre tabindex=0><code>Import-Module posh-git # 引入 posh-git
+<li><code>defaultProfile</code>Windows Terminal启动后的默认终端配置，就是list中的guid值</li>
+<li><code>font</code>找一个自己喜欢的字体Mono字体，最好是<a href="https://www.nerdfonts.com/font-downloads">Nerd Font</a>，含有字体图标的为后面美化做准备；</li>
+<li><code>guid</code>可以用我这个，只要与文件里的其它项不重复就行；</li>
+<li><code>icon</code>自己找个喜欢的图标，显示在Windows Terminal标题栏上的。</li>
+<li><code>commandline</code>取值来自<code>Anaconda Powershell Prompt (Miniconda3)</code>的快捷方式属性中的“目标”，如果是<code>%windir%\System32\WindowsPowerShell\</code>开头，可能是win10自带的powershell目录，不是新安装的PowerShell 7.2版本，需要改成<code>C:\Program Files\PowerShell\7\pwsh.exe</code>，<code>双引号&quot;</code>和<code>斜线\</code>前面要加<code>\</code>进行转义</li>
+</ul>
+<p><img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211204155456.png" alt=""></p>
+<p>至此，Anaconda3已被集成在Windows Terminal</p>
+<h2 id="让windows-terminalpowershell支持git">让Windows Terminal（PowerShell）支持Git</h2>
+<p>安装Git for Windows后，环境变量的PATH会被增加上<code>C:\Program Files\Git\cmd</code>
+我再PowerShell里又装了一次posh-git</p>
+<pre tabindex="0"><code>Install-Module posh-git -Scope CurrentUser
+</code></pre><p>如果你想为所有的用户安装，请使用<code>-Scope AllUsers</code>，下同</p>
+<h2 id="安装-oh-my-posh">安装 oh-my-posh</h2>
+<p>oh-my-posh介绍详见官网 <a href="https://ohmyposh.dev/docs/windows">https://ohmyposh.dev/docs/windows</a></p>
+<pre tabindex="0"><code>Install-Module oh-my-posh -Scope CurrentUser
+</code></pre><p>编辑<code>$Profile</code>文件，此文件类似于 ~/.zshrc 会在启动 PowerShell 的时候自动执行，我们要用它引入 oh-my-posh 模块：</p>
+<pre tabindex="0"><code>notepad.exe $Profile
+</code></pre><p>输入以下内容：</p>
+<pre tabindex="0"><code>Import-Module posh-git # 引入 posh-git
 Import-Module oh-my-posh # 引入 oh-my-posh
 
 Set-PoshPrompt Paradox # 设置主题为 Paradox
@@ -96,9 +250,13 @@ Set-PSReadLineKeyHandler -Key DownArrow -ScriptBlock {
 [Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchForward()
 [Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
 } # 设置向下键为前向搜索历史纪录，并将光标移动到行尾
-</code></pre><p>重启Windows Terminal即可看到最终效果。</p><h2 id=自定义oh-my-posh的提示符>自定义oh-my-posh的提示符</h2><p>刚才我们已经选定了Paradox主题，通过<code>Get-PoshThemes</code>命令可以查看和预览所有的主题，按住Ctrl点击主题名称可以对其编辑
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211201152417.png alt></p><p>比如Paradox主题的，可以通过删减、修改<code>segments</code>内的元素就是修改提示符，比如我在管理员（root）模式时，增加了root提示：
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211201153036.png alt></p><pre tabindex=0><code>{
+</code></pre><p>重启Windows Terminal即可看到最终效果。</p>
+<h2 id="自定义oh-my-posh的提示符">自定义oh-my-posh的提示符</h2>
+<p>刚才我们已经选定了Paradox主题，通过<code>Get-PoshThemes</code>命令可以查看和预览所有的主题，按住Ctrl点击主题名称可以对其编辑
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211201152417.png" alt=""></p>
+<p>比如Paradox主题的，可以通过删减、修改<code>segments</code>内的元素就是修改提示符，比如我在管理员（root）模式时，增加了root提示：
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/20211201153036.png" alt=""></p>
+<pre tabindex="0"><code>{
   &#34;$schema&#34;: &#34;https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json&#34;,
   &#34;blocks&#34;: [
     {
@@ -175,14 +333,30 @@ Set-PSReadLineKeyHandler -Key DownArrow -ScriptBlock {
   ],
   &#34;final_space&#34;: false
 }
-</code></pre><hr>
-<p>
-<a href=/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/ title=GTX3060成功安装tensorflow-gpu过程记录>
-《GTX3060成功安装tensorflow-gpu过程记录》</a>⬅
-🧰
-➡<a href=/p/pixlnsight1.8/ title=Pixlnsight1.8>《Pixlnsight1.8》</a>
-</p></div></div></article><hr>
-&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
-<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
-<script>hljs.highlightAll()</script>
-</body></html>
+</code></pre>
+
+        
+
+        <hr>
+        <p>
+            
+                <a href="/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" 
+            title="GTX3060成功安装tensorflow-gpu过程记录">
+            《GTX3060成功安装tensorflow-gpu过程记录》</a>⬅
+            
+            🧰
+            
+            ➡<a href="/p/pixlnsight1.8/" 
+                    title="Pixlnsight1.8">《Pixlnsight1.8》</a>
+            
+        </p>
+    </div>
+    </div>
+</article>
+
+<hr />
+&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

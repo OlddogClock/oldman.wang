@@ -1,10 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>程序员杂志 on 老王</title><link>/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97/</link><description>Recent content in 程序员杂志 on 老王</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 30 Mar 2022 15:35:38 +0800</lastBuildDate><atom:link href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97/index.xml" rel="self" type="application/rss+xml"/><item><title>没有CSS的Hugo主题</title><link>/p/%E6%B2%A1%E6%9C%89css%E7%9A%84hugo%E4%B8%BB%E9%A2%98/</link><pubDate>Wed, 30 Mar 2022 15:35:38 +0800</pubDate><guid>/p/%E6%B2%A1%E6%9C%89css%E7%9A%84hugo%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>这是一个没有CSS的Hugo博客主题&lt;/p></description></item><item><title>机械键盘折腾记</title><link>/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/</link><pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate><guid>/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/</guid><description>&lt;h2 id="记忆">记忆&lt;/h2>
-&lt;p>第一次接触机械键盘就是第一次接触电脑的时候，1996年初二的微机课，使用的是“中华学习机”，按上去卡拉卡拉的，什么轴不轴的根本没关注也没这个概念，当时注意力全在LOGO语言的画图编程上，也是后来互联网时代时，才知道老古董电脑都是机械键盘。&lt;/p>
-&lt;p>第二年初三学校电脑都换成了586，轻盈安静的薄膜键盘与之前体感形成了鲜明对比，我一度质疑这东西按下去后电脑会不会有反应。&lt;/p>
-&lt;p>同年，家里给买了“小霸王学习机”，从手感上判断，也是机械键盘，除了FC游戏，通过自带的学习卡学会了打字指法、五笔字型、BASIC语言&amp;hellip;，在买电脑之前，这是我主要的快乐来源。与学校的586相比，一直惦记着她那软绵绵手感的白色键盘。&lt;/p>
-&lt;p>上高中后（2000年），买了第一台电脑，终于用上又白又软的键盘，双手按上去非常舒适，我的第一个机械键盘就这样被束之高阁了，新电脑配备的双飞燕键鼠一直陪伴我到大学毕业，这是我目前用过时间最长的键盘，在这个时代，键盘只是一个普通的外设，就算字被磨掉、打出包浆、各别按键不好用，也都凑合用，根本不会想着去更换。&lt;/p>
-&lt;p>随着电脑的普及，这样的薄膜键盘更多的被人熟知。后来，又不知道什么时候因为什么事情，机械键盘又被追捧、细分、花样百出。&lt;/p>
-&lt;p>机械键盘最大的特点就是寿命长，然而自从我2017年购买了第一个Matias Quiet Pro FK303BT Alps轴机械键盘后，就一发不可收拾，到目前为止，没有一款键盘使用超过2年，键盘换来唤去差不多花去了小一万元，截止到今天2022年3月20日，我觉得该有个结局了，不能再大头了，总结一下吧。&lt;/p></description></item><item><title>技嘉B550I稳定超频5900X到4.5GHz</title><link>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</link><pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate><guid>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</guid><description>&lt;p>我上一次超频还是在二十一年前，高中时期我的第一台电脑，AMD毒龙800MHz CPU、512M内存、VIA主板、TNT 64M显卡、100M网卡、56Kbps Modem、15寸CRT显示器、52速CD-ROM、250W电源，现在主要配件都还留着，想着能有重新点亮的一天。当时要用铅笔使CPU表面的L1触电短路，解锁倍频，除了BIOS还要调整主板上的DIP开关，散热器还手工打孔通风，能超到1GHz的主频已经相当可观了。&lt;/p></description></item><item><title>ES版CPU还真有点香</title><link>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</link><pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate><guid>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</guid><description>&lt;p>🐒ES，Engineering Samples工程样品，是Intel在产品上市之前发给主板厂商、媒体等机构的测试样品，在CPU-Z里不显示CPU型号、主频比正式版低，也有可以正确显示型号的，名称后面会带ES标示，正显也被称为QS版（Qualification Sample品质确认样品），更多介绍可以执行查询。圈里叫我们这些用ES版CPU和淘汰Xeon的人是”垃圾佬“，十分贴切&lt;/p></description></item><item><title>Windows10设置Path环境变量的简单方法</title><link>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</link><pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate><guid>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</guid><description>&lt;p>给小白看的，人问起来，写下来吧，Win10的系统属性藏的还是比较深的。&lt;/p></description></item><item><title>网件R6800刷PandoraBox固件</title><link>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</link><pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate><guid>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</guid><description>&lt;p>Netgear R6800是我2017年8月购买的路由器，个头非常大，尺寸与MacBook差不多，一直以原厂固件稳定运行，从来没出过问题，直到WiFi6路由器上市后才换掉它。网件R6800硬件上是支持160MHz宽频的，但是被软件锁住了，智能到80MHz，刷PandoraBox可以解决这个问题。160MHz宽频可以让无线网卡5G信号速率达到1733Mbps，2.4G信号也可以达到800Mbps（原厂只有600Mbps），发挥该老路由器的最佳性能，而且过程非常简单。&lt;/p></description></item><item><title>树莓派控制直流电源HUB的开关</title><link>/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/</link><pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/</guid><description>&lt;p>我电子相关知识基本为0，停留在高中物理阶段，现用现查吧，欢迎指正。
-这是一个简易版，好听点叫”原型“，直白点说就很简陋，只能在自己的局域网内、自己一个人使用。&lt;/p></description></item><item><title>为Windows打造完美终端（非WSL）</title><link>/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/</link><pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/</guid><description>就是要美化Powershell，Mac下有iTerm和oh-my-zsh，很多文章让你使用WSL来实现同样的效果，那叫Windows吗？！而</description></item><item><title>GTX3060成功安装tensorflow-gpu过程记录</title><link>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link><pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate><guid>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid><description>&lt;p>Windows10下成功安装Tensorflow-GPU过程（GTX 3060）&lt;/p>
-&lt;p>本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。&lt;/p>
-&lt;p>重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看&lt;/p></description></item><item><title>git团队协作中出现的术语</title><link>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</link><pubDate>Tue, 26 Oct 2021 15:08:49 +0000</pubDate><guid>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</guid><description>WIP Work in progress, do not merge yet. // 开发中 LGTM Looks good to me. // Riview 完别人的 PR ，没有问题 PTAL Please take a look. // 帮我看下，一般都是请别人 review 自己的 PR CC Carbon copy // 一般代表抄送别人的意思 RFC — request</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>程序员杂志 on 老王</title>
+    <link>/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97/</link>
+    <description>Recent content in 程序员杂志 on 老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Mar 2022 15:35:38 +0800</lastBuildDate><atom:link href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>没有CSS的Hugo主题</title>
+      <link>/p/%E6%B2%A1%E6%9C%89css%E7%9A%84hugo%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Wed, 30 Mar 2022 15:35:38 +0800</pubDate>
+      
+      <guid>/p/%E6%B2%A1%E6%9C%89css%E7%9A%84hugo%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;这是一个没有CSS的Hugo博客主题&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>机械键盘折腾记</title>
+      <link>/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
+      <description>&lt;h2 id=&#34;记忆&#34;&gt;记忆&lt;/h2&gt;
+&lt;p&gt;第一次接触机械键盘就是第一次接触电脑的时候，1996年初二的微机课，使用的是“中华学习机”，按上去卡拉卡拉的，什么轴不轴的根本没关注也没这个概念，当时注意力全在LOGO语言的画图编程上，也是后来互联网时代时，才知道老古董电脑都是机械键盘。&lt;/p&gt;
+&lt;p&gt;第二年初三学校电脑都换成了586，轻盈安静的薄膜键盘与之前体感形成了鲜明对比，我一度质疑这东西按下去后电脑会不会有反应。&lt;/p&gt;
+&lt;p&gt;同年，家里给买了“小霸王学习机”，从手感上判断，也是机械键盘，除了FC游戏，通过自带的学习卡学会了打字指法、五笔字型、BASIC语言&amp;hellip;，在买电脑之前，这是我主要的快乐来源。与学校的586相比，一直惦记着她那软绵绵手感的白色键盘。&lt;/p&gt;
+&lt;p&gt;上高中后（2000年），买了第一台电脑，终于用上又白又软的键盘，双手按上去非常舒适，我的第一个机械键盘就这样被束之高阁了，新电脑配备的双飞燕键鼠一直陪伴我到大学毕业，这是我目前用过时间最长的键盘，在这个时代，键盘只是一个普通的外设，就算字被磨掉、打出包浆、各别按键不好用，也都凑合用，根本不会想着去更换。&lt;/p&gt;
+&lt;p&gt;随着电脑的普及，这样的薄膜键盘更多的被人熟知。后来，又不知道什么时候因为什么事情，机械键盘又被追捧、细分、花样百出。&lt;/p&gt;
+&lt;p&gt;机械键盘最大的特点就是寿命长，然而自从我2017年购买了第一个Matias Quiet Pro FK303BT Alps轴机械键盘后，就一发不可收拾，到目前为止，没有一款键盘使用超过2年，键盘换来唤去差不多花去了小一万元，截止到今天2022年3月20日，我觉得该有个结局了，不能再大头了，总结一下吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>技嘉B550I稳定超频5900X到4.5GHz</title>
+      <link>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</guid>
+      <description>&lt;p&gt;我上一次超频还是在二十一年前，高中时期我的第一台电脑，AMD毒龙800MHz CPU、512M内存、VIA主板、TNT 64M显卡、100M网卡、56Kbps Modem、15寸CRT显示器、52速CD-ROM、250W电源，现在主要配件都还留着，想着能有重新点亮的一天。当时要用铅笔使CPU表面的L1触电短路，解锁倍频，除了BIOS还要调整主板上的DIP开关，散热器还手工打孔通风，能超到1GHz的主频已经相当可观了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ES版CPU还真有点香</title>
+      <link>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/es%E7%89%88cpu%E8%BF%98%E7%9C%9F%E6%9C%89%E7%82%B9%E9%A6%99/</guid>
+      <description>&lt;p&gt;🐒ES，Engineering Samples工程样品，是Intel在产品上市之前发给主板厂商、媒体等机构的测试样品，在CPU-Z里不显示CPU型号、主频比正式版低，也有可以正确显示型号的，名称后面会带ES标示，正显也被称为QS版（Qualification Sample品质确认样品），更多介绍可以执行查询。圈里叫我们这些用ES版CPU和淘汰Xeon的人是”垃圾佬“，十分贴切&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows10设置Path环境变量的简单方法</title>
+      <link>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;给小白看的，人问起来，写下来吧，Win10的系统属性藏的还是比较深的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>网件R6800刷PandoraBox固件</title>
+      <link>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</guid>
+      <description>&lt;p&gt;Netgear R6800是我2017年8月购买的路由器，个头非常大，尺寸与MacBook差不多，一直以原厂固件稳定运行，从来没出过问题，直到WiFi6路由器上市后才换掉它。网件R6800硬件上是支持160MHz宽频的，但是被软件锁住了，智能到80MHz，刷PandoraBox可以解决这个问题。160MHz宽频可以让无线网卡5G信号速率达到1733Mbps，2.4G信号也可以达到800Mbps（原厂只有600Mbps），发挥该老路由器的最佳性能，而且过程非常简单。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>树莓派控制直流电源HUB的开关</title>
+      <link>/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8E%A7%E5%88%B6%E7%9B%B4%E6%B5%81%E7%94%B5%E6%BA%90hub%E7%9A%84%E5%BC%80%E5%85%B3/</guid>
+      <description>&lt;p&gt;我电子相关知识基本为0，停留在高中物理阶段，现用现查吧，欢迎指正。
+这是一个简易版，好听点叫”原型“，直白点说就很简陋，只能在自己的局域网内、自己一个人使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>为Windows打造完美终端（非WSL）</title>
+      <link>/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E4%B8%BAwindows%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E7%BB%88%E7%AB%AF%E9%9D%9Ewsl/</guid>
+      <description>就是要美化Powershell，Mac下有iTerm和oh-my-zsh，很多文章让你使用WSL来实现同样的效果，那叫Windows吗？！而</description>
+    </item>
+    
+    <item>
+      <title>GTX3060成功安装tensorflow-gpu过程记录</title>
+      <link>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Windows10下成功安装Tensorflow-GPU过程（GTX 3060）&lt;/p&gt;
+&lt;p&gt;本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。&lt;/p&gt;
+&lt;p&gt;重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>git团队协作中出现的术语</title>
+      <link>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</link>
+      <pubDate>Tue, 26 Oct 2021 15:08:49 +0000</pubDate>
+      
+      <guid>/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/</guid>
+      <description>WIP Work in progress, do not merge yet. // 开发中 LGTM Looks good to me. // Riview 完别人的 PR ，没有问题 PTAL Please take a look. // 帮我看下，一般都是请别人 review 自己的 PR CC Carbon copy // 一般代表抄送别人的意思 RFC — request</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,21 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>原创 on 老王</title><link>/tags/%E5%8E%9F%E5%88%9B/</link><description>Recent content in 原创 on 老王</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 09 Apr 2022 14:44:15 +0800</lastBuildDate><atom:link href="/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml"/><item><title>海康威视臻全彩网络摄像头在远程天文台的应用</title><link>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</link><pubDate>Sat, 09 Apr 2022 14:44:15 +0800</pubDate><guid>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</guid><description>&lt;p>远程天文台用摄像头的目的：&lt;/p>
-&lt;ul>
-&lt;li>捕获流星视频&lt;/li>
-&lt;li>拍星空延时&lt;/li>
-&lt;li>查看望远镜当前姿态&lt;/li>
-&lt;/ul>
-&lt;p>对摄像头的要求：&lt;/p>
-&lt;ul>
-&lt;li>不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰&lt;/li>
-&lt;li>耐低温、不凝结。台址在华北以北，冬季气温低&lt;/li>
-&lt;li>有软件控制的云台&lt;/li>
-&lt;li>支持RTSP视频流&lt;/li>
-&lt;li>越高清越好，视角不宜过广，否则看不清星星&lt;/li>
-&lt;/ul></description></item><item><title>记一次远程天文台建台经历（五）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</link><pubDate>Sun, 03 Apr 2022 16:51:16 +0800</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</guid><description>&lt;p>2022年4月3日了，没有任何进展。由于疫情，大黑的CYCK调焦座修好就没再去过台里。MPCC坏了，又新买了一个。没什么可写的，做个阶段总结吧。&lt;/p></description></item><item><title>网件R6800刷PandoraBox固件</title><link>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</link><pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate><guid>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</guid><description>&lt;p>Netgear R6800是我2017年8月购买的路由器，个头非常大，尺寸与MacBook差不多，一直以原厂固件稳定运行，从来没出过问题，直到WiFi6路由器上市后才换掉它。网件R6800硬件上是支持160MHz宽频的，但是被软件锁住了，智能到80MHz，刷PandoraBox可以解决这个问题。160MHz宽频可以让无线网卡5G信号速率达到1733Mbps，2.4G信号也可以达到800Mbps（原厂只有600Mbps），发挥该老路由器的最佳性能，而且过程非常简单。&lt;/p></description></item><item><title>给IntelNUC加装鸠尾槽</title><link>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</guid><description>&lt;p>IntelNUC太小了，工控机里面还有些空间可以留给固定鸠尾槽的螺丝螺母，NUC智能通过转接板的方式。&lt;/p>
-&lt;p>10×10mm铝板，厚度2mm就够了，我用的4mm有点厚。用M5×16固定鸠尾槽与转接板，再用M5×40螺丝与IntelNUC背板固定，背板的孔位需要扩一些才能穿过M5螺丝&lt;/p>
-&lt;p>看图秒懂：&lt;/p></description></item><item><title>记一次远程天文台建台经历（四）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</guid><description>&lt;p>记录调试和变更日志&lt;/p></description></item><item><title>业余天文里的常见开源、免费软件</title><link>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</link><pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</guid><description>&lt;p>业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）&lt;/p></description></item><item><title>GTX3060成功安装tensorflow-gpu过程记录</title><link>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link><pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate><guid>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid><description>&lt;p>Windows10下成功安装Tensorflow-GPU过程（GTX 3060）&lt;/p>
-&lt;p>本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。&lt;/p>
-&lt;p>重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看&lt;/p></description></item><item><title>记一次远程天文台建台经历（三）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</guid><description>&lt;p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
-借这个空当，介绍下天文电脑的配置。&lt;/p></description></item><item><title>记一次远程天文台建台经历（二）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</link><pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</guid><description>&lt;p>2021年10月27日近期进展。EQ6R拿到了。向日葵只能插排有不足。设备转移到迷你仓。平场盖加长数据线&lt;/p></description></item><item><title>记一次远程天文台建台经历（一）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</guid><description>&lt;p>2021年10月，第一次弄远程台，记录备用。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>原创 on 老王</title>
+    <link>/tags/%E5%8E%9F%E5%88%9B/</link>
+    <description>Recent content in 原创 on 老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 09 Apr 2022 14:44:15 +0800</lastBuildDate><atom:link href="/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>海康威视臻全彩网络摄像头在远程天文台的应用</title>
+      <link>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Sat, 09 Apr 2022 14:44:15 +0800</pubDate>
+      
+      <guid>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
+      <description>&lt;p&gt;远程天文台用摄像头的目的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;捕获流星视频&lt;/li&gt;
+&lt;li&gt;拍星空延时&lt;/li&gt;
+&lt;li&gt;查看望远镜当前姿态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对摄像头的要求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰&lt;/li&gt;
+&lt;li&gt;耐低温、不凝结。台址在华北以北，冬季气温低&lt;/li&gt;
+&lt;li&gt;有软件控制的云台&lt;/li&gt;
+&lt;li&gt;支持RTSP视频流&lt;/li&gt;
+&lt;li&gt;越高清越好，视角不宜过广，否则看不清星星&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一次远程天文台建台经历（五）</title>
+      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</link>
+      <pubDate>Sun, 03 Apr 2022 16:51:16 +0800</pubDate>
+      
+      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</guid>
+      <description>&lt;p&gt;2022年4月3日了，没有任何进展。由于疫情，大黑的CYCK调焦座修好就没再去过台里。MPCC坏了，又新买了一个。没什么可写的，做个阶段总结吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>网件R6800刷PandoraBox固件</title>
+      <link>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E7%BD%91%E4%BB%B6r6800%E5%88%B7pandorabox%E5%9B%BA%E4%BB%B6/</guid>
+      <description>&lt;p&gt;Netgear R6800是我2017年8月购买的路由器，个头非常大，尺寸与MacBook差不多，一直以原厂固件稳定运行，从来没出过问题，直到WiFi6路由器上市后才换掉它。网件R6800硬件上是支持160MHz宽频的，但是被软件锁住了，智能到80MHz，刷PandoraBox可以解决这个问题。160MHz宽频可以让无线网卡5G信号速率达到1733Mbps，2.4G信号也可以达到800Mbps（原厂只有600Mbps），发挥该老路由器的最佳性能，而且过程非常简单。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>给IntelNUC加装鸠尾槽</title>
+      <link>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</guid>
+      <description>&lt;p&gt;IntelNUC太小了，工控机里面还有些空间可以留给固定鸠尾槽的螺丝螺母，NUC智能通过转接板的方式。&lt;/p&gt;
+&lt;p&gt;10×10mm铝板，厚度2mm就够了，我用的4mm有点厚。用M5×16固定鸠尾槽与转接板，再用M5×40螺丝与IntelNUC背板固定，背板的孔位需要扩一些才能穿过M5螺丝&lt;/p&gt;
+&lt;p&gt;看图秒懂：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一次远程天文台建台经历（四）</title>
+      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</guid>
+      <description>&lt;p&gt;记录调试和变更日志&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>业余天文里的常见开源、免费软件</title>
+      <link>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</guid>
+      <description>&lt;p&gt;业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GTX3060成功安装tensorflow-gpu过程记录</title>
+      <link>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/gtx3060%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85tensorflow-gpu%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Windows10下成功安装Tensorflow-GPU过程（GTX 3060）&lt;/p&gt;
+&lt;p&gt;本文所述事情发生在2021年11月6日，特意强调时间是因为看过一些旧的教程，踩过坑。&lt;/p&gt;
+&lt;p&gt;重点是显卡驱动、CUDA、cudnn、tensorflow-gpu的版本应对。tensorflow的安装文档基本不用看&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一次远程天文台建台经历（三）</title>
+      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</guid>
+      <description>&lt;p&gt;2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
+借这个空当，介绍下天文电脑的配置。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一次远程天文台建台经历（二）</title>
+      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</guid>
+      <description>&lt;p&gt;2021年10月27日近期进展。EQ6R拿到了。向日葵只能插排有不足。设备转移到迷你仓。平场盖加长数据线&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一次远程天文台建台经历（一）</title>
+      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</guid>
+      <description>&lt;p&gt;2021年10月，第一次弄远程台，记录备用。
 对以下内容有任何疑问或者好奇，欢迎提问，多提意见🤝🤝
-微信号：qi&amp;ndash;_&amp;ndash;ip__olo&lt;/p></description></item></channel></rss>
+微信号：qi&amp;ndash;_&amp;ndash;ip__olo&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
