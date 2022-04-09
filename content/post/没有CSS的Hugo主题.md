@@ -5,6 +5,7 @@ description: ""
 draft: false
 categories:
   - 程序员杂志
+  - 关于
 tags:
   - Hugo
   - Hugo Themes
