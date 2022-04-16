@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开源软件 on 老王</title><link>/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link><description>Recent content in 开源软件 on 老王</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>业余天文里的常见开源、免费软件</title><link>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</link><pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</guid><description>&lt;p>业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开源软件 on 老王</title>
+    <link>/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 开源软件 on 老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>业余天文里的常见开源、免费软件</title>
+      <link>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E4%B8%9A%E4%BD%99%E5%A4%A9%E6%96%87%E9%87%8C%E7%9A%84%E5%B8%B8%E8%A7%81%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/</guid>
+      <description>&lt;p&gt;业余天文圈子里好多程序猿，他们将开源精神也带入到了这一领域。而且这些软件足矣满足一个资深天文爱好者、深空摄影爱好者50%的需求（另外一半就是收费的后期处理软件PixInsight、Ps、Lr太优秀了，几乎没有课代替）&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

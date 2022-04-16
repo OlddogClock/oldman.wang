@@ -1,116 +1,537 @@
-<!doctype html><html lang=zh-cn>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=keyword content>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
-<title>记一次远程天文台建台经历（一）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
-<link rel=stylesheet href=/css/alone.css>
-<script>var _hmt=_hmt||[];(function(){var e=document.createElement("script"),t;e.src="https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script>
-</head><body><header class=homepage-header>
-<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header><hr>
-&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
-<hr>
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keyword"  content="">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+    <title>记一次远程天文台建台经历（一）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
+    
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
+    <link rel="stylesheet" href="/css/alone.css" />
+
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+<body><header class="homepage-header">
+    <h1>⌚️老王</h1>
+    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header>
+<hr />
+&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
+
+
+|&nbsp;&nbsp;<a href="https://github.com/OlddogClock/oldman.wang/issues" title="✍️给我留言" target="_blank">✍️给我留言</a>
+ 
+<hr />
+
+
 <article>
-<div class=container>
-<h2>📖记一次远程天文台建台经历（一）</h2><hr>
-<h5>文章目录</h5><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%ba%9f%e8%af%9d>
-废话
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e7%ae%80%e4%bb%8b>
-简介
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%a4%a9%e6%96%87%e5%ad%a6%e5%8f%8a%e4%b8%9a%e4%bd%99%e5%a4%a9%e6%96%87%e5%85%a5%e9%97%a8>
-天文学及业余天文入门
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%a4%a9%e6%96%87%e6%9c%9b%e8%bf%9c%e9%95%9c%e7%9a%84%e9%85%8d%e7%bd%ae%e5%92%8c%e4%bb%b7%e6%a0%bc>
-天文望远镜的配置和价格
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%85%b3%e4%ba%8e%e6%b8%a0%e9%81%93%e5%92%8c%e4%bb%b7%e6%a0%bc>
-关于渠道和价格：
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e8%b5%a4%e9%81%93%e4%bb%aa>
-赤道仪
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e4%b8%bb%e9%95%9c1>
-主镜1
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e4%b8%bb%e9%95%9c2>
-主镜2
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%af%bc%e6%98%9f>
-导星
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e5%85%b6%e5%ae%83>
-其它
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<ul class=nav>
-<li><a href=#%e6%80%bb%e4%bd%93%e8%80%8c%e8%a8%80>
-总体而言
-</a></li></ul></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e8%ae%be%e5%a4%87%e5%9b%be>
-设备图
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e8%bf%9e%e6%8e%a5%e7%a4%ba%e6%84%8f%e5%9b%be>
-连接示意图
-</a></li></ul></ul><hr>
-<p>2021年10月，第一次弄远程台，记录备用。
-对以下内容有任何疑问或者好奇，欢迎提问，多提意见🤝🤝
-微信号：qi&ndash;_&ndash;ip__olo</p><h2 id=废话>废话</h2><p>年近不惑，还是忘不了小时候的那片星空。小时候住平房，大门面向南方，冬天去上厕出门一抬头就能看到由四颗星组成的梯形，内部中间处，整齐的排列了三颗星将其上下一分为二，中间的星下面，还有隐约的什么东西看不清，就像系着绳子还未开封的礼品盒……年复一年的秋冬，这个礼品盒就在晚上陪我上厕所。那个时候没有互联网，书籍也很少，初中后才知道那叫——猎户座。看着杂志上的天狼画师望远镜的广告，眼馋，但又看了看两三千元的价格，根本没好意思张口找家里要。</p><p>工作、成家后更无暇顾及自己的爱好，但还是在2012年买了第一台望远镜——“信达小黑套装”，是一台150mm的抛物面牛顿式反射镜，EQ3W的赤道仪。每次外出观测我都用孩子的婴儿车推着，它最远去过的地方就是我单位了，办了一次路边天文。</p><p>我通过它在自家小区里目视了M31、昴星团、土星、木星、月球、太阳（加装巴德膜）等天体，一开始有一点点失望，因为看到的深空天体都是黑白的，而且模糊不清，能看清的也就是各种颜色的小亮点，根本没有那种璀璨宇宙的震撼。通过学习才知道，肉眼是无法感知天体的颜色的，只能通过相机拍摄。这时我工作已有7年。</p><p>小黑在家搁置的五年时间里，发生了很多事情，主镜背面被破坏，最终500元在闲鱼送走了它。</p><p>第二台望远镜是2016年入坑的裕众102APO，AZEQ5赤道仪，使用率也很低，出摊去过一次延庆，之后控制手柄被人为破坏掉，维修换新后，不久更换成了CGEM II——一台重型赤道仪，背负102APO+70SAV3双镜系统，因为出去的机会很少，所以就想尽可能的提高效率。2020年6月份日食，它成了小区最亮的仔，孩子把小区里的同学们都领来看。</p><p>由于CGEM II过于笨重，而且链接电脑必须通过手柄，每次断电开机都要在手柄上一番操作，不太适合远程台，就在咸鱼上出掉了，但它仍然是一款非常精准、出色、皮实的赤道仪。</p><p>期间还用佳能450D改机玩过星野摄影，用过艾顿的小星野、信达大星野、三洋1.4镜头，都是纸上谈兵，几乎没有能拿出手的作品，最后在2017年确定了现在的佳能6D改机+老蛙12。</p><p>我感觉自己对天文的热爱逐渐变成了不断用物品填充自己内心空虚的失败者。</p><p>但我还是忘不了那片纯净的星空。</p><h2 id=简介>简介</h2><p>这个系列文章目的主要是向同好分享一切细节，供入门者照搬、参考。</p><p>对于我而言，远程台解决的主要问题是：</p><ul>
-<li>没时间出去打野，难得出去一趟也是“春宵一刻值千金”，一但出现废片苦恼不已</li><li>设备笨重，每次搬运、拆装不方便，还影响精度</li><li>夜间天寒地冻、蚊虫叮咬，人扛不住</li><li>很容易实现对一个天体进行十小时以上的曝光，甚至隔天拍摄</li><li>将自己更多业余精力集中在“天文”上，而不是摆弄“望远镜”上</li></ul><p>分为以下4个里程碑：</p><ol>
-<li>准备：设备的选型与购买</li><li>选址：我了解到的几个国内远程台联系方式及价格</li><li>总装：软硬件联调，对极轴等</li><li>开光：拍摄，出片！</li></ol><p><a href=%E6%9B%9D%E5%85%8916%E5%B0%8F%E6%97%B6%E7%9A%84%E9%B1%BC%E5%A4%B4%E6%98%9F%E4%BA%91></a></p><h2 id=天文学及业余天文入门>天文学及业余天文入门</h2><p>略。（⚠️严禁在没有专业设备保护的情况下将肉眼、望远镜、相机对准太阳，会导致永久性损坏！！！）</p><h2 id=天文望远镜的配置和价格>天文望远镜的配置和价格</h2><h3 id=关于渠道和价格>关于渠道和价格：</h3><ul>
-<li>全部购于淘宝、闲鱼，商家集中在“XTZ学徒者天文望远镜、cyck畅游星空、西湾光电”全是淘宝店，不要看店里标价，直接问最低价，通常越贵的，折扣越大</li><li>闲鱼上很多东西都是全新的，但价格远低于其它平台，定制的东西也来自闲鱼</li><li>砍价时，别提我名</li></ul><h3 id=赤道仪>赤道仪</h3><ul>
-<li>赤道仪：SKYWATCHER EQ6R - 有效载重18kg - ¥8600 - 非常抢手，要提前一个月定，现货很少且贵</li><li>附加重锤：定制2.4kg×2 - ¥200</li><li>增高节：定制21.5cm - ¥350</li><li>电源线：2米GX12-2航空插头线 - ¥10 - 原厂带车载接口电源线，此为接线端子的</li></ul><h3 id=主镜1>主镜1</h3><ul>
-<li>主镜1：SKYWATCHER牛反D200mm/f4 （CYCK改版大黑）- 9.7kg - ¥5600 - 调焦座改为cyck有齿调焦</li><li>慧差镜1：SKYWATCHER 1X MPCC 二代 - 0.7kg - ¥1700 - 要提前一个月定</li><li>电调1： ZWO EAF 2 - ¥包含在主镜内 - 转动时有异响，问了一圈，可能是二代通病</li><li>电调1加热：自制 - ¥50 - 12V加热带+常闭50度温控开关，加装“电调加热带”主要是听说EAF在低温环境下不太稳定（本人未测试）</li><li>相机1：ZWO ASI2600MC COOL - 0.7kg - ¥10000 - 二手，APS-C画幅彩色冷冻相机</li><li>滤镜轮1：ZWO EFW五孔2寸 - 0.5kg - ¥1900 - 二手</li><li>滤镜1：Optolong双窄带2寸 - ¥0 - 二手</li><li>滤镜2：IR685nm pass 1.25寸 - ¥170 - 拍月亮用的，通过转接口装在2寸滤镜轮上，不推荐这么用</li><li>滤镜3：暗场滤镜 - ¥40</li><li>镜头盖1：3D打印定制带平场 - ¥500 - 提前一个月定</li><li>抱箍1：铝合金CNC定制 - ¥1200 - 提前一个月定，本次我配置的是叠加双镜系统，大黑原厂抱箍不够结实</li><li>主镜1加热：自制 - ¥140</li></ul><h3 id=主镜2>主镜2</h3><ul>
-<li>主镜2：SKY-ROVER 70 SA V3 - 2.5kg - ¥5380 - 叠在大黑上面，这款镜子我买了四五年了，这次顺便装上</li><li>电调2：ZWO EAF - ¥900</li><li>电调2加热：自制 - ¥50</li><li>相机2：QHY183MM COOL - 0.5kg - ¥5500 - 1英寸黑白冷冻相机</li><li>滤镜轮2：QHYCFW3M-US七孔36mm - 0.7kg - ¥1600</li><li>滤镜2.1：Optolong SHO 36mm - ¥2000</li><li>滤镜2.2：Optolong LRGB 36mm - ¥1000</li><li>镜头盖2：3D打印定制带平场 - ¥400</li><li>除雾带2：自制 - ¥50</li></ul><h3 id=导星>导星</h3><ul>
-<li>导星镜：D50f200 - 0.6kg - ¥612 - OAG偏轴导星是首选，但有很多注意事项。这款导星镜我也用了好几年了，不换了</li><li>导星相机： QHY5III 178M - ¥1700</li><li>导星镜除雾带：自制 - ¥50</li></ul><h3 id=其它>其它</h3><ul>
-<li>鸠尾板：300mm大平台板 - ¥390</li><li>流星捕捉相机： 海康威视臻全彩摄像头3T87WD-L 4mm - ¥620 - 不能选用太广角的，否则小流星看不清，通过OBS可以将该款网络摄像头模拟为本地的，UFOCaptureHD2可以识别</li><li>望远镜姿态摄像头：海康威视C8W 6mm - ¥307 - 所有摄像头必须选用【不带可见光补光】，或者补光能关闭的！</li><li>控制电脑：H410T2/Intel i5 10400/16G/500G+2T SSD - ¥4400 - USB口多一些的工控机也可，还便宜，BIOS必须【带通电自动开机】功能</li><li>12V电源：淘汰的HP服务器电源400W×2 - ¥60 - 加热除雾带电源与主要设备电源分开</li><li>插排：向日葵智能插排C2 - ¥138 - 可以App上控制开关的</li><li>交换机：aopre 工业级POE交换机 - ¥300 - 主要给摄像头用</li><li>设备箱：26升塑料整理箱 - ¥59 - 放控制电脑、电源之类的</li><li>托管：新疆、云南、北京周边 - ¥1~1.4万/年</li></ul><h3 id=总体而言>总体而言</h3><p>以上配置并不出众，也不是一次置齐的，拖拖拉拉了四五年，部分物品是二手，预算≈5万，相当于一台Nikon Z9的钱。有大佬建议我出掉一台，相机改换成全画幅黑白，因为“60分加60分，也比不过一个90分”，这的确是很好的建议。
+    <div class="container">
+        <h2>📖记一次远程天文台建台经历（一）</h2>
+        
+
+    
+    
+    
+        
+        
+        
+        <hr />
+        <h5>文章目录</h5>
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%ba%9f%e8%af%9d">
+                    废话
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e7%ae%80%e4%bb%8b">
+                    简介
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%a4%a9%e6%96%87%e6%9c%9b%e8%bf%9c%e9%95%9c%e7%9a%84%e9%85%8d%e7%bd%ae%e5%92%8c%e4%bb%b7%e6%a0%bc">
+                    天文望远镜的配置和价格
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%85%b3%e4%ba%8e%e6%b8%a0%e9%81%93%e5%92%8c%e4%bb%b7%e6%a0%bc">
+                    关于渠道和价格：
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e8%b5%a4%e9%81%93%e4%bb%aa">
+                    赤道仪
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e4%b8%bb%e9%95%9c1">
+                    主镜1
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e4%b8%bb%e9%95%9c2">
+                    主镜2
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%af%bc%e6%98%9f">
+                    导星
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e5%85%b6%e5%ae%83">
+                    其它
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e6%80%bb%e4%bd%93%e8%80%8c%e8%a8%80">
+                    总体而言
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e8%ae%be%e5%a4%87%e5%9b%be">
+                    设备图
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e8%bf%9e%e6%8e%a5%e7%a4%ba%e6%84%8f%e5%9b%be">
+                    连接示意图
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+    
+
+        <hr />
+
+        <p>2021年10月，第一次弄远程台，记录备用。
+对以下内容有任何疑问或者好奇，欢迎提问，多提意见🤝🤝</p>
+<h2 id="废话">废话</h2>
+<p>年近不惑，还是忘不了小时候的那片星空。小时候住平房，大门面向南方，冬天去上厕出门一抬头就能看到由四颗星组成的梯形，内部中间处，整齐的排列了三颗星将其上下一分为二，中间的星下面，还有隐约的什么东西看不清，就像系着绳子还未开封的礼品盒……年复一年的秋冬，这个礼品盒就在晚上陪我上厕所。那个时候没有互联网，书籍也很少，初中后才知道那叫——猎户座。看着杂志上的天狼画师望远镜的广告，眼馋，但又看了看两三千元的价格，根本没好意思张口找家里要。</p>
+<p>工作、成家后更无暇顾及自己的爱好，但还是在2012年买了第一台望远镜——“信达小黑套装”，是一台150mm的抛物面牛顿式反射镜，EQ3W的赤道仪。每次外出观测我都用孩子的婴儿车推着，它最远去过的地方就是我单位了，办了一次路边天文。</p>
+<p>我通过它在自家小区里目视了M31、昴星团、土星、木星、月球、太阳（加装巴德膜）等天体，一开始有一点点失望，因为看到的深空天体都是黑白的，而且模糊不清，能看清的也就是各种颜色的小亮点，根本没有那种璀璨宇宙的震撼。通过学习才知道，肉眼是无法感知天体的颜色的，只能通过相机拍摄。这时我工作已有7年。</p>
+<p>小黑在家搁置的五年时间里，发生了很多事情，主镜背面被破坏，最终500元在闲鱼送走了它。</p>
+<p>第二台望远镜是2016年入坑的裕众102APO，AZEQ5赤道仪，使用率也很低，出摊去过一次延庆，之后控制手柄被人为破坏掉，维修换新后，不久更换成了CGEM II——一台重型赤道仪，背负102APO+70SAV3双镜系统，因为出去的机会很少，所以就想尽可能的提高效率。2020年6月份日食，它成了小区最亮的仔，孩子把小区里的同学们都领来看。</p>
+<p>由于CGEM II过于笨重，而且链接电脑必须通过手柄，每次断电开机都要在手柄上一番操作，不太适合远程台，就在咸鱼上出掉了，但它仍然是一款非常精准、出色、皮实的赤道仪。</p>
+<p>期间还用佳能450D改机玩过星野摄影，用过艾顿的小星野、信达大星野、三洋1.4镜头，都是纸上谈兵，几乎没有能拿出手的作品，最后在2017年确定了现在的佳能6D改机+老蛙12。</p>
+<p>我感觉自己对天文的热爱逐渐变成了不断用物品填充自己内心空虚的失败者。</p>
+<p>但我还是忘不了那片纯净的星空。</p>
+<h2 id="简介">简介</h2>
+<p>这个系列文章目的主要是向同好分享一切细节，供入门者照搬、参考。</p>
+<p>对于我而言，远程台解决的主要问题是：</p>
+<ul>
+<li>没时间出去打野，难得出去一趟也是“春宵一刻值千金”，一但出现废片苦恼不已</li>
+<li>设备笨重，每次搬运、拆装不方便，还影响精度</li>
+<li>夜间天寒地冻、蚊虫叮咬，人扛不住</li>
+<li>很容易实现对一个天体进行十小时以上的曝光，甚至隔天拍摄</li>
+<li>将自己更多业余精力集中在“天文”上，而不是摆弄“望远镜”上</li>
+</ul>
+<p>分为以下4个里程碑：</p>
+<ol>
+<li>准备：设备的选型与购买</li>
+<li>选址：我了解到的几个国内远程台联系方式及价格</li>
+<li>总装：软硬件联调，对极轴等</li>
+<li>开光：拍摄，出片！</li>
+</ol>
+<h2 id="天文望远镜的配置和价格">天文望远镜的配置和价格</h2>
+<h3 id="关于渠道和价格">关于渠道和价格：</h3>
+<ul>
+<li>全部购于淘宝、闲鱼，商家集中在“XTZ学徒者天文望远镜、cyck畅游星空、西湾光电”全是淘宝店，不要看店里标价，直接问最低价，通常越贵的，折扣越大</li>
+<li>闲鱼上很多东西都是全新的，但价格远低于其它平台，定制的东西也来自闲鱼</li>
+<li>砍价时，别提我名</li>
+</ul>
+<h3 id="赤道仪">赤道仪</h3>
+<ul>
+<li>赤道仪：SKYWATCHER EQ6R - 有效载重18kg - ¥8600 - 非常抢手，要提前一个月定，现货很少且贵</li>
+<li>附加重锤：定制2.4kg×2 - ¥200</li>
+<li>增高节：定制21.5cm - ¥350</li>
+<li>电源线：2米GX12-2航空插头线 - ¥10 - 原厂带车载接口电源线，此为接线端子的</li>
+</ul>
+<h3 id="主镜1">主镜1</h3>
+<ul>
+<li>主镜1：SKYWATCHER牛反D200mm/f4 （CYCK改版大黑）- 9.7kg - ¥5600 - 调焦座改为cyck有齿调焦</li>
+<li>慧差镜1：SKYWATCHER 1X MPCC 二代 - 0.7kg - ¥1700 - 要提前一个月定</li>
+<li>电调1： ZWO EAF 2 - ¥包含在主镜内 - 转动时有异响，问了一圈，可能是二代通病</li>
+<li>电调1加热：自制 - ¥50 - 12V加热带+常闭50度温控开关，加装“电调加热带”主要是听说EAF在低温环境下不太稳定（本人未测试）</li>
+<li>相机1：ZWO ASI2600MC COOL - 0.7kg - ¥10000 - 二手，APS-C画幅彩色冷冻相机</li>
+<li>滤镜轮1：ZWO EFW五孔2寸 - 0.5kg - ¥1900 - 二手</li>
+<li>滤镜1：Optolong双窄带2寸 - ¥0 - 二手</li>
+<li>滤镜2：IR685nm pass 1.25寸 - ¥170 - 拍月亮用的，通过转接口装在2寸滤镜轮上，不推荐这么用</li>
+<li>滤镜3：暗场滤镜 - ¥40</li>
+<li>镜头盖1：3D打印定制带平场 - ¥500 - 提前一个月定</li>
+<li>抱箍1：铝合金CNC定制  - ¥1200 - 提前一个月定，本次我配置的是叠加双镜系统，大黑原厂抱箍不够结实</li>
+<li>主镜1加热：自制 - ¥140</li>
+</ul>
+<h3 id="主镜2">主镜2</h3>
+<ul>
+<li>主镜2：SKY-ROVER 70 SA V3 - 2.5kg - ¥5380 - 叠在大黑上面，这款镜子我买了四五年了，这次顺便装上</li>
+<li>电调2：ZWO EAF - ¥900</li>
+<li>电调2加热：自制 - ¥50</li>
+<li>相机2：QHY183MM COOL - 0.5kg - ¥5500 - 1英寸黑白冷冻相机</li>
+<li>滤镜轮2：QHYCFW3M-US七孔36mm - 0.7kg  - ¥1600</li>
+<li>滤镜2.1：Optolong SHO 36mm - ¥2000</li>
+<li>滤镜2.2：Optolong LRGB 36mm - ¥1000</li>
+<li>镜头盖2：3D打印定制带平场 - ¥400</li>
+<li>除雾带2：自制 - ¥50</li>
+</ul>
+<h3 id="导星">导星</h3>
+<ul>
+<li>导星镜：QHYOAG-M - ¥1080</li>
+<li>导星相机： QHY5III 178M - ¥1700</li>
+</ul>
+<h3 id="其它">其它</h3>
+<ul>
+<li>鸠尾板：300mm大平台板 - ¥390</li>
+<li>流星捕捉相机： 海康威视臻全彩摄像头3T87WD-L 4mm - ¥620 - 不能选用太广角的，否则小流星看不清，通过OBS可以将该款网络摄像头模拟为本地的，UFOCaptureHD2可以识别</li>
+<li>望远镜姿态摄像头：海康威视C8W 6mm - ¥307 - 所有摄像头必须选用【不带可见光补光】，或者补光能关闭的！</li>
+<li>控制电脑：H410T2/Intel i5 10400/16G/500G+2T SSD - ¥4400 - USB口多一些的工控机也可，还便宜，BIOS必须【带通电自动开机】功能</li>
+<li>12V电源：淘汰的HP服务器电源400W×2 - ¥60 - 加热除雾带电源与主要设备电源分开</li>
+<li>插排：向日葵智能插排C2 - ¥138 - 可以App上控制开关的</li>
+<li>交换机：aopre 工业级POE交换机 - ¥300 - 主要给摄像头用</li>
+<li>设备箱：26升塑料整理箱 - ¥59 - 放控制电脑、电源之类的</li>
+<li>托管：新疆、云南、北京周边 - ¥1~1.4万/年</li>
+</ul>
+<h3 id="总体而言">总体而言</h3>
+<p>以上配置并不出众，也不是一次置齐的，拖拖拉拉了四五年，部分物品是二手，预算≈5万，相当于一台Nikon Z9的钱。有大佬建议我出掉一台，相机改换成全画幅黑白，因为“60分加60分，也比不过一个90分”，这的确是很好的建议。
 双镜系统主要是为了提高拍摄效率，不同镜子、相机拍摄的照片肯定不能合并，只能独立工作，例如：主镜1使用NINA软件控制，主镜2使用QHY自研的EZCAP_QT软件控制拍摄。而且两个主镜焦距、口径差异很大，可以针对相同的目标获得不同的效果；
 所有东西加起来已经到了EQ6R的极限了，有点考验平衡和总装能力，能不能保证精度就最后见分晓了；
 信达EQ6及以下级别的赤道仪都没有零位，断电的话比较麻烦；
-艾顿的赤道仪返修率体感比较高，不敢用，虽然保有量很大。升级的话直接EQ8或者派拉蒙MX了。</p><p>以上所有设备均未经低温高海拔测试。</p><h2 id=设备图>设备图</h2><p>↓70SAv3加了平场镜头盖</p><p><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3538-5332693.jpeg alt=IMG_3538></p><p>↓3D打印外壳的平场镜头盖控制器，真是粗糙啊。原理是arduino nano+舵机+ascom平台开发</p><p><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3502.jpeg alt=IMG_3502><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3503.jpeg alt=IMG_3503></p><p>↓主镜1上ASI2600MC相机用的滤镜轮和2寸螺纹边滤镜，顺序分别是：</p><ol>
-<li>双窄；</li><li>1.25寸IR685nm pass，拍月球和行星用的，通过转接到2寸滤镜轮上的，这东西其实没必要，正好赶上我有，就装上了</li><li>暗场</li></ol><p><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3519.jpeg alt=IMG_3519></p><p>↓QHY183MM用的滤镜轮和36mm无边框滤镜，顺序分别是（滤镜紫色的一面面向相机，图中的这面是面向望远镜的）：
-<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_3360.jpeg alt></p><p>↓MPCC+滤镜轮+相机装配后，我没有通过相机的螺纹，直接把滤镜轮拆开，用螺丝与滤镜轮固定，前面一个T2延长桶，链接MPCC，55mm后截距，暂时未测试</p><p><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3533.jpeg alt=IMG_3533></p><p>↓大黑调焦座里面有个螺丝，卡主了MPCC，无法完全插入，螺丝好像是固定调焦齿轮的，无奈现在已经装上了电调，手拧不动了，接上电脑后，需要拉出调焦座松动下螺丝才能将MPCC完全插入</p><p><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3522.jpeg alt=IMG_3522><img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3523.jpeg alt=IMG_3523></p><p>↓大黑装配
-<img src=../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3541.jpeg alt=IMG_3541></p><p>↓主镜2的70SA直接固定在大黑抱箍上
-<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4195.jpeg alt=IMG_3541></p><p>↓宽鸠尾板
-<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4198.jpeg alt=IMG_3541></p><p>↓导星镜通过巡星镜接口固定，换一个双螺丝的，拆卸时要注意大黑镜筒里面的螺母
-<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4205.jpeg alt=IMG_3541>
-<img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4206.jpeg alt=IMG_3541></p><p><img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4203.jpeg alt=IMG_3541></p><h2 id=连接示意图>连接示意图</h2><p><img src=//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/yuancheng.png alt></p><p>使用USB3的设备（数据，就是要传照片）</p><ol>
-<li>QHY183</li><li>ASI2600</li><li>QHY5</li><li>移动硬盘</li></ol><p>使用USB2的设备（指令，就仅是串口通信）</p><ol>
-<li>EAF1</li><li>镜头盖1</li><li>镜头盖2</li><li>EQ6R</li><li>（EAF2通过ASI2600Hub链接）</li></ol><p>12V供电设备</p><ol>
-<li>QHY183</li><li>ASI2600</li><li>EQ6R</li><li>EAF1</li><li>镜头盖1</li><li>镜头盖2</li><li>大黑散热</li><li>导星加热带</li><li>主镜1加热带</li><li>EAF1加热带</li><li>主镜2加热带</li><li>EAF2加热带</li></ol><p>至此，设备准备完成，接下来选址</p><hr>
-<p>
-<a href=/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/ title=git团队协作中出现的术语>
-《git团队协作中出现的术语》</a>⬅
-🧰
-➡<a href=/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/ title=记一次远程天文台建台经历（二）>《记一次远程天文台建台经历（二）》</a>
-</p></div></div></article><hr>
-&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
-<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
-<script>hljs.highlightAll()</script>
-</body></html>
+艾顿的赤道仪返修率体感比较高，不敢用，虽然保有量很大。升级的话直接EQ8或者派拉蒙MX了。</p>
+<p>以上所有设备均未经低温高海拔测试。</p>
+<h2 id="设备图">设备图</h2>
+<p>↓70SAv3加了平场镜头盖</p>
+<p><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3538-5332693.jpeg" alt="IMG_3538"></p>
+<p>↓3D打印外壳的平场镜头盖控制器，真是粗糙啊。原理是arduino nano+舵机+ascom平台开发</p>
+<p><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3502.jpeg" alt="IMG_3502"><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3503.jpeg" alt="IMG_3503"></p>
+<p>↓主镜1上ASI2600MC相机用的滤镜轮和2寸螺纹边滤镜，顺序分别是：</p>
+<ol>
+<li>双窄；</li>
+<li>1.25寸IR685nm pass，拍月球和行星用的，通过转接到2寸滤镜轮上的，这东西其实没必要，正好赶上我有，就装上了</li>
+<li>暗场</li>
+</ol>
+<p><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3519.jpeg" alt="IMG_3519"></p>
+<p>↓QHY183MM用的滤镜轮和36mm无边框滤镜，顺序分别是（滤镜紫色的一面面向相机，图中的这面是面向望远镜的）：
+<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_3360.jpeg" alt=""></p>
+<p>↓MPCC+滤镜轮+相机装配后，我没有通过相机的螺纹，直接把滤镜轮拆开，用螺丝与滤镜轮固定，前面一个T2延长桶，链接MPCC，55mm后截距，暂时未测试</p>
+<p><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3533.jpeg" alt="IMG_3533"></p>
+<p>↓大黑调焦座里面有个螺丝，卡主了MPCC，无法完全插入，螺丝好像是固定调焦齿轮的，无奈现在已经装上了电调，手拧不动了，接上电脑后，需要拉出调焦座松动下螺丝才能将MPCC完全插入</p>
+<p><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3522.jpeg" alt="IMG_3522"><img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3523.jpeg" alt="IMG_3523"></p>
+<p>↓大黑装配
+<img src="../images/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%EF%BC%88%E4%B8%80%EF%BC%89/IMG_3541.jpeg" alt="IMG_3541"></p>
+<p>↓主镜2的70SA直接固定在大黑抱箍上
+<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4195.jpeg" alt="IMG_3541"></p>
+<p>↓宽鸠尾板
+<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4198.jpeg" alt="IMG_3541"></p>
+<p>↓导星镜通过巡星镜接口固定，换一个双螺丝的，拆卸时要注意大黑镜筒里面的螺母
+<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4205.jpeg" alt="IMG_3541">
+<img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4206.jpeg" alt="IMG_3541"></p>
+<p><img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/IMG_4203.jpeg" alt="IMG_3541"></p>
+<h2 id="连接示意图">连接示意图</h2>
+<p><img src="//oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/yuancheng.png" alt=""></p>
+<p>使用USB3的设备（数据，就是要传照片）</p>
+<ol>
+<li>QHY183</li>
+<li>ASI2600</li>
+<li>QHY5</li>
+<li>移动硬盘</li>
+</ol>
+<p>使用USB2的设备（指令，就仅是串口通信）</p>
+<ol>
+<li>EAF1</li>
+<li>镜头盖1</li>
+<li>镜头盖2</li>
+<li>EQ6R</li>
+<li>（EAF2通过ASI2600Hub链接）</li>
+</ol>
+<p>12V供电设备</p>
+<ol>
+<li>QHY183</li>
+<li>ASI2600</li>
+<li>EQ6R</li>
+<li>EAF1</li>
+<li>镜头盖1</li>
+<li>镜头盖2</li>
+<li>大黑散热</li>
+<li>导星加热带</li>
+<li>主镜1加热带</li>
+<li>EAF1加热带</li>
+<li>主镜2加热带</li>
+<li>EAF2加热带</li>
+</ol>
+<p>至此，设备准备完成，接下来选址</p>
+
+        
+
+        <hr>
+        <p>
+            
+                <a href="/p/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E6%9C%AF%E8%AF%AD/" 
+            title="git团队协作中出现的术语">
+            《git团队协作中出现的术语》</a>⬅
+            
+            🧰
+            
+            ➡<a href="/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/" 
+                    title="记一次远程天文台建台经历（二）">《记一次远程天文台建台经历（二）》</a>
+            
+        </p>
+    </div>
+    </div>
+</article>
+
+<hr />
+&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

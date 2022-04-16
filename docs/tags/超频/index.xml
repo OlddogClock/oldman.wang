@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>超频 on 老王</title><link>/tags/%E8%B6%85%E9%A2%91/</link><description>Recent content in 超频 on 老王</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%B6%85%E9%A2%91/index.xml" rel="self" type="application/rss+xml"/><item><title>技嘉B550I稳定超频5900X到4.5GHz</title><link>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</link><pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate><guid>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</guid><description>&lt;p>我上一次超频还是在二十一年前，高中时期我的第一台电脑，AMD毒龙800MHz CPU、512M内存、VIA主板、TNT 64M显卡、100M网卡、56Kbps Modem、15寸CRT显示器、52速CD-ROM、250W电源，现在主要配件都还留着，想着能有重新点亮的一天。当时要用铅笔使CPU表面的L1触电短路，解锁倍频，除了BIOS还要调整主板上的DIP开关，散热器还手工打孔通风，能超到1GHz的主频已经相当可观了。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>超频 on 老王</title>
+    <link>/tags/%E8%B6%85%E9%A2%91/</link>
+    <description>Recent content in 超频 on 老王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%B6%85%E9%A2%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技嘉B550I稳定超频5900X到4.5GHz</title>
+      <link>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/p/%E6%8A%80%E5%98%89b550i%E7%A8%B3%E5%AE%9A%E8%B6%85%E9%A2%915900x%E5%88%B04.5ghz/</guid>
+      <description>&lt;p&gt;我上一次超频还是在二十一年前，高中时期我的第一台电脑，AMD毒龙800MHz CPU、512M内存、VIA主板、TNT 64M显卡、100M网卡、56Kbps Modem、15寸CRT显示器、52速CD-ROM、250W电源，现在主要配件都还留着，想着能有重新点亮的一天。当时要用铅笔使CPU表面的L1触电短路，解锁倍频，除了BIOS还要调整主板上的DIP开关，散热器还手工打孔通风，能超到1GHz的主频已经相当可观了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

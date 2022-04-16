@@ -24,3 +24,10 @@ category = "categories"
 
 [permalinks]
   post = "/p/:title/"
+
+[menu]
+[[menu.main]]
+  identifier = 'blog'
+  name = '✍️给我留言'
+  url = 'https://github.com/OlddogClock/oldman.wang/issues' 
+  target = '_blank'

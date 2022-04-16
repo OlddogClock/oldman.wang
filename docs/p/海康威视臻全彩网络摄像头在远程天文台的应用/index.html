@@ -1,52 +1,182 @@
-<!doctype html><html lang=zh-cn>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=keyword content>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
-<title>海康威视臻全彩网络摄像头在远程天文台的应用-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
-<link rel=stylesheet href=/css/alone.css>
-<script>var _hmt=_hmt||[];(function(){var e=document.createElement("script"),t;e.src="https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script>
-</head><body><header class=homepage-header>
-<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
-</header><hr>
-&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
-<hr>
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keyword"  content="">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+    <title>海康威视臻全彩网络摄像头在远程天文台的应用-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title>
+    
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css">
+    <link rel="stylesheet" href="/css/alone.css" />
+
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+<body><header class="homepage-header">
+    <h1>⌚️老王</h1>
+    <span class="subtitle">一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header>
+<hr />
+&nbsp;&nbsp;<a href="/">🏠首页</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%85%B3%E4%BA%8E">📁关于</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E5%A4%A9%E6%96%87">📁天文</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97">📁程序员杂志</a>&nbsp;&nbsp;
+
+|&nbsp;&nbsp;<a class="navbar-item" href="/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">📁资源下载</a>&nbsp;&nbsp;
+
+
+|&nbsp;&nbsp;<a href="https://github.com/OlddogClock/oldman.wang/issues" title="✍️给我留言" target="_blank">✍️给我留言</a>
+ 
+<hr />
+
+
 <article>
-<div class=container>
-<h2>📖海康威视臻全彩网络摄像头在远程天文台的应用</h2><hr>
-<h5>文章目录</h5><ul class=nav>
-<ul class=nav>
-<li><a href=#%e6%b5%b7%e5%ba%b7%e5%a8%81%e8%a7%86%e8%87%bb%e5%85%a8%e5%bd%a9%e7%bd%91%e7%bb%9c%e6%91%84%e5%83%8f%e5%a4%b4%e6%a8%a1%e6%8b%9f%e6%88%90%e6%9c%ac%e5%9c%b0%e6%91%84%e5%83%8f%e5%a4%b4>
-海康威视臻全彩网络摄像头模拟成本地摄像头
-</a></li></ul></ul><ul class=nav>
-<ul class=nav>
-<li><a href=#%e6%b5%81%e6%98%9f%e6%8d%95%e8%8e%b7>
-流星捕获
-</a></li></ul></ul><hr>
-<p>远程天文台用摄像头的目的：</p><ul>
-<li>捕获流星视频</li><li>拍星空延时</li><li>查看望远镜当前姿态</li></ul><p>对摄像头的要求：</p><ul>
-<li>不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰</li><li>耐低温、不凝结。台址在华北以北，冬季气温低</li><li>有软件控制的云台</li><li>支持RTSP视频流</li><li>越高清越好，视角不宜过广，否则看不清星星</li></ul><p>2021年底，我试过IMX291、海康威视C8W、小蚁摄都有各种各样的问题，最终选择了海康威视臻全彩DS-2CD3T87WD-L 4mm焦距（正考虑换2.8mm的），这是一款800万像素的低照度全彩摄像头，可在没有任何补光的情况下可以拍出彩色的画面，照度低至0.0005，关于它的详细参数见<a href="https://www.hikvision.com/cn/products/Front-End-Product/Fixed-Camera/Distributed-Series/ds-2cd3t87-d-wd-l0/?q=ds-2cd3t87-d-wd-l&position=3">官网</a>，营销信息参考<a href="https://item.taobao.com/item.htm?id=574618170936&ns=1&abbucket=10#detail">淘宝</a> 。</p><p><img src=https://gd1.alicdn.com/imgextra/i3/163143065/O1CN01sBZrbh1YVoeKXMt2d_!!163143065.png_350x350.jpg alt></p><p>海康威视臻全彩DS-2CD3T87WD-L大部分情况下都是接硬盘录像机使用，与日常使用的USB摄像头不同，网络摄像头不能被常见软件直接识别调用，需要将网络摄像头模拟为本地摄像头。</p><p>云台使用的是https://item.taobao.com/item.htm?id=593470869933 看上去使用的是Modbus TCP/IP控制，没空研究了，用自带的软件凑合用</p><p><img src=https://gd4.alicdn.com/imgextra/i2/3884688156/O1CN01riaFQI2A7UpxG4T3l_!!3884688156.jpg_350x350.jpg alt></p><h2 id=海康威视臻全彩网络摄像头模拟成本地摄像头>海康威视臻全彩网络摄像头模拟成本地摄像头</h2><ol>
-<li>将海康威视臻全彩DS-2CD3T87WD-L接通在局域网内，保证和电脑在同一局域网内；</li><li>下载安装<a href=https://www.hikvision.com/cn/support/Downloads/Desktop-Application/HikvisionTools/>Hikvision Tools（原名SADPTool）</a> 找到局域网内摄像头的IP</li><li>通过浏览器访问摄像头IP，比如我的是10.0.0.10，输入默认管理员用户名密码admin，进入摄像头自己的管理界面，首次使用需要激活，根据提示进行</li><li>大部分采用默认设置即可，场景改为<strong>低照度</strong>这样就关闭了补光，码率改为<strong>定码率</strong>，<strong>帧率</strong>调到最高；关闭OSD水印或设置一个酷酷的名字；NTP时间服务使用阿里云的<strong>ntp.aliyun.com</strong>；为了获得更好的清晰度，后面所使用的都是RTSP主码流
-<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/haikang-dizhaodu.jpg alt>
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE.png alt>
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%A7%86%E9%A2%91%E8%AE%BE%E7%BD%AE.png alt>
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86IP%E8%AE%BE%E7%BD%AE.png alt></li><li>电脑上按照顺序下载并安装</li></ol><ul>
-<li><a href=https://obsproject.com/>OBS</a></li><li><a href=https://obsproject.com/forum/resources/obs-virtualcam.949/>OBS-Virtualcam插件</a></li><li><a href=https://gstreamer.freedesktop.org/download/>GStreamer（MinGW 64-bit runtime installer）</a>，安装Gstreamer后，将<code>d:\gstreamer\1.0\x86_64\bin</code>添加到环境变量path下（<a href=/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/>添加环境变量的方法</a>），d:\gstreamer是你的安装路径。
-<img src=http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/gstreamer.png alt></li><li><a href=https://github.com/fzwoch/obs-gstreamer/releases>OBS-Gstreamer插件</a>，解压后将<code>obs-gstreamer</code>复制到<code>C:\Program Files\obs-studio\obs-plugins\64bit</code>下。如果地址打不开就访问链接：https://pan.baidu.com/s/1UghiVq1GqpcMZsCFDvXoPA 提取码：1111</li></ul><ol start=6>
+    <div class="container">
+        <h2>📖海康威视臻全彩网络摄像头在远程天文台的应用</h2>
+        
+
+    
+    
+    
+        
+        
+        
+        <hr />
+        <h5>文章目录</h5>
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e6%b5%b7%e5%ba%b7%e5%a8%81%e8%a7%86%e8%87%bb%e5%85%a8%e5%bd%a9%e7%bd%91%e7%bb%9c%e6%91%84%e5%83%8f%e5%a4%b4%e6%a8%a1%e6%8b%9f%e6%88%90%e6%9c%ac%e5%9c%b0%e6%91%84%e5%83%8f%e5%a4%b4">
+                    海康威视臻全彩网络摄像头模拟成本地摄像头
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+            
+            
+                
+                    
+                    
+                        <ul class="nav">
+                    
+                        <ul class="nav">
+                    
+                    
+                    <li><a href="#%e6%b5%81%e6%98%9f%e6%8d%95%e8%8e%b7">
+                    流星捕获
+                    </a></li>
+                    
+                    
+                        </ul>
+                    
+                        </ul>
+                    
+                
+            
+        
+    
+
+        <hr />
+
+        <p>远程天文台用摄像头的目的：</p>
+<ul>
+<li>捕获流星视频</li>
+<li>拍星空延时</li>
+<li>查看望远镜当前姿态</li>
+</ul>
+<p>对摄像头的要求：</p>
+<ul>
+<li>不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰</li>
+<li>耐低温、不凝结。台址在华北以北，冬季气温低</li>
+<li>有软件控制的云台</li>
+<li>支持RTSP视频流</li>
+<li>越高清越好，视角不宜过广，否则看不清星星</li>
+</ul>
+<p>2021年底，我试过IMX291、海康威视C8W、小蚁摄都有各种各样的问题，最终选择了海康威视臻全彩DS-2CD3T87WD-L 4mm焦距（正考虑换2.8mm的），这是一款800万像素的低照度全彩摄像头，可在没有任何补光的情况下可以拍出彩色的画面，照度低至0.0005，关于它的详细参数见<a href="https://www.hikvision.com/cn/products/Front-End-Product/Fixed-Camera/Distributed-Series/ds-2cd3t87-d-wd-l0/?q=ds-2cd3t87-d-wd-l&amp;position=3">官网</a>，营销信息参考<a href="https://item.taobao.com/item.htm?id=574618170936&amp;ns=1&amp;abbucket=10#detail">淘宝</a> 。</p>
+<p><img src="https://gd1.alicdn.com/imgextra/i3/163143065/O1CN01sBZrbh1YVoeKXMt2d_!!163143065.png_350x350.jpg" alt=""></p>
+<p>海康威视臻全彩DS-2CD3T87WD-L大部分情况下都是接硬盘录像机使用，与日常使用的USB摄像头不同，网络摄像头不能被常见软件直接识别调用，需要将网络摄像头模拟为本地摄像头。</p>
+<p>云台使用的是https://item.taobao.com/item.htm?id=593470869933 看上去使用的是Modbus TCP/IP控制，没空研究了，用自带的软件凑合用</p>
+<p><img src="https://gd4.alicdn.com/imgextra/i2/3884688156/O1CN01riaFQI2A7UpxG4T3l_!!3884688156.jpg_350x350.jpg" alt=""></p>
+<h2 id="海康威视臻全彩网络摄像头模拟成本地摄像头">海康威视臻全彩网络摄像头模拟成本地摄像头</h2>
+<ol>
+<li>将海康威视臻全彩DS-2CD3T87WD-L接通在局域网内，保证和电脑在同一局域网内；</li>
+<li>下载安装<a href="https://www.hikvision.com/cn/support/Downloads/Desktop-Application/HikvisionTools/">Hikvision Tools（原名SADPTool）</a> 找到局域网内摄像头的IP</li>
+<li>通过浏览器访问摄像头IP，比如我的是10.0.0.10，输入默认管理员用户名密码admin，进入摄像头自己的管理界面，首次使用需要激活，根据提示进行</li>
+<li>大部分采用默认设置即可，场景改为<strong>低照度</strong>这样就关闭了补光，码率改为<strong>定码率</strong>，<strong>帧率</strong>调到最高；关闭OSD水印或设置一个酷酷的名字；NTP时间服务使用阿里云的<strong>ntp.aliyun.com</strong>；为了获得更好的清晰度，后面所使用的都是RTSP主码流
+<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/haikang-dizhaodu.jpg" alt="">
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE.png" alt="">
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%A7%86%E9%A2%91%E8%AE%BE%E7%BD%AE.png" alt="">
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86IP%E8%AE%BE%E7%BD%AE.png" alt=""></li>
+<li>电脑上按照顺序下载并安装</li>
+</ol>
+<ul>
+<li><a href="https://obsproject.com/">OBS</a></li>
+<li><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">OBS-Virtualcam插件</a></li>
+<li><a href="https://gstreamer.freedesktop.org/download/">GStreamer（MinGW 64-bit runtime installer）</a>，安装Gstreamer后，将<code>d:\gstreamer\1.0\x86_64\bin</code>添加到环境变量path下（<a href="/p/windows10%E8%AE%BE%E7%BD%AEpath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/">添加环境变量的方法</a>），d:\gstreamer是你的安装路径。
+<img src="http://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/gstreamer.png" alt=""></li>
+<li><a href="https://github.com/fzwoch/obs-gstreamer/releases">OBS-Gstreamer插件</a>，解压后将<code>obs-gstreamer</code>复制到<code>C:\Program Files\obs-studio\obs-plugins\64bit</code>下。如果地址打不开就访问链接：https://pan.baidu.com/s/1UghiVq1GqpcMZsCFDvXoPA 提取码：1111</li>
+</ul>
+<ol start="6">
 <li>用VLC播放器测试网络摄像头的RTSP协议，海康威视的RTSP输出流地址格式是：<code>rtsp://admin:摄像头密码@摄像头IP地址:554/h264/ch1/main/av_stream</code>，输入到VLC中进行播放测试，看到实时画面说明摄像头设置完成
-<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/vlc-open.jpg alt></li><li>打开OBS软件，在视频源中添加并选择GStreamer Source</li><li>在弹出的窗口中，Pipeline一项将rtsp地址替换为自己的，如：<code>rtspsrc location="rtsp://admin:xxxxxx@10.0.0.10:554/h264/ch1/main/av_stream" latency=0 buffer-mode=auto ! rtph264depay ! h264parse ! d3d11h264dec ! video.</code> 注意不要有换行。</li><li>设置好后，在工具菜单-启用虚拟摄像头即可，Target Camera就是虚拟出来本地摄像头的名字。<strong>OBS软件不要关</strong>。</li></ol><p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/obs-rtsp.jpg alt></p><p><img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/obs-rtsp2.jpg alt></p><h2 id=流星捕获>流星捕获</h2><p>流星捕获使用的软件是UFocaptureHD，可以看到刚才虚拟出来的摄像头了
-<img src=https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/ufo.jpg alt></p><p>未完待续，或者参考星空π对Terry老师的文章《UFOCaptureHD2 快速指南》 <a href=http://pi.bestxtech.com/ufocapture/index/>http://pi.bestxtech.com/ufocapture/index/</a></p><hr>
-<p>
-<a href=/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/ title=机械键盘折腾记>
-《机械键盘折腾记》</a>⬅
-🧰
-</p></div></div></article><hr>
-&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
-<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
-<script>hljs.highlightAll()</script>
-</body></html>
+<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/vlc-open.jpg" alt=""></li>
+<li>打开OBS软件，在视频源中添加并选择GStreamer Source</li>
+<li>在弹出的窗口中，Pipeline一项将rtsp地址替换为自己的，如：<code>rtspsrc location=&quot;rtsp://admin:xxxxxx@10.0.0.10:554/h264/ch1/main/av_stream&quot; latency=0 buffer-mode=auto ! rtph264depay ! h264parse ! d3d11h264dec ! video.</code> 注意不要有换行。</li>
+<li>设置好后，在工具菜单-启用虚拟摄像头即可，Target Camera就是虚拟出来本地摄像头的名字。<strong>OBS软件不要关</strong>。</li>
+</ol>
+<p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/obs-rtsp.jpg" alt=""></p>
+<p><img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/obs-rtsp2.jpg" alt=""></p>
+<h2 id="流星捕获">流星捕获</h2>
+<p>流星捕获使用的软件是UFocaptureHD，可以看到刚才虚拟出来的摄像头了
+<img src="https://oldmanblog.oss-cn-guangzhou.aliyuncs.com/blog/ufo.jpg" alt=""></p>
+<p>未完待续，或者参考星空π对Terry老师的文章《UFOCaptureHD2 快速指南》 <a href="http://pi.bestxtech.com/ufocapture/index/">http://pi.bestxtech.com/ufocapture/index/</a></p>
+
+        
+
+        <hr>
+        <p>
+            
+                <a href="/p/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98%E6%8A%98%E8%85%BE%E8%AE%B0/" 
+            title="机械键盘折腾记">
+            《机械键盘折腾记》</a>⬅
+            
+            🧰
+            
+        </p>
+    </div>
+    </div>
+</article>
+
+<hr />
+&copy; 2022 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>, Themes <a href="https://github.com/OlddogClock/nocss-hugo" target="_blank">nocss-hugo</a>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
