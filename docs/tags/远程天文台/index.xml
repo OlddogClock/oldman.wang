@@ -1,100 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>远程天文台 on 老王</title>
-    <link>/tags/%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0/</link>
-    <description>Recent content in 远程天文台 on 老王</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Apr 2022 14:44:15 +0800</lastBuildDate><atom:link href="/tags/%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>海康威视臻全彩网络摄像头在远程天文台的应用</title>
-      <link>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</link>
-      <pubDate>Sat, 09 Apr 2022 14:44:15 +0800</pubDate>
-      
-      <guid>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
-      <description>&lt;p&gt;远程天文台用摄像头的目的：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;捕获流星视频&lt;/li&gt;
-&lt;li&gt;拍星空延时&lt;/li&gt;
-&lt;li&gt;查看望远镜当前姿态&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;对摄像头的要求：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰&lt;/li&gt;
-&lt;li&gt;耐低温、不凝结。台址在华北以北，冬季气温低&lt;/li&gt;
-&lt;li&gt;有软件控制的云台&lt;/li&gt;
-&lt;li&gt;支持RTSP视频流&lt;/li&gt;
-&lt;li&gt;越高清越好，视角不宜过广，否则看不清星星&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>记一次远程天文台建台经历（五）</title>
-      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</link>
-      <pubDate>Sun, 03 Apr 2022 16:51:16 +0800</pubDate>
-      
-      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</guid>
-      <description>&lt;p&gt;2022年4月3日了，没有任何进展。由于疫情，大黑的CYCK调焦座修好就没再去过台里。MPCC坏了，又新买了一个。没什么可写的，做个阶段总结吧。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>给IntelNUC加装鸠尾槽</title>
-      <link>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</guid>
-      <description>&lt;p&gt;IntelNUC太小了，工控机里面还有些空间可以留给固定鸠尾槽的螺丝螺母，NUC智能通过转接板的方式。&lt;/p&gt;
-&lt;p&gt;10×10mm铝板，厚度2mm就够了，我用的4mm有点厚。用M5×16固定鸠尾槽与转接板，再用M5×40螺丝与IntelNUC背板固定，背板的孔位需要扩一些才能穿过M5螺丝&lt;/p&gt;
-&lt;p&gt;看图秒懂：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>记一次远程天文台建台经历（四）</title>
-      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</guid>
-      <description>&lt;p&gt;记录调试和变更日志&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2021年商业、半商业运作远程天文台不完全汇总</title>
-      <link>/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/</link>
-      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/</guid>
-      <description>&lt;p&gt;可能是因为过于小众，这些台基本都没有做广告，自己多处打听收集的&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>记一次远程天文台建台经历（三）</title>
-      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</link>
-      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</guid>
-      <description>&lt;p&gt;2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
-借这个空当，介绍下天文电脑的配置。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>记一次远程天文台建台经历（二）</title>
-      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</guid>
-      <description>&lt;p&gt;2021年10月27日近期进展。EQ6R拿到了。向日葵只能插排有不足。设备转移到迷你仓。平场盖加长数据线&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>记一次远程天文台建台经历（一）</title>
-      <link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</link>
-      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</guid>
-      <description>&lt;p&gt;2021年10月，第一次弄远程台，记录备用。
-对以下内容有任何疑问或者好奇，欢迎提问，多提意见🤝🤝&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>远程天文台 on 老王</title><link>/tags/%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0/</link><description>Recent content in 远程天文台 on 老王</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 09 Apr 2022 14:44:15 +0800</lastBuildDate><atom:link href="/tags/%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>海康威视臻全彩网络摄像头在远程天文台的应用</title><link>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</link><pubDate>Sat, 09 Apr 2022 14:44:15 +0800</pubDate><guid>/p/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E8%87%BB%E5%85%A8%E5%BD%A9%E7%BD%91%E7%BB%9C%E6%91%84%E5%83%8F%E5%A4%B4%E5%9C%A8%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E7%9A%84%E5%BA%94%E7%94%A8/</guid><description>&lt;p>远程天文台用摄像头的目的：&lt;/p>
+&lt;ul>
+&lt;li>捕获流星视频&lt;/li>
+&lt;li>拍星空延时&lt;/li>
+&lt;li>查看望远镜当前姿态&lt;/li>
+&lt;/ul>
+&lt;p>对摄像头的要求：&lt;/p>
+&lt;ul>
+&lt;li>不能有可见光补光、也不能有红外补光。会对天文摄影造成干扰&lt;/li>
+&lt;li>耐低温、不凝结。台址在华北以北，冬季气温低&lt;/li>
+&lt;li>有软件控制的云台&lt;/li>
+&lt;li>支持RTSP视频流&lt;/li>
+&lt;li>越高清越好，视角不宜过广，否则看不清星星&lt;/li>
+&lt;/ul></description></item><item><title>记一次远程天文台建台经历（五）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</link><pubDate>Sun, 03 Apr 2022 16:51:16 +0800</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%94/</guid><description>&lt;p>2022年4月3日了，没有任何进展。由于疫情，大黑的CYCK调焦座修好就没再去过台里。MPCC坏了，又新买了一个。没什么可写的，做个阶段总结吧。&lt;/p></description></item><item><title>给IntelNUC加装鸠尾槽</title><link>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E7%BB%99intelnuc%E5%8A%A0%E8%A3%85%E9%B8%A0%E5%B0%BE%E6%A7%BD/</guid><description>&lt;p>IntelNUC太小了，工控机里面还有些空间可以留给固定鸠尾槽的螺丝螺母，NUC智能通过转接板的方式。&lt;/p>
+&lt;p>10×10mm铝板，厚度2mm就够了，我用的4mm有点厚。用M5×16固定鸠尾槽与转接板，再用M5×40螺丝与IntelNUC背板固定，背板的孔位需要扩一些才能穿过M5螺丝&lt;/p>
+&lt;p>看图秒懂：&lt;/p></description></item><item><title>记一次远程天文台建台经历（四）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E5%9B%9B/</guid><description>&lt;p>记录调试和变更日志&lt;/p></description></item><item><title>2021年商业、半商业运作远程天文台不完全汇总</title><link>/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/</link><pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate><guid>/p/2021%E5%B9%B4%E5%95%86%E4%B8%9A%E5%8D%8A%E5%95%86%E4%B8%9A%E8%BF%90%E4%BD%9C%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%B1%87%E6%80%BB/</guid><description>&lt;p>可能是因为过于小众，这些台基本都没有做广告，自己多处打听收集的&lt;/p></description></item><item><title>记一次远程天文台建台经历（三）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%89/</guid><description>&lt;p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
+借这个空当，介绍下天文电脑的配置。&lt;/p></description></item><item><title>记一次远程天文台建台经历（二）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</link><pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%BA%8C/</guid><description>&lt;p>2021年10月27日近期进展。EQ6R拿到了。向日葵只能插排有不足。设备转移到迷你仓。平场盖加长数据线&lt;/p></description></item><item><title>记一次远程天文台建台经历（一）</title><link>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><guid>/p/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%BF%9C%E7%A8%8B%E5%A4%A9%E6%96%87%E5%8F%B0%E5%BB%BA%E5%8F%B0%E7%BB%8F%E5%8E%86%E4%B8%80/</guid><description>&lt;p>2021年10月，第一次弄远程台，记录备用。
+对以下内容有任何疑问或者好奇，欢迎提问，多提意见🤝🤝&lt;/p></description></item></channel></rss>
