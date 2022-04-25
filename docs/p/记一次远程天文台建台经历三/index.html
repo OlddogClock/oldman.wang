@@ -3,7 +3,9 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=keyword content="记一次远程天文台建台经历（三）-一个老伙计心中的少年。PS:这是一个没有CSS的站点">
-<meta name=description content="2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
+<meta name=description content="2022年4月25日 本文方案作废。电脑改为Intel NUC，镜上承载，文中所述这套太重了。
+==分割线==
+2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
 借这个空当，介绍下天文电脑的配置。">
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
 <title>记一次远程天文台建台经历（三）-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
@@ -62,7 +64,7 @@ CPU：Intel Core i5-10400
 <li><a href=#%e6%9c%80%e7%bb%88%e6%95%88%e6%9e%9c>
 最终效果
 </a></li></ul></ul></ul><hr>
-<p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
+<p>2022年4月25日 本文方案作废。电脑改为Intel NUC，镜上承载，文中所述这套太重了。</p><p>==分割线==</p><p>2021年10月29日，定制的抱箍还没有发货，焦急的等待中，就靠这个抱箍链接大黑和70sa组成双镜系统。
 借这个空当，介绍下天文电脑的配置。</p><h2 id=总控电脑配置>总控电脑配置</h2><p>我对天文总控电脑的基本要求是：</p><ul>
 <li>支持户外工作，温度范围是-10℃~40℃</li><li>支持多个USB3.0接口</li><li>支持通电自动开机（非常重要）</li><li>支持千兆网卡</li></ul><p>这次远程台我没有使用大家常用的无风扇工控机，之前打野时也用过，还因为正负极接反而烧过一台。内部是小厂生产的主板集成低压CPU，比如Intel Celeron J9000或者型号结尾“U”的低功耗Core，内存、SSD也都是我们没听过的品牌，扩展性很差，我曾经要升级一块带蓝牙的无线网卡都无法支持&mldr;但是并不代表着质量就差，正好相反，我用过的这两台工控机都非常稳定，从来没有死过机。这次就挑战一回自己动手装的电脑看是否适合长期在野外工作。</p><h3 id=主板asus-h410t2csm>主板：Asus H410T2/CSM</h3><p>华硕的这款是工控机主板，THIN MINI-ITX结构，尺寸只有17×17cm，关键是支持12V/19V供电、通电自动开机，不用再购买DC-ATX模块了，关于H410T2主板的详情介绍可以看<a href="https://item.taobao.com/item.htm?id=634886483572&_u=t18gkkqb0e0">这里</a>。现在出了支持Intel第十一代CPU的H510T，需要注意的是，这种主板是不可能支持PCI-E的，也就是不能插独立显卡。</p><h3 id=cpuintel-core-i5-10400>CPU：Intel Core i5-10400</h3><p>带核显，设计功耗65W，再高我怕电源供不上</p><h3 id=网卡intel-ax210>网卡：Intel AX210</h3><p>支持wifi6、带蓝牙，花几元钱买IPEX4接口的<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.58a22e8d8G8KDI&id=586127342811&_u=t18gkkqa2de">PCB天线</a>装上，信号效果远远好于各种“八爪鱼”天线，而且还不用支棱在外面</p><h3 id=电源华硕-19v-632a>电源：华硕 19V 6.32A</h3><p>直流电源的造假、虚标现象非常严重，买的时候一定要注意看评论、店家信誉，我是在<a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c172e8dI9bsQ1&id=573189648830&_u=t18gkkqe88d">这家</a>买的</p><h3 id=硬盘内存>硬盘、内存</h3><p>内存16G起，硬盘用两块，主板M.2上一块、SATA插一块，因为有流星监控，需要大量的视频读写。
 将拍照的硬盘和视频的硬盘分开</p><h3 id=其它配件>其它配件</h3><p>由于主板只有2个USB3、2个USB2，使用USB hub又可能存在问题，故将主板预留的USB口插针用上</p><ul>
