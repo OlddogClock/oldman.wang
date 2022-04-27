@@ -9,7 +9,8 @@
     width: 1000px;
     height: 550px;
 }
-.highlight {
+pre > code {
+    font-family: "Sans Mono", "Consolas", "Courier", monospace;
     font-size:18px;
 }
 
