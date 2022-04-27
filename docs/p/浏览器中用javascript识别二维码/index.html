@@ -1,0 +1,102 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=keyword content="浏览器中用JavaScript识别二维码-一个老伙计心中的少年。PS:这是一个没有CSS的站点">
+<meta name=description content="浏览器中使用纯JS读取识别二维码内容。来自工作中一个需求，上传二维码时，对二维码内容进行校验，避免上传非法二维码。">
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
+<title>浏览器中用JavaScript识别二维码-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=/css/alone.css>
+<script>var _hmt=_hmt||[];(function(){var e=document.createElement("script"),t;e.src="https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script>
+</head><body><header class=homepage-header>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+</header><hr>
+&nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%85%B3%E4%BA%8E>📁关于</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
+|&nbsp;&nbsp;<a href=https://github.com/OlddogClock/oldman.wang/issues title=✍️给我留言 target=_blank>✍️给我留言</a>
+<hr>
+<article>
+<div class=container>
+<h2>📖浏览器中用JavaScript识别二维码</h2><hr>
+<p>浏览器中使用纯JS读取识别二维码内容。来自工作中一个需求，上传二维码时，对二维码内容进行校验，避免上传非法二维码。</p><p>使用jsQR对二维码进行识别 <a href=https://github.com/cozmo/jsQR>https://github.com/cozmo/jsQR</a> ，为了更加方便的嗲用，对浏览器中的<a href=https://github.com/cozmo/jsQR/blob/master/dist/jsQR.js>jsQR</a>稍微有些改动：</p><ul>
+<li>可以传入图片URL、Base64、Blob</li><li>不用传入图片尺寸</li><li>用Promise方式</li></ul><pre tabindex=0><code>// 原调用方式需要传入Uint8ClampedArray类型的图片数据，并要知道图片的宽高
+const code = jsQR(imageData, width, height, options?);
+
+// 修改后直接传入图片URL、Base64、Blob
+jsQR(&#39;https://xxx/ooo.jpg&#39;).then((success) =&gt; {
+  console.log(success)
+}, () =&gt; {
+  console.log(&#39;error&#39;)
+})
+</code></pre><p>如果用在jQuery Uploader中，可以实现上传前检查二维码内容，比如：</p><pre tabindex=0><code>$(&#39;#upload_alipay&#39;).fileupload({
+  add: function(e, data){
+    jsQR(URL.createObjectURL(data.files[0])).then((success) =&gt; {
+      // 只允许支付宝二维码
+      if (!/^https:\/\/qr\.alipay\.com\//.test(success.data)) {
+        alert(&#39;请上传正确的支付宝收款二维码&#39;)
+      }else{
+        data.submit()
+      }
+    }, () =&gt; {
+      alert(&#39;请上传正确的支付宝收款二维码&#39;)
+    })
+  }
+})
+</code></pre><p>对jsQR的改动如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// jsQR function 改名为 _jsQR
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_jsQR</span>(<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>, <span style=color:#a6e22e>providedOptions</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>providedOptions</span> <span style=color:#f92672>===</span> <span style=color:#66d9ef>void</span> <span style=color:#ae81ff>0</span>) { <span style=color:#a6e22e>providedOptions</span> <span style=color:#f92672>=</span> {}; }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>options</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>defaultOptions</span>;
+</span></span><span style=display:flex><span>    Object.<span style=color:#a6e22e>keys</span>(<span style=color:#a6e22e>options</span> <span style=color:#f92672>||</span> {}).<span style=color:#a6e22e>forEach</span>(<span style=color:#66d9ef>function</span> (<span style=color:#a6e22e>opt</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>options</span>[<span style=color:#a6e22e>opt</span>] <span style=color:#f92672>=</span> <span style=color:#a6e22e>providedOptions</span>[<span style=color:#a6e22e>opt</span>] <span style=color:#f92672>||</span> <span style=color:#a6e22e>options</span>[<span style=color:#a6e22e>opt</span>];
+</span></span><span style=display:flex><span>    });
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>shouldInvert</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;attemptBoth&#34;</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;invertFirst&#34;</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>tryInvertedFirst</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;onlyInvert&#34;</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;invertFirst&#34;</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>_a</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>binarizer_1</span>.<span style=color:#a6e22e>binarize</span>(<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>, <span style=color:#a6e22e>shouldInvert</span>), <span style=color:#a6e22e>binarized</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_a</span>.<span style=color:#a6e22e>binarized</span>, <span style=color:#a6e22e>inverted</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_a</span>.<span style=color:#a6e22e>inverted</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>result</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>scan</span>(<span style=color:#a6e22e>tryInvertedFirst</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>inverted</span> <span style=color:#f92672>:</span> <span style=color:#a6e22e>binarized</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>result</span> <span style=color:#f92672>&amp;&amp;</span> (<span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;attemptBoth&#34;</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>options</span>.<span style=color:#a6e22e>inversionAttempts</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;invertFirst&#34;</span>)) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>result</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>scan</span>(<span style=color:#a6e22e>tryInvertedFirst</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>binarized</span> <span style=color:#f92672>:</span> <span style=color:#a6e22e>inverted</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>result</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 用canvas读取并转化图片为Uint8ClampedArray类型
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>jsQR</span>(<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>providedOptions</span>){
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>width</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>height</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>canvas</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>createElement</span>(<span style=color:#e6db74>&#39;canvas&#39;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>ctx</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>canvas</span>.<span style=color:#a6e22e>getContext</span>(<span style=color:#e6db74>&#39;2d&#39;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>image</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Image</span>()
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>image</span>.<span style=color:#a6e22e>crossOrigin</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;anonymous&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>image</span>.<span style=color:#a6e22e>src</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>data</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Promise(<span style=color:#66d9ef>function</span> (<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>image</span>.<span style=color:#a6e22e>onload</span> <span style=color:#f92672>=</span> () =&gt; {
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>width</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>image</span>.<span style=color:#a6e22e>width</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>height</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>image</span>.<span style=color:#a6e22e>height</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>canvas</span>.<span style=color:#a6e22e>width</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>width</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>canvas</span>.<span style=color:#a6e22e>height</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>height</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>ctx</span>.<span style=color:#a6e22e>drawImage</span>(<span style=color:#a6e22e>image</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>imageData</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>ctx</span>.<span style=color:#a6e22e>getImageData</span>(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>result</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_jsQR</span>(<span style=color:#a6e22e>imageData</span>.<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>, <span style=color:#a6e22e>providedOptions</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>result</span>){
+</span></span><span style=display:flex><span>                <span style=color:#a6e22e>resolve</span>(<span style=color:#a6e22e>result</span>)
+</span></span><span style=display:flex><span>            }<span style=color:#66d9ef>else</span>{
+</span></span><span style=display:flex><span>                <span style=color:#a6e22e>reject</span>()
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#a6e22e>jsQR</span>.<span style=color:#66d9ef>default</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>jsQR</span>;
+</span></span><span style=display:flex><span><span style=color:#a6e22e>exports</span>.<span style=color:#66d9ef>default</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>jsQR</span>;
+</span></span></code></pre></div><hr>
+<p>
+<a href=/p/2022%E5%B9%B4%E6%98%AF%E6%88%91%E6%9C%89%E7%94%9F%E4%BB%A5%E6%9D%A5%E7%9A%84%E6%9C%80%E4%BD%8E%E8%B0%B7%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E6%9B%B4%E7%B3%9F/ title=2022年是我有生以来的最低谷，未来可能更糟>
+《2022年是我有生以来的最低谷，未来可能更糟》</a>⬅
+🧰
+</p></div></div></article><hr>
+&copy; 2022 Powered by <a href=https://gohugo.io target=_blank>Hugo</a>, Themes <a href=https://github.com/OlddogClock/nocss-hugo target=_blank>nocss-hugo</a>
+<script src=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js></script>
+<script>hljs.highlightAll()</script>
+</body></html>
