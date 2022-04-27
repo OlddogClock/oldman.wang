@@ -15,7 +15,7 @@ tags:
 * 不用传入图片尺寸
 * 用Promise方式
 
-```
+```js
 // 原调用方式需要传入Uint8ClampedArray类型的图片数据，并要知道图片的宽高
 const code = jsQR(imageData, width, height, options?);
 
@@ -29,7 +29,7 @@ jsQR('https://xxx/ooo.jpg').then((success) => {
 ```
 
 如果用在jQuery Uploader中，可以实现上传前检查二维码内容，比如：
-```
+```js
 $('#upload_alipay').fileupload({
   add: function(e, data){
     jsQR(URL.createObjectURL(data.files[0])).then((success) => {

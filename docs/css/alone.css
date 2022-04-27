@@ -9,6 +9,9 @@
     width: 1000px;
     height: 550px;
 }
+.highlight {
+    font-size:18px;
+}
 
 @media screen and (max-width: 1000px) {
     .container img{

@@ -22,30 +22,30 @@
 <div class=container>
 <h2>📖浏览器中用JavaScript识别二维码</h2><hr>
 <p>浏览器中使用纯JS读取识别二维码内容。来自工作中一个需求，上传二维码时，对二维码内容进行校验，避免上传非法二维码。</p><p>使用jsQR对二维码进行识别 <a href=https://github.com/cozmo/jsQR>https://github.com/cozmo/jsQR</a> ，为了更加方便的嗲用，对浏览器中的<a href=https://github.com/cozmo/jsQR/blob/master/dist/jsQR.js>jsQR</a>稍微有些改动：</p><ul>
-<li>可以传入图片URL、Base64、Blob</li><li>不用传入图片尺寸</li><li>用Promise方式</li></ul><pre tabindex=0><code>// 原调用方式需要传入Uint8ClampedArray类型的图片数据，并要知道图片的宽高
-const code = jsQR(imageData, width, height, options?);
-
-// 修改后直接传入图片URL、Base64、Blob
-jsQR(&#39;https://xxx/ooo.jpg&#39;).then((success) =&gt; {
-  console.log(success)
-}, () =&gt; {
-  console.log(&#39;error&#39;)
-})
-</code></pre><p>如果用在jQuery Uploader中，可以实现上传前检查二维码内容，比如：</p><pre tabindex=0><code>$(&#39;#upload_alipay&#39;).fileupload({
-  add: function(e, data){
-    jsQR(URL.createObjectURL(data.files[0])).then((success) =&gt; {
-      // 只允许支付宝二维码
-      if (!/^https:\/\/qr\.alipay\.com\//.test(success.data)) {
-        alert(&#39;请上传正确的支付宝收款二维码&#39;)
-      }else{
-        data.submit()
-      }
-    }, () =&gt; {
-      alert(&#39;请上传正确的支付宝收款二维码&#39;)
-    })
-  }
-})
-</code></pre><p>对jsQR的改动如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// jsQR function 改名为 _jsQR
+<li>可以传入图片URL、Base64、Blob</li><li>不用传入图片尺寸</li><li>用Promise方式</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// 原调用方式需要传入Uint8ClampedArray类型的图片数据，并要知道图片的宽高
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>code</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>jsQR</span>(<span style=color:#a6e22e>imageData</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>, <span style=color:#a6e22e>options</span><span style=color:#f92672>?</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 修改后直接传入图片URL、Base64、Blob
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>jsQR</span>(<span style=color:#e6db74>&#39;https://xxx/ooo.jpg&#39;</span>).<span style=color:#a6e22e>then</span>((<span style=color:#a6e22e>success</span>) =&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>success</span>)
+</span></span><span style=display:flex><span>}, () =&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;error&#39;</span>)
+</span></span><span style=display:flex><span>})
+</span></span></code></pre></div><p>如果用在jQuery Uploader中，可以实现上传前检查二维码内容，比如：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#upload_alipay&#39;</span>).<span style=color:#a6e22e>fileupload</span>({
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>add</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>e</span>, <span style=color:#a6e22e>data</span>){
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>jsQR</span>(<span style=color:#a6e22e>URL</span>.<span style=color:#a6e22e>createObjectURL</span>(<span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>files</span>[<span style=color:#ae81ff>0</span>])).<span style=color:#a6e22e>then</span>((<span style=color:#a6e22e>success</span>) =&gt; {
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// 只允许支付宝二维码
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#e6db74>/^https:\/\/qr\.alipay\.com\//</span>.<span style=color:#a6e22e>test</span>(<span style=color:#a6e22e>success</span>.<span style=color:#a6e22e>data</span>)) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>alert</span>(<span style=color:#e6db74>&#39;请上传正确的支付宝收款二维码&#39;</span>)
+</span></span><span style=display:flex><span>      }<span style=color:#66d9ef>else</span>{
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>submit</span>()
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>    }, () =&gt; {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>alert</span>(<span style=color:#e6db74>&#39;请上传正确的支付宝收款二维码&#39;</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>})
+</span></span></code></pre></div><p>对jsQR的改动如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// jsQR function 改名为 _jsQR
 </span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_jsQR</span>(<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>width</span>, <span style=color:#a6e22e>height</span>, <span style=color:#a6e22e>providedOptions</span>) {
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>providedOptions</span> <span style=color:#f92672>===</span> <span style=color:#66d9ef>void</span> <span style=color:#ae81ff>0</span>) { <span style=color:#a6e22e>providedOptions</span> <span style=color:#f92672>=</span> {}; }
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>options</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>defaultOptions</span>;
