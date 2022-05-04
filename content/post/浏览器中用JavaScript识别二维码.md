@@ -8,7 +8,7 @@ tags:
   - JavaScript
   - 二维码
 ---
-浏览器中使用纯JS读取识别二维码内容。来自工作中一个需求，上传二维码时，对二维码内容进行校验，避免上传非法二维码。
+浏览器中使用纯JS读取识别二维码内容。可用于上传二维码图时，对二维码内容进行校验，避免上传非法二维码。
 <!--more-->
 使用jsQR对二维码进行识别 https://github.com/cozmo/jsQR ，为了更加方便的嗲用，对浏览器中的[jsQR](https://github.com/cozmo/jsQR/blob/master/dist/jsQR.js)稍微有些改动：
 * 可以传入图片URL、Base64、Blob

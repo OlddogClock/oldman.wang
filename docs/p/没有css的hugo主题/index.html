@@ -2,14 +2,15 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=keyword content="没有CSS的Hugo主题-一个老伙计心中的少年。PS:这是一个没有CSS的站点">
+<meta name=keyword content="没有CSS的Hugo主题-一个老伙计心中的少年。PS:这是一个几乎没有CSS的站点">
 <meta name=description content="这是一个没有CSS的Hugo博客主题">
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌚</text></svg>">
-<title>没有CSS的Hugo主题-一个老伙计心中的少年。PS:这是一个没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<title>没有CSS的Hugo主题-一个老伙计心中的少年。PS:这是一个几乎没有CSS的站点</title><link rel=stylesheet href=//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/tomorrow-night-blue.min.css>
+<link rel=stylesheet href=//cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css>
 <link rel=stylesheet href=/css/alone.css>
 <script>var _hmt=_hmt||[];(function(){var e=document.createElement("script"),t;e.src="https://hm.baidu.com/hm.js?d2b64b94332edb95313ab7ff3a2b2f56",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script>
 </head><body><header class=homepage-header>
-<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个没有CSS的站点</span>
+<h1>⌚️老王</h1><span class=subtitle>一个老伙计心中的少年。PS:这是一个几乎没有CSS的站点</span>
 </header><hr>
 &nbsp;&nbsp;<a href=/>🏠首页</a>&nbsp;&nbsp;
 |&nbsp;&nbsp;<a class=navbar-item href=/categories/leetcode>📁Leetcode</a>&nbsp;&nbsp;
@@ -17,15 +18,18 @@
 |&nbsp;&nbsp;<a class=navbar-item href=/categories/%E5%A4%A9%E6%96%87>📁天文</a>&nbsp;&nbsp;
 |&nbsp;&nbsp;<a class=navbar-item href=/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%82%E5%BF%97>📁程序员杂志</a>&nbsp;&nbsp;
 |&nbsp;&nbsp;<a class=navbar-item href=/categories/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD>📁资源下载</a>&nbsp;&nbsp;
-|&nbsp;&nbsp;<a href=https://github.com/OlddogClock/oldman.wang/issues title=✍️给我留言 target=_blank>✍️给我留言</a>
 <hr>
 <article>
-<div class=container>
+<div class="container markdown-body">
 <h2>📖没有CSS的Hugo主题</h2><hr>
 <p>这是一个没有CSS的Hugo博客主题</p><p><a href=https://github.com/OlddogClock/nocss-hugo>💾代码库</a> | <a href=https://oldman.wang>👓预览</a></p><p>但是，由于各种各样的原因，还是要有一些CSS的</p><p>目前仅有的<code>css/alone.css</code>作用是：</p><ul>
-<li>限制图片尺寸</li><li>B站视频</li><li>第三方插件
+<li>限制图片尺寸</li><li>插入B站视频
 <ul>
-<li>highlight.js</li></ul></li></ul><p>站点的config必要配置</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span>[<span style=color:#a6e22e>params</span>]
+<li>{{&lt;b 视频ID>}}</li></ul></li><li>第三方插件
+<ul>
+<li>highlight.js</li><li>katex
+<ul>
+<li>在文章Front-matter写入<code>katex: true</code></li></ul></li></ul></li></ul><p>站点的config必要配置</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span>[<span style=color:#a6e22e>params</span>]
 </span></span><span style=display:flex><span><span style=color:#a6e22e>SEOTitle</span> = <span style=color:#e6db74>&#34;一个老伙计心中的少年。天文 无线电&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#a6e22e>Subtitle</span> = <span style=color:#e6db74>&#34;一个老伙计心中的少年。PS:这是一个没有CSS的站点&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#a6e22e>TOC</span> = <span style=color:#66d9ef>true</span>

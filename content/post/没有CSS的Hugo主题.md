@@ -14,15 +14,20 @@ tags:
 这是一个没有CSS的Hugo博客主题
 
 <!--more-->
+
 [💾代码库](https://github.com/OlddogClock/nocss-hugo) | [👓预览](https://oldman.wang)
 
 但是，由于各种各样的原因，还是要有一些CSS的
 
 目前仅有的`css/alone.css`作用是：
 * 限制图片尺寸
-* B站视频
+* 插入B站视频
+  * {{&lt;b 视频ID&gt;}}
 * 第三方插件
   * highlight.js
+  * katex
+    * 在文章Front-matter写入`katex: true`
+
 
 站点的config必要配置
 ```toml
