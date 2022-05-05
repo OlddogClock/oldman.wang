@@ -62,8 +62,10 @@ function jsQR(data, providedOptions){
     var canvas = document.createElement('canvas')
     var ctx = canvas.getContext('2d')
     var image = new Image()
+    // 允许图片地址跨域
     image.crossOrigin = 'anonymous'
     image.src = data
+    // 等图片加载完成进行转换
     return new Promise(function (resolve, reject) {
         image.onload = () => {
             width = image.width
@@ -71,7 +73,9 @@ function jsQR(data, providedOptions){
             canvas.width = width
             canvas.height = height
             ctx.drawImage(image, 0, 0, width, height)
+            // 图片转成Uint8ClampedArray
             var imageData = ctx.getImageData(0, 0, width, height)
+            // 调用原jsQR方法
             var result = _jsQR(imageData.data, width, height, providedOptions)
             if(result){
                 resolve(result)
