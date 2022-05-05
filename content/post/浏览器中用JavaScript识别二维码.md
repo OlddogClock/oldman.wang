@@ -1,6 +1,6 @@
 ---
 title: "浏览器中用JavaScript识别二维码"
-date: 2022-04-27T16:17:04+08:00
+date: 2022-05-01T10:17:04+08:00
 draft: false
 categories:
   - 程序员杂志
@@ -10,7 +10,7 @@ tags:
 ---
 浏览器中使用纯JS读取识别二维码内容。可用于上传二维码图时，对二维码内容进行校验，避免上传非法二维码。
 <!--more-->
-使用jsQR对二维码进行识别 https://github.com/cozmo/jsQR ，为了更加方便的嗲用，对浏览器中的[jsQR](https://github.com/cozmo/jsQR/blob/master/dist/jsQR.js)稍微有些改动：
+使用jsQR对二维码进行识别 https://github.com/cozmo/jsQR ，为了更加方便的调用，对浏览器中的[jsQR](https://github.com/cozmo/jsQR/blob/master/dist/jsQR.js)稍微有些改动：
 * 可以传入图片URL、Base64、Blob
 * 不用传入图片尺寸
 * 用Promise方式
@@ -49,23 +49,12 @@ $('#upload_alipay').fileupload({
 对jsQR的改动如下：
 
 ```js
-// jsQR function 改名为 _jsQR
+// jsQR 函数名改名为 _jsQR
 function _jsQR(data, width, height, providedOptions) {
-    if (providedOptions === void 0) { providedOptions = {}; }
-    var options = defaultOptions;
-    Object.keys(options || {}).forEach(function (opt) {
-        options[opt] = providedOptions[opt] || options[opt];
-    });
-    var shouldInvert = options.inversionAttempts === "attemptBoth" || options.inversionAttempts === "invertFirst";
-    var tryInvertedFirst = options.inversionAttempts === "onlyInvert" || options.inversionAttempts === "invertFirst";
-    var _a = binarizer_1.binarize(data, width, height, shouldInvert), binarized = _a.binarized, inverted = _a.inverted;
-    var result = scan(tryInvertedFirst ? inverted : binarized);
-    if (!result && (options.inversionAttempts === "attemptBoth" || options.inversionAttempts === "invertFirst")) {
-        result = scan(tryInvertedFirst ? binarized : inverted);
-    }
-    return result;
+    ...原jsQR函数体不变...
 }
 
+// 重新定义一个jsQR函数
 // 用canvas读取并转化图片为Uint8ClampedArray类型
 function jsQR(data, providedOptions){
     var width
